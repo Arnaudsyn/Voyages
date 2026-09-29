@@ -106,6 +106,15 @@
     .leaflet-popup-content{margin:12px 14px}
     .leaflet-popup-content strong{font-size:.95rem}
     .leaflet-popup-content button{margin-top:7px;border:0;background:#1d2922;color:white;border-radius:999px;padding:7px 10px;font-weight:800;cursor:pointer}
+    .mobile-place-popup .leaflet-popup-content-wrapper{padding:0;overflow:hidden;border-radius:18px}
+    .mobile-place-popup .leaflet-popup-content{margin:0;width:230px!important}
+    .mobile-map-card{width:230px;background:var(--card)}
+    .mobile-map-card img{display:block;width:100%;height:112px;object-fit:cover;background:#e9e4da}
+    .mobile-map-card-body{padding:12px 13px 13px}
+    .mobile-map-theme{font-size:.66rem;line-height:1;text-transform:uppercase;letter-spacing:.11em;font-weight:850;color:var(--muted)}
+    .mobile-map-card h4{margin:6px 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem;line-height:1.12;color:var(--ink)}
+    .mobile-map-card .mobile-detail-btn{display:block;width:100%;margin:0;border:0;border-radius:999px;padding:9px 11px;background:#1d2922;color:#fff;font-weight:850;font-size:.8rem;cursor:pointer}
+    .mobile-place-popup .leaflet-popup-close-button{width:28px;height:28px;line-height:26px;background:rgba(255,255,255,.92);border-radius:50%;top:7px;right:7px;color:#17211b!important;box-shadow:0 4px 12px rgba(0,0,0,.14)}
     .custom-marker{background:transparent!important;border:0!important}
     .pin{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#8b2942;border:3px solid #fff;box-shadow:0 5px 14px rgba(0,0,0,.28);font-size:17px;line-height:1}
     .pin span{display:block;transform:none}
@@ -639,10 +648,77 @@
     });
   }
 
+  function isMobileMapMode(){
+    return window.matchMedia('(max-width: 980px)').matches;
+  }
+
+  function themeLabel(place){
+    if(place.kind === 'hotel') return 'Hôtel';
+    if(place.kind === 'food') return 'Café / gourmandise';
+    return 'Visite';
+  }
+
+  function openMobilePlacePreview(place, marker){
+    var wrapper = document.createElement('div');
+    wrapper.className = 'mobile-map-card';
+
+    var photo = photos[place.id];
+    if(photo){
+      var img = document.createElement('img');
+      img.src = commonsUrl(photo.file,520);
+      img.alt = photo.label;
+      img.loading = 'eager';
+      wrapper.appendChild(img);
+    }
+
+    var body = document.createElement('div');
+    body.className = 'mobile-map-card-body';
+
+    var theme = document.createElement('div');
+    theme.className = 'mobile-map-theme';
+    theme.textContent = themeLabel(place);
+
+    var title = document.createElement('h4');
+    title.textContent = place.name;
+
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'mobile-detail-btn';
+    button.textContent = 'Voir le détail';
+    button.addEventListener('click', function(){
+      map.closePopup();
+      window.focusPlace(place.id,true);
+    });
+
+    body.appendChild(theme);
+    body.appendChild(title);
+    body.appendChild(button);
+    wrapper.appendChild(body);
+
+    L.popup({
+      className:'mobile-place-popup',
+      maxWidth:250,
+      minWidth:230,
+      autoPan:true,
+      closeButton:true,
+      offset:[0,-20]
+    })
+      .setLatLng(marker.getLatLng())
+      .setContent(wrapper)
+      .openOn(map);
+  }
+
   places.forEach(function(place){
     var marker = L.marker([place.lat,place.lng],{icon:iconFor(place)}).addTo(map);
     marker.bindTooltip(place.name,{direction:'top',offset:[0,-28],opacity:.92});
-    marker.on('click', function(){ window.focusPlace(place.id,true); });
+    marker.on('click', function(){
+      if(isMobileMapMode()){
+        setFocused(place.id);
+        openMobilePlacePreview(place,marker);
+      } else {
+        window.focusPlace(place.id,true);
+      }
+    });
     markers[place.id] = marker;
     bounds.push([place.lat,place.lng]);
   });
@@ -677,7 +753,7 @@
     if(!place) return;
     setFocused(id);
     map.flyTo([place.lat,place.lng], Math.max(map.getZoom(),15), {duration:.65});
-    markers[id].openTooltip();
+    if(!isMobileMapMode()) markers[id].openTooltip();
     if(scrollToCard){
       var card = document.getElementById(id);
       if(card) setTimeout(function(){card.scrollIntoView({behavior:'smooth',block:'center'});},120);
@@ -699,7 +775,8 @@
           panel.scrollIntoView({behavior:'smooth',block:'start'});
           setTimeout(function(){
             refreshMap(false);
-            if(markers[id]) markers[id].openTooltip();
+            var place = places.find(function(p){return p.id === id;});
+            if(place && markers[id]) openMobilePlacePreview(place,markers[id]);
           },450);
         },80);
       } else {
