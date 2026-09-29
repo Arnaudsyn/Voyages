@@ -629,13 +629,8 @@
 
   places.forEach(function(place){
     var marker = L.marker([place.lat,place.lng],{icon:iconFor(place)}).addTo(map);
-    marker.bindPopup('<strong>' + place.emoji + ' ' + place.name + '</strong><br><button type="button" data-scroll="' + place.id + '">Voir la fiche</button>');
     marker.bindTooltip(place.name,{direction:'top',offset:[0,-28],opacity:.92});
-    marker.on('popupopen', function(e){
-      var btn = e.popup.getElement().querySelector('[data-scroll]');
-      if (btn) btn.addEventListener('click', function(){ focusPlace(place.id,true); });
-    });
-    marker.on('click', function(){ setFocused(place.id); });
+    marker.on('click', function(){ window.focusPlace(place.id,true); });
     markers[place.id] = marker;
     bounds.push([place.lat,place.lng]);
   });
@@ -670,7 +665,7 @@
     if(!place) return;
     setFocused(id);
     map.flyTo([place.lat,place.lng], Math.max(map.getZoom(),15), {duration:.65});
-    markers[id].openPopup();
+    markers[id].openTooltip();
     if(scrollToCard){
       var card = document.getElementById(id);
       if(card) setTimeout(function(){card.scrollIntoView({behavior:'smooth',block:'center'});},120);
