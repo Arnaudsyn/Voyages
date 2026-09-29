@@ -24,7 +24,11 @@
     body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}
     a{color:inherit}
     .topbar{position:sticky;top:0;z-index:1000;background:rgba(245,240,231,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(222,215,202,.9)}
-    .topbar-inner{max-width:1500px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 24px}
+    .topbar-inner{max-width:1500px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 24px;position:relative}
+    .topbar-inner::after{content:"";position:absolute;top:0;right:0;bottom:0;width:46px;background:linear-gradient(90deg,rgba(245,240,231,0),rgba(245,240,231,.98) 72%);pointer-events:none;opacity:0;transition:opacity .2s ease}
+    .back-to-top{position:fixed;right:18px;bottom:18px;z-index:1400;width:44px;height:44px;border:0;border-radius:50%;background:#1d2922;color:#fff;font-size:1.15rem;font-weight:850;cursor:pointer;box-shadow:0 9px 28px rgba(0,0,0,.22);opacity:0;transform:translateY(10px) scale(.94);pointer-events:none;transition:opacity .2s ease,transform .2s ease}
+    .back-to-top.visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+    .back-to-top:hover{background:#31453a}
     .brand{font-weight:850;white-space:nowrap}
     .nav{display:flex;gap:8px;overflow:auto;scrollbar-width:none}
     .nav::-webkit-scrollbar{display:none}
@@ -112,7 +116,10 @@
     .footer a{word-break:break-all}
     @media(max-width:980px){
       .topbar-inner{padding:10px 14px}
+      .topbar-inner::after{opacity:1}
+      .topbar-inner.nav-at-end::after{opacity:0}
       .brand{display:none}
+      .nav{padding-right:34px}
       .layout{grid-template-columns:1fr;padding:0 14px 60px;gap:14px}
       .map-panel{order:-1;position:relative;top:auto;height:43vh;min-height:300px;border-radius:0 0 20px 20px;margin:0 -14px;box-shadow:none}
       .map-panel.collapsed{height:58px;min-height:58px}
@@ -473,6 +480,8 @@
   </aside>
 </main>
 
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+
 <div class="lightbox" id="photoLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo agrandie">
   <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
   <div class="lightbox-inner">
@@ -674,7 +683,26 @@
   };
 
   document.querySelectorAll('[data-focus]').forEach(function(btn){
-    btn.addEventListener('click',function(){window.focusPlace(btn.getAttribute('data-focus'),false);});
+    btn.addEventListener('click',function(){
+      var id = btn.getAttribute('data-focus');
+      var isMobile = window.matchMedia('(max-width: 980px)').matches;
+
+      if(isMobile){
+        panel.classList.remove('collapsed');
+        toggle.textContent = 'Réduire la carte';
+        setTimeout(function(){
+          refreshMap(false);
+          window.focusPlace(id,false);
+          panel.scrollIntoView({behavior:'smooth',block:'start'});
+          setTimeout(function(){
+            refreshMap(false);
+            if(markers[id]) markers[id].openTooltip();
+          },450);
+        },80);
+      } else {
+        window.focusPlace(id,false);
+      }
+    });
   });
 
   var panel = document.getElementById('mapPanel');
@@ -687,6 +715,29 @@
   });
 
   window.addEventListener('resize',function(){setTimeout(function(){refreshMap(false);},80);});
+
+  var nav = document.querySelector('.nav');
+  var topbarInner = document.querySelector('.topbar-inner');
+  function updateNavFade(){
+    if(!nav || !topbarInner) return;
+    var atEnd = nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 8;
+    topbarInner.classList.toggle('nav-at-end', atEnd);
+  }
+  if(nav){
+    nav.addEventListener('scroll',updateNavFade,{passive:true});
+    window.addEventListener('resize',updateNavFade);
+    requestAnimationFrame(updateNavFade);
+  }
+
+  var backToTop = document.getElementById('backToTop');
+  function updateBackToTop(){
+    backToTop.classList.toggle('visible', window.scrollY > 850);
+  }
+  window.addEventListener('scroll',updateBackToTop,{passive:true});
+  updateBackToTop();
+  backToTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
 
   if(location.hash){
     var initial = location.hash.slice(1);
