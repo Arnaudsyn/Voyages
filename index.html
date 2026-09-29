@@ -78,7 +78,7 @@
     button.map-link{background:#1d2922;color:#fff}
     button.map-link:hover{background:#31453a}
     .site-link{background:#ece6da;color:#334038}
-    .map-panel{position:sticky;top:82px;height:calc(100vh - 104px);border-radius:26px;overflow:hidden;background:#dfe7df;border:1px solid #d3d2c8;box-shadow:var(--shadow)}
+    .map-panel{position:sticky;top:82px;align-self:start;height:calc(100vh - 104px);border-radius:26px;overflow:hidden;background:#dfe7df;border:1px solid #d3d2c8;box-shadow:var(--shadow)}
     #map{height:100%;width:100%}
     .map-label{position:absolute;z-index:500;top:14px;left:14px;right:14px;pointer-events:none;display:flex;justify-content:space-between;gap:10px}
     .map-badge{background:rgba(255,253,249,.94);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.8);box-shadow:0 7px 20px rgba(0,0,0,.11);padding:10px 13px;border-radius:14px;font-size:.83rem}
@@ -88,8 +88,9 @@
     .leaflet-popup-content{margin:12px 14px}
     .leaflet-popup-content strong{font-size:.95rem}
     .leaflet-popup-content button{margin-top:7px;border:0;background:#1d2922;color:white;border-radius:999px;padding:7px 10px;font-weight:800;cursor:pointer}
-    .pin{display:grid;place-items:center;width:34px;height:34px;border-radius:50% 50% 50% 10%;transform:rotate(-45deg);background:#8b2942;border:2px solid #fff;box-shadow:0 5px 14px rgba(0,0,0,.25)}
-    .pin span{transform:rotate(45deg);font-size:16px}
+    .custom-marker{background:transparent!important;border:0!important}
+    .pin{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#8b2942;border:3px solid #fff;box-shadow:0 5px 14px rgba(0,0,0,.28);font-size:17px;line-height:1}
+    .pin span{display:block;transform:none}
     .hotel .pin{background:#315b72}
     .food .pin{background:#8a5b16}
     .maybe-pin .pin{background:#607467}
@@ -477,7 +478,7 @@
   ];
 
   var map = L.map('map', {zoomControl:true, scrollWheelZoom:true}).setView([48.2055,16.373],13);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
     maxZoom:19,
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
@@ -499,6 +500,7 @@
   places.forEach(function(place){
     var marker = L.marker([place.lat,place.lng],{icon:iconFor(place)}).addTo(map);
     marker.bindPopup('<strong>' + place.emoji + ' ' + place.name + '</strong><br><button type="button" data-scroll="' + place.id + '">Voir la fiche</button>');
+    marker.bindTooltip(place.name,{direction:'top',offset:[0,-28],opacity:.92});
     marker.on('popupopen', function(e){
       var btn = e.popup.getElement().querySelector('[data-scroll]');
       if (btn) btn.addEventListener('click', function(){ focusPlace(place.id,true); });
@@ -508,7 +510,24 @@
     bounds.push([place.lat,place.lng]);
   });
 
-  map.fitBounds(bounds,{padding:[24,24]});
+  function refreshMap(fit) {
+    map.invalidateSize({pan:false});
+    if (fit) map.fitBounds(bounds,{padding:[24,24]});
+  }
+
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){ refreshMap(true); });
+  });
+  window.addEventListener('load', function(){
+    setTimeout(function(){ refreshMap(false); }, 120);
+  });
+
+  if (window.ResizeObserver) {
+    var resizeObserver = new ResizeObserver(function(){
+      requestAnimationFrame(function(){ refreshMap(false); });
+    });
+    resizeObserver.observe(document.getElementById('mapPanel'));
+  }
 
   function setFocused(id){
     document.querySelectorAll('.place.is-focused').forEach(function(el){el.classList.remove('is-focused');});
@@ -539,10 +558,10 @@
     panel.classList.toggle('collapsed');
     var collapsed = panel.classList.contains('collapsed');
     toggle.textContent = collapsed ? 'Afficher la carte' : 'Réduire la carte';
-    if(!collapsed) setTimeout(function(){map.invalidateSize();},200);
+    if(!collapsed) setTimeout(function(){refreshMap(false);},200);
   });
 
-  window.addEventListener('resize',function(){setTimeout(function(){map.invalidateSize();},50);});
+  window.addEventListener('resize',function(){setTimeout(function(){refreshMap(false);},80);});
 
   if(location.hash){
     var initial = location.hash.slice(1);
