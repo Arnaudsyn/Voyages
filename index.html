@@ -72,6 +72,20 @@
     .tag.maybe{background:var(--amber-soft);color:var(--amber)}
     .tag.untested{background:var(--blue-soft);color:var(--blue)}
     .place p{margin:.55em 0;color:#39463e}
+    .place.has-photo{display:grid;grid-template-columns:190px minmax(0,1fr);gap:20px;align-items:stretch}
+    .place-body{min-width:0}
+    .place-media{margin:0;position:relative;border-radius:16px;overflow:hidden;background:#e9e4da;min-height:185px;cursor:zoom-in}
+    .place-media img{display:block;width:100%;height:100%;min-height:185px;object-fit:cover;transition:transform .25s ease}
+    .place-media:hover img{transform:scale(1.025)}
+    .place-media figcaption{position:absolute;left:7px;bottom:7px;padding:4px 7px;border-radius:999px;background:rgba(20,29,24,.76);backdrop-filter:blur(6px);font-size:.66rem;color:#fff;line-height:1}
+    .place-media figcaption a{color:#fff;text-decoration:none}
+    .lightbox{position:fixed;inset:0;z-index:3000;display:none;align-items:center;justify-content:center;padding:28px;background:rgba(10,14,12,.92);backdrop-filter:blur(8px)}
+    .lightbox.open{display:flex}
+    .lightbox-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;max-width:96vw;max-height:94vh}
+    .lightbox img{display:block;max-width:92vw;max-height:84vh;object-fit:contain;border-radius:12px;box-shadow:0 22px 70px rgba(0,0,0,.45)}
+    .lightbox-close{position:fixed;right:20px;top:18px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#17211b;font-size:1.45rem;font-weight:800;cursor:pointer;box-shadow:0 8px 28px rgba(0,0,0,.25)}
+    .lightbox-caption{color:#f4f1eb;font-size:.78rem;text-align:center}
+    .lightbox-caption a{color:#fff}
     .quote{border-left:3px solid var(--accent);padding-left:14px;font-weight:650;color:#2e3a33}
     .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
     button.map-link,.site-link{appearance:none;border:0;border-radius:999px;padding:9px 12px;font-weight:800;font-size:.82rem;cursor:pointer;text-decoration:none}
@@ -109,6 +123,9 @@
     }
     @media(max-width:560px){
       .place{padding:18px}
+      .place.has-photo{grid-template-columns:1fr;gap:15px}
+      .place-media{height:190px;min-height:190px}
+      .place-media img{min-height:190px}
       .place-top{display:block}
       h1{font-size:3rem}
       .toc{padding:18px}
@@ -286,6 +303,15 @@
           <div class="actions"><button class="map-link" data-focus="prater">Voir sur la carte</button><a class="site-link" href="https://wienerriesenrad.com/en/home/" target="_blank" rel="noopener">Grande roue ↗</a><a class="site-link" href="https://www.zumriesenrad.at/" target="_blank" rel="noopener">Gourmet-Waggons ↗</a></div>
         </article>
 
+        <article class="place" id="fiaker" data-place="fiaker">
+          <div class="place-top"><div class="place-title"><span class="emoji">🐴</span><h3>Un tour en fiacre… de nuit</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 20–40 min</span><span class="tag loved">❤️ À deux, le soir</span></div>
+          <p><strong>À faire de nuit.</strong> C’est franchement romantique : les rues éclairées, le bruit des sabots, le centre qui défile tranquillement… on a vraiment beaucoup aimé.</p>
+          <p class="quote">Les cochers peuvent paraître un peu impressionnants au premier abord 😄, mais ceux avec qui on a échangé étaient en réalité vraiment très sympas.</p>
+          <p>À titre indicatif, l’office de tourisme annonce actuellement environ <strong>60 € pour 20 min</strong> dans la vieille ville ou <strong>105 € pour 40 min</strong> avec une partie du Ring, par calèche. Des départs se trouvent notamment vers Stephansplatz, Petersplatz, Albertinaplatz, Michaelerplatz et Burgtheater.</p>
+          <div class="actions"><button class="map-link" data-focus="fiaker">Voir sur la carte</button><a class="site-link" href="https://www.wien.info/fr/a-voir-a-faire/decouvrir-vienne/visites-balades/en-fiacre-%C3%A0-travers-vienne-345902" target="_blank" rel="noopener">Infos fiacres ↗</a></div>
+        </article>
+
       </div>
     </section>
 
@@ -447,6 +473,14 @@
   </aside>
 </main>
 
+<div class="lightbox" id="photoLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner">
+    <img id="lightboxImage" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
@@ -462,6 +496,7 @@
     {id:'votivkirche',name:'Votivkirche',lat:48.21542,lng:16.35917,emoji:'∞',kind:'visit'},
     {id:'stephansdom',name:'Stephansdom',lat:48.20849,lng:16.37317,emoji:'⛪',kind:'visit'},
     {id:'prater',name:'Wiener Riesenrad / Prater',lat:48.216831,lng:16.395919,emoji:'🎡',kind:'visit'},
+    {id:'fiaker',name:'Fiacre de nuit · départ centre-ville',lat:48.2092,lng:16.3705,emoji:'🐴',kind:'visit'},
     {id:'demel',name:'Demel',lat:48.20861,lng:16.36721,emoji:'🍰',kind:'food'},
     {id:'schwarzenberg',name:'Café Schwarzenberg',lat:48.20185,lng:16.37392,emoji:'☕',kind:'food'},
     {id:'altmann',name:'Altmann & Kühne',lat:48.20834,lng:16.3708,emoji:'🍫',kind:'food'},
@@ -476,6 +511,101 @@
     {id:'stefanie',name:'Hotel Stefanie',lat:48.21439,lng:16.38051,emoji:'🛎️',kind:'hotel'},
     {id:'grandhotel',name:'Grand Hotel Wien',lat:48.202111,lng:16.372194,emoji:'✨',kind:'hotel'}
   ];
+
+  var photos = {
+    schonbrunn:{file:'Gloriette of Schonbrunn.jpg',label:'Gloriette · Schönbrunn'},
+    hofburg:{file:'Hofburg entrance Michaelerplatz Vienna.jpg',label:'Hofburg · Michaelerplatz'},
+    khm:{file:'Kunsthistorisches Museum Wien 2012 innen.jpg',label:'Kunsthistorisches Museum'},
+    belvedere:{file:'Upper Belvedere Vienna.jpg',label:'Upper Belvedere'},
+    library:{file:'State Hall of the Austrian National Library (40558228933).jpg',label:'Prunksaal · Bibliothèque nationale'},
+    mq:{file:'MuseumsQuartier Vienna.jpg',label:'MuseumsQuartier'},
+    karlskirche:{file:'Karlskirche Wien Nacht.jpg',label:'Karlskirche'},
+    votivkirche:{file:'Votivkirche, Vienna At Night.jpg',label:'Votivkirche · Infinity of Light'},
+    stephansdom:{file:'Stephansdom at night.jpg',label:'Stephansdom'},
+    prater:{file:'Wiener Riesenrad by night.jpg',label:'Wiener Riesenrad · Prater'},
+    fiaker:{file:'Zum Michaelertor der Wiener Hofburg Nachts.JPG',label:'Fiacre devant la Hofburg'},
+    demel:{file:'Demel Wiener Kaiserschmarrn (on explore at February 19, 2025) - Flickr - Sandor Somkuti.jpg',label:'Demel'},
+    schwarzenberg:{file:'Cafe schwarzenberg.jpg',label:'Café Schwarzenberg'},
+    altmann:{file:'Altmann & Kühne Graben Wien.jpg',label:'Altmann & Kühne'},
+    lobmeyr:{file:'Lobmeyr Ladenlokal Kärtner Strasse.jpg',label:'J. & L. Lobmeyr'},
+    furniture:{file:'Hofmobiliendepot 7.JPG',label:'Musée du Mobilier'},
+    freud:{file:'Sigmund Freud Museum Vienna, Waiting room (2019).jpg',label:'Musée Sigmund Freud'},
+    nhm:{file:'Naturhistorisches Museum Interior, Vienna.jpg',label:'Naturhistorisches Museum'},
+    opera:{file:'Vienna State Opera (Wiener Staatsoper).jpg',label:'Wiener Staatsoper'},
+    wienmuseum:{file:'Wien Museum Karlsplatz.jpg',label:'Wien Museum'},
+    naschmarkt:{file:'Naschmarkt, Vienna.jpg',label:'Naschmarkt'},
+    hundertwasser:{file:'Hundertwasserhaus.jpg',label:'Hundertwasserhaus'},
+    stefanie:{file:'Hotel Stefanie Wien.jpg',label:'Hotel Stefanie'},
+    grandhotel:{file:'Wien Grand Hotel 2.JPG',label:'Grand Hotel Wien'}
+  };
+
+  function commonsUrl(file,width){
+    return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/' + encodeURIComponent(file) + '?width=' + width;
+  }
+  function commonsPage(file){
+    return 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(file).replace(/%20/g,'_');
+  }
+
+  var lightbox = document.getElementById('photoLightbox');
+  var lightboxImage = document.getElementById('lightboxImage');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxClose = document.getElementById('lightboxClose');
+
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    lightboxImage.removeAttribute('src');
+    document.body.style.overflow='';
+  }
+  function openLightbox(photo, alt){
+    lightboxImage.src = commonsUrl(photo.file,1600);
+    lightboxImage.alt = alt;
+    lightboxCaption.innerHTML = photo.label + ' · <a href="' + commonsPage(photo.file) + '" target="_blank" rel="noopener">photo, auteur & licence sur Wikimedia Commons ↗</a>';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+
+  Object.keys(photos).forEach(function(id){
+    var card = document.getElementById(id);
+    var photo = photos[id];
+    if(!card || !photo) return;
+
+    var body = document.createElement('div');
+    body.className = 'place-body';
+    while(card.firstChild) body.appendChild(card.firstChild);
+
+    var figure = document.createElement('figure');
+    figure.className = 'place-media';
+    figure.setAttribute('tabindex','0');
+    figure.setAttribute('role','button');
+    figure.setAttribute('aria-label','Agrandir la photo de ' + photo.label);
+
+    var img = document.createElement('img');
+    img.src = commonsUrl(photo.file,520);
+    img.alt = photo.label;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+
+    var caption = document.createElement('figcaption');
+    caption.innerHTML = '<a href="' + commonsPage(photo.file) + '" target="_blank" rel="noopener" title="Auteur et licence">Wikimedia Commons ↗</a>';
+    caption.addEventListener('click',function(e){ e.stopPropagation(); });
+
+    figure.appendChild(img);
+    figure.appendChild(caption);
+    figure.addEventListener('click',function(){ openLightbox(photo,photo.label); });
+    figure.addEventListener('keydown',function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(photo,photo.label); }
+    });
+
+    card.appendChild(figure);
+    card.appendChild(body);
+    card.classList.add('has-photo');
+  });
+
+  lightboxClose.addEventListener('click',closeLightbox);
+  lightbox.addEventListener('click',function(e){ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown',function(e){ if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
 
   var map = L.map('map', {zoomControl:true, scrollWheelZoom:true}).setView([48.2055,16.373],13);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
