@@ -88,3 +88,28 @@ Le guide de Vienne utilise :
 - [OpenStreetMap](https://www.openstreetmap.org/)
 
 Les coordonnées sont stockées directement dans le HTML pour éviter une dépendance de géocodage au chargement.
+
+
+## Architecture des guides détaillés
+
+Les guides de villes/régions utilisent désormais une base commune :
+
+- `assets/guide.css` : mise en page, fiches, carte, responsive et comportement mobile visuel ;
+- `assets/guide.js` : Leaflet, marqueurs, focus fiche ↔ carte, aperçu mobile, lightbox et retour en haut ;
+- `templates/city-guide.html` : squelette canonique pour démarrer une nouvelle destination ;
+- chaque `/<pays>/<destination>/index.html` ne contient plus que sa navigation, son contenu éditorial et ses données `GUIDE_*`.
+
+Les données locales suivent ce contrat :
+
+```js
+window.GUIDE_CENTER = [latitude, longitude];
+window.GUIDE_ZOOM = 13;
+window.GUIDE_PLACES = [
+  { id, name, lat, lng, emoji, kind }
+];
+window.GUIDE_PHOTOS = {
+  placeId: { file, label }
+};
+```
+
+Ainsi, une amélioration future du comportement mobile ou de la carte peut être faite une seule fois dans `guide.js` / `guide.css` et bénéficier à Vienne, Kyoto et aux futurs guides.
