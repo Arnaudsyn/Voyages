@@ -14,7 +14,9 @@ Voyages/
 │   └── vienne/
 │       └── index.html
 └── japon/
-    └── index.html
+    ├── index.html
+    └── kyoto/
+        └── index.html
 ```
 
 - `/` : page globale pour choisir un pays.
@@ -55,14 +57,14 @@ La logique est volontairement statique : pas de framework ni de build.
 
 ## Japon
 
-Le hub Japon reprend la structure déjà organisée dans Trello :
+Le hub Japon rassemble :
 
 - infos et astuces générales ;
 - checklist de voyage ;
 - destinations classées par durée indicative ;
-- futurs guides détaillés pour Tokyo, Kyoto, Osaka, Hakone, Kinosaki Onsen, etc.
+- guides détaillés pour Tokyo, Kyoto, Osaka, Hakone, Kinosaki Onsen, etc.
 
-Les informations pays restent sur `/japon/` afin d'éviter de les répéter dans chaque guide local.
+Les informations générales restent sur `/japon/`, tandis que chaque destination garde ses adresses, visites, hôtels et retours d’expérience.
 
 ## Publier avec GitHub Pages
 
