@@ -43,5 +43,19 @@ a.card:hover{transform:translateY(-3px);border-color:#c8bcaa;box-shadow:var(--sh
 .duration{font-size:.75rem;font-weight:800;color:var(--green);background:var(--green-soft);padding:5px 8px;border-radius:999px;display:inline-block;margin-top:10px}
 .note{border-radius:var(--radius);padding:22px 24px;background:#1d2922;color:#f8f5ef}
 .note p{color:#dfe6e1;margin:.45em 0}
+.note h3{color:#fff;margin:0 0 8px}
+.note-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.note-item{border-top:1px solid rgba(255,255,255,.18);padding-top:14px}
+.note-item strong{display:block;color:#fff;margin-bottom:4px}
+.guide-card h3{font-size:1.32rem}
+.guide-card ul{margin:12px 0 0;padding-left:20px;color:#455149}
+.guide-card li+li{margin-top:7px}
+.guide-card .source{display:inline-block;margin-top:14px;font-size:.78rem;font-weight:800;color:var(--green);text-decoration:none}
+.guide-card .source:hover{text-decoration:underline}
+.guide-card.wide{grid-column:span 2}
+.quick-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;margin:0;padding:0;list-style:none}
+.quick-list li{position:relative;padding-left:25px;color:#455149}
+.quick-list li::before{content:"✓";position:absolute;left:0;top:0;font-weight:900;color:var(--green)}
+.mini-note{margin-top:16px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.55);border:1px solid rgba(222,215,202,.9);font-size:.9rem;color:#455149}
 .footer{border-top:1px solid var(--line);margin-top:64px;padding-top:24px;color:var(--muted);font-size:.86rem}
-@media(max-width:780px){.shell{padding:0 15px 56px}.topbar-inner{padding:10px 15px}.hero{padding:48px 0 28px}.grid,.grid.three{grid-template-columns:1fr}.card.country{min-height:220px}h1{font-size:3.7rem}}
+@media(max-width:780px){.shell{padding:0 15px 56px}.topbar-inner{padding:10px 15px}.hero{padding:48px 0 28px}.grid,.grid.three,.note-grid,.quick-list{grid-template-columns:1fr}.guide-card.wide{grid-column:auto}.card.country{min-height:220px}h1{font-size:3.7rem}}
