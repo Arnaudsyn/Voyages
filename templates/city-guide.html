@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guide personnel de CITY.">
+  <title>CITY — notre guide perso</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">FLAG CITY</div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../../">← Tous les guides</a>
+      <a href="../">FLAG COUNTRY</a>
+      <a href="#pratique">Pratique</a>
+      <a href="#hotels">🏨 Hôtels</a>
+      <a href="#loved">❤️ À faire</a>
+      <a href="#food">🍜 Manger</a>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content">
+    <header class="hero">
+      <div class="eyebrow">DURATION</div>
+      <h1>CITY,<br>notre petit guide !</h1>
+      <p class="lead">INTRO</p>
+      <div class="legend">
+        <span class="pill">❤️ On referait volontiers</span>
+        <span class="pill">🙂 Sympa selon vos goûts</span>
+        <span class="pill">🧭 Pas encore testé</span>
+      </div>
+    </header>
+
+    <div class="toc">
+      <h2>Menu rapide</h2>
+      <div class="toc-links">
+        <a href="#pratique">🚇 Pratique</a>
+        <a href="#hotels">🏨 Où dormir</a>
+        <a href="#loved">❤️ À faire</a>
+        <a href="#food">🍜 Manger</a>
+      </div>
+    </div>
+
+    <section id="pratique">
+      <div class="section-head"><div class="section-kicker">Pratique</div><h2>À savoir</h2></div>
+    </section>
+
+    <section id="hotels">
+      <div class="section-head"><div class="section-kicker">Dormir</div><h2>Hôtels</h2></div>
+      <div class="places"></div>
+    </section>
+
+    <section id="loved">
+      <div class="section-head"><div class="section-kicker">Nos idées</div><h2>À faire</h2></div>
+      <div class="places"></div>
+    </section>
+
+    <section id="food">
+      <div class="section-head"><div class="section-kicker">Manger</div><h2>Bonnes adresses</h2></div>
+      <div class="places"></div>
+    </section>
+
+    <footer class="footer"><a href="../">← Retour au pays</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>CITY</strong><span>Carte du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [0,0];
+window.GUIDE_ZOOM = 13;
+window.GUIDE_PLACES = [];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

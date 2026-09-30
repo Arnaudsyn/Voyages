@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guide personnel de Vienne — nos bonnes adresses, nos avis, temps de visite et conseils pratiques pour novembre 2026.">
+  <title>Vienne — notre guide perso</title>
+
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇦🇹 Vienne</div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../../">← Tous les guides</a>
+      <a href="../">🇦🇹 Autriche</a>
+      <a href="#novembre">Novembre 2026</a>
+      <a href="#transport">Se déplacer</a>
+      <a href="#hotels">🏨 Hôtels</a>
+      <a href="#loved">❤️ On a adoré</a>
+      <a href="#cafes">☕ Cafés</a>
+      <a href="#maybe">🙂 Selon les goûts</a>
+      <a href="#untested">🧭 Pas testés</a>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content">
+    <header class="hero">
+      <div class="eyebrow">12–15 février 2026 · actualisé pour novembre 2026</div>
+      <h1>Vienne,<br>notre petit guide rapide !</h1>
+      <p class="lead">Pas un “top 25” touristique : voilà ce qu’on a fait, ce qu’on a vraiment aimé, ce qui était juste sympa, et les quelques endroits qu’on réserverait surtout aux gens très motivés. Les durées sont là pour aider à construire les journées, pas comme des chronos.</p>
+      <div class="legend">
+        <span class="pill">❤️ On referait volontiers</span>
+        <span class="pill">🙂 Sympa selon vos goûts</span>
+        <span class="pill">😬 Si vraiment ça vous intéresse</span>
+        <span class="pill">🧭 On n’a pas testé</span>
+      </div>
+    </header>
+
+    <div class="toc">
+      <h2>Menu rapide</h2>
+      <div class="toc-links">
+        <a href="#novembre">⚠️ À savoir en novembre</a>
+        <a href="#transport">🚇 Transports & cartes</a>
+        <a href="#hotels">🏨 Où dormir</a>
+        <a href="#loved">❤️ Nos gros coups de cœur</a>
+        <a href="#cafes">☕ Cafés & gourmandises</a>
+        <a href="#maybe">🙂 Bons compléments</a>
+        <a href="#untested">🧭 Ce qu’on n’a pas testé</a>
+      </div>
+    </div>
+
+    <section id="novembre">
+      <div class="section-head">
+        <div class="section-kicker">Important pour votre séjour</div>
+        <h2>Novembre 2026</h2>
+        <p class="section-intro">Deux choses ont changé depuis notre séjour de février : la Hofburg est en travaux pendant une partie du mois et les liaisons ferroviaires avec l’aéroport sont modifiées.</p>
+      </div>
+      <div class="notice-grid">
+        <article class="notice">
+          <h3>🏛️ Musée Sisi · 6 oct. → 18 nov.</h3>
+          <p>La partie <strong>Musée Sisi</strong> est fermée pour travaux jusqu’au 18 novembre. Les <strong>appartements impériaux restent ouverts</strong>, mais l’expérience n’est donc pas exactement celle que nous avons eue en février.</p>
+          <p>Le Sisi Pass regroupe Schönbrunn, Hofburg/Sisi et le Musée du Mobilier : l’info est surtout utile pour comparer ce que vous aurez réellement accès à voir selon vos dates.</p>
+          <a class="source" href="https://www.sisimuseum-hofburg.at/en/tickets/tickets-prices" target="_blank" rel="noopener">Source officielle ↗</a>
+        </article>
+        <article class="notice transport">
+          <h3>✈️ Aéroport · travaux ferroviaires</h3>
+          <p>Depuis septembre 2026, le <strong>S7 ne va plus directement jusqu’à Wien Mitte</strong>. Le REX7 et les Railjet restent les options ferroviaires les plus simples selon votre destination finale ; le CAT est temporairement remplacé par un bus.</p>
+          <p>C’est surtout à garder en tête si un vieux guide vous dit simplement “S7 jusqu’à Wien Mitte”.</p>
+          <a class="source" href="https://www.wien.info/en/travel-info/arrival-departure/airport-to-center/important-information-for-airport-travellers-2026-2027-1118558" target="_blank" rel="noopener">Info travaux ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="transport">
+      <div class="section-head">
+        <div class="section-kicker">Pratique</div>
+        <h2>Se déplacer</h2>
+        <p class="section-intro">Vienne se fait très bien en combinant marche, métro et tram. <strong>WienMobil</strong> est l’app officielle utile pour les trajets, perturbations et billets.</p>
+      </div>
+      <div class="transport-cards">
+        <article class="mini-card">
+          <h3>7 Days VIENNA · transports</h3>
+          <div class="price">25,20 €</div>
+          <p>Version digitale actuelle. Les anciens tickets Wiener Linien 48 h / 72 h ont disparu en 2026, donc ce pass peut avoir du sens même sur quelques jours.</p>
+          <a class="source" href="https://www.wienerlinien.at/web/wl-en/tickets/7-days-vienna" target="_blank" rel="noopener">Wiener Linien ↗</a>
+        </article>
+        <article class="mini-card">
+          <h3>Vienna City Card</h3>
+          <div class="price">19–39 €</div>
+          <p>Transport + réductions. Au moment de notre vérification : 24 h 19 €, 48 h 31 €, 72 h 37 €, 7 jours 39 €. À comparer selon les visites réellement prévues.</p>
+          <a class="source" href="https://www.wien.info/en/travel-info/vienna-city-card" target="_blank" rel="noopener">Vienna City Card ↗</a>
+        </article>
+      </div>
+      <p class="section-intro" style="margin-top:15px">Petit plaisir simple : les trams qui croisent le <strong>Ring</strong> donnent déjà un bel aperçu de la ville. La ligne D passe notamment vers le Belvédère et l’Opéra.</p>
+    </section>
+
+    <section id="hotels">
+      <div class="section-head">
+        <div class="section-kicker">Nos deux expériences</div>
+        <h2>🏨 Où dormir</h2>
+      </div>
+      <div class="places">
+        <article class="place" id="stefanie" data-place="stefanie">
+          <div class="place-title"><span class="emoji">🛎️</span><h3>Hotel Stefanie</h3></div>
+          <div class="meta"><span class="tag loved">Charme traditionnel</span><span class="tag maybe">Un peu daté</span></div>
+          <p><strong>Charmant, très viennois… mais oui, un peu daté.</strong> Il a une vraie personnalité et une atmosphère historique agréable ; moins adapté si vous cherchez quelque chose de très contemporain.</p>
+          <p>L’emplacement est meilleur que notre premier souvenir : Leopoldstadt, juste de l’autre côté du canal, avec Schwedenplatz à proximité et le centre facilement accessible à pied.</p>
+          <div class="actions"><button class="map-link" data-focus="stefanie">Voir sur la carte</button><a class="site-link" href="https://www.hotelstefanie.wien/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="grandhotel" data-place="grandhotel">
+          <div class="place-title"><span class="emoji">✨</span><h3>Grand Hotel Wien</h3></div>
+          <div class="meta"><span class="tag loved">Superbe</span><span class="tag maybe">€€€</span></div>
+          <p><strong>Absolument magnifique</strong>, excellent emplacement sur le Ring, expérience beaucoup plus luxueuse… avec le prix qui va avec.</p>
+          <p>Et petite correction de notre propre erreur de réservation : <strong>il n’y a pas de piscine</strong> 😭 Le spa a sauna, bain de vapeur, espace relaxation, cardio et soins — mais ce qu’on prenait pour un bassin était bien un steam bath. :&lt;</p>
+          <div class="actions"><button class="map-link" data-focus="grandhotel">Voir sur la carte</button><a class="site-link" href="https://en.grandhotelwien.com/grand-spa/" target="_blank" rel="noopener">Spa officiel ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="loved">
+      <div class="section-head">
+        <div class="section-kicker">Nos souvenirs forts</div>
+        <h2>❤️ On referait volontiers</h2>
+      </div>
+      <div class="places">
+
+        <article class="place" id="schonbrunn" data-place="schonbrunn">
+          <div class="place-top"><div class="place-title"><span class="emoji">👑</span><h3>Schönbrunn + la Gloriette</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 3–4 h</span><span class="tag loved">❤️ Gros oui</span></div>
+          <p>Très cool et surtout <strong>massif</strong> : ce n’est pas juste un palais à traverser en vitesse. Les jardins comptent vraiment dans l’expérience.</p>
+          <p class="quote">Le détail qu’on garderait absolument : monter jusqu’à la <strong>Gloriette</strong>. C’est super charmant et ça donne une vraie respiration à la visite.</p>
+          <div class="actions"><button class="map-link" data-focus="schonbrunn">Voir sur la carte</button><a class="site-link" href="https://www.schoenbrunn.at/en/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="hofburg" data-place="hofburg">
+          <div class="place-top"><div class="place-title"><span class="emoji">🏛️</span><h3>Hofburg · Musée Sisi & appartements impériaux</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 1 h 30–2 h</span><span class="tag loved">❤️ Beaucoup aimé</span></div>
+          <p>Très bonne plongée dans la vie impériale et dans la figure de Sisi. En novembre 2026, l’expérience dépendra simplement de vos dates à cause des travaux mentionnés plus haut.</p>
+          <div class="actions"><button class="map-link" data-focus="hofburg">Voir sur la carte</button><a class="site-link" href="https://www.sisimuseum-hofburg.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="khm" data-place="khm">
+          <div class="place-top"><div class="place-title"><span class="emoji">🖼️</span><h3>Kunsthistorisches Museum</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 3 h+ facilement</span><span class="tag loved">❤️ Exceptionnel</span></div>
+          <p><strong>Un des plus beaux musées qu’on ait vus.</strong> Le bâtiment est spectaculaire et les collections sont immenses.</p>
+          <p class="quote">Un peu comme un “petit Louvre” : si vous voulez vraiment le visiter, prévoyez une vraie demi-journée plutôt qu’un créneau d’une heure.</p>
+          <p>Juste en face se trouve le Naturhistorisches Museum, presque son jumeau architectural. Il est lui aussi énorme — mais on ne l’a pas visité, donc pas d’avis perso dessus.</p>
+          <div class="actions"><button class="map-link" data-focus="khm">Voir sur la carte</button><a class="site-link" href="https://www.khm.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="belvedere" data-place="belvedere">
+          <div class="place-top"><div class="place-title"><span class="emoji">✨</span><h3>Upper Belvedere</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 1 h 30–2 h</span><span class="tag loved">❤️ Très forte valeur</span></div>
+          <p>Beaucoup plus compact que le KHM, mais avec un payoff énorme : c’est notamment l’occasion de voir <strong>Le Baiser de Klimt — l’original</strong>, et plusieurs autres Klimt, dans un très beau palais.</p>
+          <p class="quote">Voir une œuvre qu’on connaît depuis toujours dans les livres et les reproductions, avec sa vraie matière et son échelle, ça change vraiment quelque chose.</p>
+          <div class="actions"><button class="map-link" data-focus="belvedere">Voir sur la carte</button><a class="site-link" href="https://www.belvedere.at/en" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="library" data-place="library">
+          <div class="place-top"><div class="place-title"><span class="emoji">📚</span><h3>Bibliothèque nationale autrichienne · State Hall</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ ~45 min</span><span class="tag loved">❤️ À voir</span></div>
+          <p><strong>Stunning.</strong> Et justement, ça ne demande pas une demi-journée : environ 45 minutes nous ont suffi.</p>
+          <p class="quote">Ça vaut le temps passé dix fois. Très gros effet “waouh” pour un engagement assez court.</p>
+          <div class="actions"><button class="map-link" data-focus="library">Voir sur la carte</button><a class="site-link" href="https://www.onb.ac.at/en/museums/state-hall" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="mq" data-place="mq">
+          <div class="place-top"><div class="place-title"><span class="emoji">🌆</span><h3>MuseumsQuartier</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 1–2 h… ou plus</span><span class="tag loved">❤️ Très agréable</span></div>
+          <p>Un des endroits où on a surtout aimé <strong>être</strong> : se balader, faire une pause, prendre un verre, regarder l’architecture et laisser le planning respirer.</p>
+          <div class="actions"><button class="map-link" data-focus="mq">Voir sur la carte</button><a class="site-link" href="https://www.mqw.at/en/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="karlskirche" data-place="karlskirche">
+          <div class="place-top"><div class="place-title"><span class="emoji">⛪</span><h3>Karlskirche</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 30–45 min</span><span class="tag loved">❤️ Belle halte</span></div>
+          <p>Très belle église, et Karlsplatz fonctionne bien autour. Plus généralement, les églises de Vienne se prêtent très bien aux visites opportunistes : on passe devant, on entre, on voit.</p>
+          <div class="actions"><button class="map-link" data-focus="karlskirche">Voir sur la carte</button><a class="site-link" href="https://www.karlskirche.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="votivkirche" data-place="votivkirche">
+          <div class="place-top"><div class="place-title"><span class="emoji">∞</span><h3>Votivkirche · surtout de nuit</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 15–30 min</span><span class="tag loved">❤️ De nuit</span></div>
+          <p>À partir du crépuscule, l’installation lumineuse <strong>∞</strong> entre les deux tours est vraiment superbe. Elle doit rester en place jusqu’à fin mai 2027 : vous devriez donc l’avoir en novembre.</p>
+          <div class="actions"><button class="map-link" data-focus="votivkirche">Voir sur la carte</button><a class="site-link" href="https://www.katholisch.at/aktuelles/158767/wien-lichtinstallation-auf-votivkirche-bis-mai-2027-verlaengert" target="_blank" rel="noopener">Info installation ↗</a></div>
+        </article>
+
+        <article class="place" id="stephansdom" data-place="stephansdom">
+          <div class="place-top"><div class="place-title"><span class="emoji">⛪</span><h3>Stephansdom</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 30–45 min</span><span class="tag loved">❤️ Naturellement</span></div>
+          <p>Le grand classique du centre, mais surtout un endroit qu’on voit naturellement en se baladant. Très facile à intégrer sans “bloquer” un gros créneau.</p>
+          <div class="actions"><button class="map-link" data-focus="stephansdom">Voir sur la carte</button></div>
+        </article>
+
+        <article class="place" id="prater" data-place="prater">
+          <div class="place-top"><div class="place-title"><span class="emoji">🎡</span><h3>Prater & Wiener Riesenrad</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 1 h 30–2 h</span><span class="tag loved">❤️ Surtout la nuit</span></div>
+          <p>Le Prater marche particulièrement bien <strong>le soir</strong> : lumières, ambiance rétro, grande roue historique… Pour un couple, c’est clairement plus charmant une fois la nuit tombée.</p>
+          <p>Et le détail un peu fou : la grande roue propose des <strong>Gourmet-Waggons</strong> privatifs, avec repas servi dans la cabine pendant qu’elle tourne. Le dîner pour deux tournait autour de 500 € au moment de notre vérification — donc “occasion spéciale”, pas “petite pause snack” 😄</p>
+          <div class="actions"><button class="map-link" data-focus="prater">Voir sur la carte</button><a class="site-link" href="https://wienerriesenrad.com/en/home/" target="_blank" rel="noopener">Grande roue ↗</a><a class="site-link" href="https://www.zumriesenrad.at/" target="_blank" rel="noopener">Gourmet-Waggons ↗</a></div>
+        </article>
+
+        <article class="place" id="fiaker" data-place="fiaker">
+          <div class="place-top"><div class="place-title"><span class="emoji">🐴</span><h3>Un tour en fiacre… de nuit</h3></div></div>
+          <div class="meta"><span class="tag time">⏱ 20–40 min</span><span class="tag loved">❤️ À deux, le soir</span></div>
+          <p><strong>À faire de nuit.</strong> C’est franchement romantique : les rues éclairées, le bruit des sabots, le centre qui défile tranquillement… on a vraiment beaucoup aimé.</p>
+          <p class="quote">Les cochers peuvent paraître un peu impressionnants au premier abord 😄, mais ceux avec qui on a échangé étaient en réalité vraiment très sympas.</p>
+          <p>À titre indicatif, l’office de tourisme annonce actuellement environ <strong>60 € pour 20 min</strong> dans la vieille ville ou <strong>105 € pour 40 min</strong> avec une partie du Ring, par calèche. Des départs se trouvent notamment vers Stephansplatz, Petersplatz, Albertinaplatz, Michaelerplatz et Burgtheater.</p>
+          <div class="actions"><button class="map-link" data-focus="fiaker">Voir sur la carte</button><a class="site-link" href="https://www.wien.info/fr/a-voir-a-faire/decouvrir-vienne/visites-balades/en-fiacre-%C3%A0-travers-vienne-345902" target="_blank" rel="noopener">Infos fiacres ↗</a></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="cafes">
+      <div class="section-head">
+        <div class="section-kicker">Pause viennoise obligatoire</div>
+        <h2>☕ Cafés & gourmandises</h2>
+      </div>
+      <div class="places">
+        <article class="place" id="demel" data-place="demel">
+          <div class="place-title"><span class="emoji">🍰</span><h3>Demel</h3></div>
+          <div class="meta"><span class="tag time">⏱ 45–60 min + attente</span><span class="tag loved">❤️ Institution</span></div>
+          <p>Très beau café / pâtisserie historique, mais il peut devenir franchement bondé. Horaires actuels : <strong>10 h–19 h</strong>, sans réservation.</p>
+          <p class="quote">Si Demel compte vraiment pour vous, le créneau le plus rassurant est autour de l’ouverture — vers 10 h, idéalement en semaine. Des retours récents montrent que ça peut déjà se remplir très vite.</p>
+          <div class="actions"><button class="map-link" data-focus="demel">Voir sur la carte</button><a class="site-link" href="https://www.demel.com/en" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="schwarzenberg" data-place="schwarzenberg">
+          <div class="place-title"><span class="emoji">☕</span><h3>Café Schwarzenberg</h3></div>
+          <div class="meta"><span class="tag time">⏱ 1–1 h 30</span><span class="tag loved">❤️ On a beaucoup aimé</span></div>
+          <p>Un peu en retrait du noyau Hofburg / Stephansplatz, mais toujours très central sur le Ring. <strong>Le petit détour vaut clairement le coup.</strong> On a trouvé que c’était un endroit où on avait vraiment envie de s’installer et prendre son temps.</p>
+          <p>En novembre 2026, le café annonce de la musique live vendredi/samedi à partir de 18 h 30, et des jazz brunches les <strong>8 et 22 novembre</strong>.</p>
+          <div class="actions"><button class="map-link" data-focus="schwarzenberg">Voir sur la carte</button><a class="site-link" href="https://www.cafe-schwarzenberg.at/en/events/" target="_blank" rel="noopener">Programme ↗</a></div>
+        </article>
+
+        <article class="place" id="altmann" data-place="altmann">
+          <div class="place-title"><span class="emoji">🍫</span><h3>Altmann & Kühne</h3></div>
+          <div class="meta"><span class="tag time">⏱ 10–15 min</span><span class="tag maybe">🙂 Cute</span></div>
+          <p>Petite chocolaterie historique très mignonne. <strong>Cute, pas incroyable</strong> — parfaite si vous passez devant ou cherchez un petit cadeau.</p>
+          <div class="actions"><button class="map-link" data-focus="altmann">Voir sur la carte</button><a class="site-link" href="https://www.altmann-kuehne.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="lobmeyr" data-place="lobmeyr">
+          <div class="place-title"><span class="emoji">🥂</span><h3>J. & L. Lobmeyr</h3></div>
+          <div class="meta"><span class="tag time">⏱ 15–30 min</span><span class="tag maybe">🙂 Artisanat</span></div>
+          <p>Intéressant pour le savoir-faire verrier et le bel objet. On le voit plutôt comme une <strong>étape pendant une balade dans le quartier</strong> qu’une destination à organiser toute seule.</p>
+          <div class="actions"><button class="map-link" data-focus="lobmeyr">Voir sur la carte</button><a class="site-link" href="https://www.lobmeyr.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="maybe">
+      <div class="section-head">
+        <div class="section-kicker">Selon vos goûts</div>
+        <h2>🙂 Bons compléments</h2>
+      </div>
+      <div class="places">
+        <article class="place" id="furniture" data-place="furniture">
+          <div class="place-title"><span class="emoji">🪑</span><h3>Vienna Furniture Museum</h3></div>
+          <div class="meta"><span class="tag time">⏱ 1–1 h 30</span><span class="tag maybe">🙂 Avis mitigé</span></div>
+          <p>Correct, surtout si vous êtes très fan de Sisi, du mobilier historique ou du design. Pour nous, ce n’était pas un souvenir majeur.</p>
+          <p class="quote">Le quartier nous a aussi paru moins intéressant que beaucoup d’autres zones de Vienne : ça rend le détour un peu moins évident.</p>
+          <div class="actions"><button class="map-link" data-focus="furniture">Voir sur la carte</button><a class="site-link" href="https://www.moebelmuseumwien.at/en/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="freud" data-place="freud">
+          <div class="place-title"><span class="emoji">🧠</span><h3>Musée Sigmund Freud</h3></div>
+          <div class="meta"><span class="tag time">⏱ ~1 h</span><span class="tag maybe">😬 Si vraiment</span></div>
+          <p>Pour être polis : <strong>on l’a trouvé assez décevant</strong>. Le lieu a évidemment un intérêt historique, mais face à la richesse des autres musées de Vienne, il nous a paru nettement en dessous.</p>
+          <p>Ça devient surtout pertinent si Freud ou l’histoire de la psychanalyse vous intéressent vraiment. À partir du 1er octobre 2026, le musée est fermé le mardi.</p>
+          <div class="actions"><button class="map-link" data-focus="freud">Voir sur la carte</button><a class="site-link" href="https://www.freud-museum.at/en/visitor_information" target="_blank" rel="noopener">Infos visite ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="untested">
+      <div class="section-head">
+        <div class="section-kicker">À vous d’explorer</div>
+        <h2>🧭 On n’a pas vraiment testé</h2>
+        <p class="section-intro">Ici, pas de faux avis perso : soit on n’y est pas entrés, soit on ne s’en souvient pas assez bien pour prétendre juger.</p>
+      </div>
+      <div class="places">
+        <article class="place" id="nhm" data-place="nhm">
+          <div class="place-title"><span class="emoji">🦕</span><h3>Naturhistorisches Museum</h3></div>
+          <div class="meta"><span class="tag time">⏱ 2 h 30–3 h 30+</span><span class="tag untested">🧭 Pas visité</span></div>
+          <p>Le gigantesque musée d’Histoire naturelle juste en face du Kunsthistorisches. Il compte des dizaines de salles et semble clairement être une visite de plusieurs heures à lui seul.</p>
+          <p>On ne l’a pas fait, donc aucune comparaison “KHM vs NHM” de notre part — choisissez simplement selon votre intérêt pour l’art ou les sciences naturelles.</p>
+          <div class="actions"><button class="map-link" data-focus="nhm">Voir sur la carte</button><a class="site-link" href="https://www.nhm-wien.ac.at/en" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="opera" data-place="opera">
+          <div class="place-title"><span class="emoji">🎭</span><h3>Wiener Staatsoper</h3></div>
+          <div class="meta"><span class="tag time">⏱ ~40 min la visite guidée</span><span class="tag untested">🧭 Intérieur non testé</span></div>
+          <p>On voulait le visiter… mais on est tombés en pleine période des <strong>bals viennois annuels</strong> 😄 Donc pas d’avis sur l’intérieur.</p>
+          <p>La visite guidée standard actuelle dure environ 40 minutes et passe par les salles d’apparat jusqu’à l’auditorium.</p>
+          <div class="actions"><button class="map-link" data-focus="opera">Voir sur la carte</button><a class="site-link" href="https://www.wiener-staatsoper.at/en/guided-tours/" target="_blank" rel="noopener">Visites guidées ↗</a></div>
+        </article>
+
+        <article class="place" id="wienmuseum" data-place="wienmuseum">
+          <div class="place-title"><span class="emoji">🏙️</span><h3>Wien Museum Karlsplatz</h3></div>
+          <div class="meta"><span class="tag time">⏱ 1 h 30–2 h</span><span class="tag untested">🧭 Pas visité</span></div>
+          <p>On l’avait prévu, mais on <strong>n’a finalement pas eu le temps de le visiter</strong>.</p>
+          <p>C’est surtout un musée consacré à <strong>l’histoire et à la culture de Vienne</strong>, avec également beaucoup d’œuvres et d’objets d’art. Sa grande exposition permanente sur l’histoire de la ville est gratuite, donc ça peut être une option assez facile autour de Karlsplatz.</p>
+          <div class="actions"><button class="map-link" data-focus="wienmuseum">Voir sur la carte</button><a class="site-link" href="https://www.wienmuseum.at/" target="_blank" rel="noopener">Site officiel ↗</a></div>
+        </article>
+
+        <article class="place" id="naschmarkt" data-place="naschmarkt">
+          <div class="place-title"><span class="emoji">🥕</span><h3>Naschmarkt</h3></div>
+          <div class="meta"><span class="tag time">⏱ 1–1 h 30</span><span class="tag untested">🧭 Bonus balade</span></div>
+          <p>Marché, restos, promenade ; le samedi s’ajoute le marché aux puces. Plutôt une ambiance de quartier à glisser dans une journée qu’un monument à “cocher”.</p>
+          <div class="actions"><button class="map-link" data-focus="naschmarkt">Voir sur la carte</button></div>
+        </article>
+
+        <article class="place" id="hundertwasser" data-place="hundertwasser">
+          <div class="place-title"><span class="emoji">🏠</span><h3>Hundertwasserhaus</h3></div>
+          <div class="meta"><span class="tag time">⏱ 30–45 min</span><span class="tag untested">🧭 Bonus architecture</span></div>
+          <p>À envisager si vous aimez l’architecture atypique. La façade s’intègre facilement dans une balade dans l’est du centre.</p>
+          <div class="actions"><button class="map-link" data-focus="hundertwasser">Voir sur la carte</button></div>
+        </article>
+      </div>
+    </section>
+
+    
+
+    <section>
+      <div class="section-head">
+        <div class="section-kicker">La façon dont on profiterait de Vienne</div>
+        <h2>Une grosse visite, puis laisser la ville faire le reste.</h2>
+      </div>
+      <p class="lead">Ce qu’on a aimé, c’est que Vienne n’a pas besoin d’un planning militaire. Une bonne journée peut simplement faire : <strong>une grosse visite → balade → église ou boutique trouvée en chemin → café viennois → autre quartier → soirée.</strong></p>
+      <p class="lead">Une partie de nos bons souvenirs vient précisément de choses vues parce qu’on était dans le coin, pas parce qu’elles étaient verrouillées trois semaines avant dans un agenda.</p>
+    </section>
+
+    <footer class="footer">
+      <strong>Sources pratiques revérifiées fin septembre 2026.</strong>
+      <p>Les temps de visite sont des ordres de grandeur mêlant notre expérience et, lorsque disponible, les recommandations des sites officiels. Les horaires, tarifs et programmes peuvent évidemment encore bouger d’ici votre séjour.</p>
+      <p>Carte : © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · interface <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet</a>.</p>
+    </footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel" aria-label="Carte interactive des lieux">
+    <div id="map"></div>
+    <div class="map-label">
+      <div class="map-badge"><strong>Carte interactive</strong>Cliquez un lieu ↔ cliquez un marqueur</div>
+      <div class="map-badge">❤️ visites · ☕ pauses · 🏨 hôtels</div>
+    </div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+
+<div class="lightbox" id="photoLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner">
+    <img id="lightboxImage" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [48.2055,16.373];
+window.GUIDE_ZOOM = 13;
+window.GUIDE_PLACES = [
+    {id:'schonbrunn',name:'Schönbrunn + Gloriette',lat:48.18499,lng:16.31233,emoji:'👑',kind:'visit'},
+    {id:'hofburg',name:'Hofburg / Musée Sisi',lat:48.20556,lng:16.36422,emoji:'🏛️',kind:'visit'},
+    {id:'khm',name:'Kunsthistorisches Museum',lat:48.203881,lng:16.3616,emoji:'🖼️',kind:'visit'},
+    {id:'belvedere',name:'Upper Belvedere',lat:48.19154,lng:16.3809,emoji:'✨',kind:'visit'},
+    {id:'library',name:'Bibliothèque nationale',lat:48.20617,lng:16.36669,emoji:'📚',kind:'visit'},
+    {id:'mq',name:'MuseumsQuartier',lat:48.20319,lng:16.3586,emoji:'🌆',kind:'visit'},
+    {id:'karlskirche',name:'Karlskirche',lat:48.19828,lng:16.3718,emoji:'⛪',kind:'visit'},
+    {id:'votivkirche',name:'Votivkirche',lat:48.21542,lng:16.35917,emoji:'∞',kind:'visit'},
+    {id:'stephansdom',name:'Stephansdom',lat:48.20849,lng:16.37317,emoji:'⛪',kind:'visit'},
+    {id:'prater',name:'Wiener Riesenrad / Prater',lat:48.216831,lng:16.395919,emoji:'🎡',kind:'visit'},
+    {id:'fiaker',name:'Fiacre de nuit · départ centre-ville',lat:48.2092,lng:16.3705,emoji:'🐴',kind:'visit'},
+    {id:'demel',name:'Demel',lat:48.20861,lng:16.36721,emoji:'🍰',kind:'food'},
+    {id:'schwarzenberg',name:'Café Schwarzenberg',lat:48.20185,lng:16.37392,emoji:'☕',kind:'food'},
+    {id:'altmann',name:'Altmann & Kühne',lat:48.20834,lng:16.3708,emoji:'🍫',kind:'food'},
+    {id:'lobmeyr',name:'J. & L. Lobmeyr',lat:48.2052,lng:16.3708,emoji:'🥂',kind:'food'},
+    {id:'furniture',name:'Vienna Furniture Museum',lat:48.198389,lng:16.346806,emoji:'🪑',kind:'maybe'},
+    {id:'freud',name:'Musée Sigmund Freud',lat:48.21866,lng:16.36305,emoji:'🧠',kind:'maybe'},
+    {id:'nhm',name:'Naturhistorisches Museum',lat:48.205131,lng:16.359931,emoji:'🦕',kind:'maybe'},
+    {id:'opera',name:'Wiener Staatsoper',lat:48.202814,lng:16.368928,emoji:'🎭',kind:'maybe'},
+    {id:'wienmuseum',name:'Wien Museum Karlsplatz',lat:48.199272,lng:16.373034,emoji:'🏙️',kind:'maybe'},
+    {id:'naschmarkt',name:'Naschmarkt',lat:48.198889,lng:16.363611,emoji:'🥕',kind:'maybe'},
+    {id:'hundertwasser',name:'Hundertwasserhaus',lat:48.20738,lng:16.39394,emoji:'🏠',kind:'maybe'},
+    {id:'stefanie',name:'Hotel Stefanie',lat:48.21439,lng:16.38051,emoji:'🛎️',kind:'hotel'},
+    {id:'grandhotel',name:'Grand Hotel Wien',lat:48.202111,lng:16.372194,emoji:'✨',kind:'hotel'}
+  ];
+window.GUIDE_PHOTOS = {
+    schonbrunn:{file:'Gloriette of Schonbrunn.jpg',label:'Gloriette · Schönbrunn'},
+    hofburg:{file:'Hofburg entrance Michaelerplatz Vienna.jpg',label:'Hofburg · Michaelerplatz'},
+    khm:{file:'Kunsthistorisches Museum Wien 2012 innen.jpg',label:'Kunsthistorisches Museum'},
+    belvedere:{file:'Upper Belvedere Vienna.jpg',label:'Upper Belvedere'},
+    library:{file:'State Hall of the Austrian National Library (40558228933).jpg',label:'Prunksaal · Bibliothèque nationale'},
+    mq:{file:'MuseumsQuartier Vienna.jpg',label:'MuseumsQuartier'},
+    karlskirche:{file:'Karlskirche Wien Nacht.jpg',label:'Karlskirche'},
+    votivkirche:{file:'Votivkirche, Vienna At Night.jpg',label:'Votivkirche · Infinity of Light'},
+    stephansdom:{file:'Stephansdom at night.jpg',label:'Stephansdom'},
+    prater:{file:'Wiener Riesenrad by night.jpg',label:'Wiener Riesenrad · Prater'},
+    fiaker:{file:'Zum Michaelertor der Wiener Hofburg Nachts.JPG',label:'Fiacre devant la Hofburg'},
+    demel:{file:'Demel Wiener Kaiserschmarrn (on explore at February 19, 2025) - Flickr - Sandor Somkuti.jpg',label:'Demel'},
+    schwarzenberg:{file:'Cafe schwarzenberg.jpg',label:'Café Schwarzenberg'},
+    altmann:{file:'Altmann & Kühne Graben Wien.jpg',label:'Altmann & Kühne'},
+    lobmeyr:{file:'Lobmeyr Ladenlokal Kärtner Strasse.jpg',label:'J. & L. Lobmeyr'},
+    furniture:{file:'Hofmobiliendepot 7.JPG',label:'Musée du Mobilier'},
+    freud:{file:'Sigmund Freud Museum Vienna, Waiting room (2019).jpg',label:'Musée Sigmund Freud'},
+    nhm:{file:'Naturhistorisches Museum Interior, Vienna.jpg',label:'Naturhistorisches Museum'},
+    opera:{file:'Vienna State Opera (Wiener Staatsoper).jpg',label:'Wiener Staatsoper'},
+    wienmuseum:{file:'Wien Museum Karlsplatz.jpg',label:'Wien Museum'},
+    naschmarkt:{file:'Naschmarkt, Vienna.jpg',label:'Naschmarkt'},
+    hundertwasser:{file:'Hundertwasserhaus.jpg',label:'Hundertwasserhaus'},
+    stefanie:{file:'Hotel Stefanie Wien.jpg',label:'Hotel Stefanie'},
+    grandhotel:{file:'Wien Grand Hotel 2.JPG',label:'Grand Hotel Wien'}
+  };
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

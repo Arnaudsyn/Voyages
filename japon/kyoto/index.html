@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Notre petit guide de Kyoto — bonnes adresses, idées, hôtel et repères pratiques.">
+  <title>Kyoto — notre guide perso</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Kyoto</div>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../../">← Tous les guides</a>
+      <a href="../">🇯🇵 Japon</a>
+      <a href="#pratique">Pratique</a>
+      <a href="#hotels">🏨 Hôtels</a>
+      <a href="#loved">❤️ À faire</a>
+      <a href="#food">🍜 Manger</a>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content">
+    <header class="hero">
+      <div class="eyebrow">2 à 6 jours · première mise en forme depuis Trello</div>
+      <h1>Kyoto,<br>notre petit guide !</h1>
+      <p class="lead">On commence ici à transformer notre Trello Japon en vrais guides de destination. Kyoto reprend exactement le même moteur que Vienne : fiches, carte, comportement mobile et navigation entre les lieux.</p>
+      <div class="legend">
+        <span class="pill">🧭 Notes déjà dans Trello</span>
+        <span class="pill">🏨 Hôtels</span>
+        <span class="pill">🍜 Restaurants</span>
+        <span class="pill">🌸 Idées saisonnières</span>
+      </div>
+    </header>
+
+    <div class="toc">
+      <h2>Menu rapide</h2>
+      <div class="toc-links">
+        <a href="#pratique">🚇 Pratique</a>
+        <a href="#hotels">🏨 Où dormir</a>
+        <a href="#loved">❤️ À faire</a>
+        <a href="#food">🍜 Manger</a>
+      </div>
+    </div>
+
+    <section id="pratique">
+      <div class="section-head">
+        <div class="section-kicker">Japon</div>
+        <h2>Avant Kyoto</h2>
+        <p class="section-intro">Les conseils transversaux — transports, cash, hébergement, onsen, immigration — restent volontairement sur la page Japon pour ne pas les dupliquer ville par ville.</p>
+      </div>
+      <div class="notice-grid">
+        <article class="notice transport">
+          <h3>🚆 Les conseils pays restent centralisés</h3>
+          <p>Kyoto contient uniquement ce qui est spécifique à la destination. Pour le fonctionnement général du Japon, on remonte d’un niveau.</p>
+          <a class="source" href="../">Voir le guide Japon →</a>
+        </article>
+        <article class="notice">
+          <h3>🧭 Import Trello en cours</h3>
+          <p>Les cartes déjà nommées sont intégrées en priorité. Les liens Maps bruts du backlog seront ajoutés à mesure qu’on les identifie et les classe proprement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hotels">
+      <div class="section-head"><div class="section-kicker">Dormir</div><h2>Hôtels</h2></div>
+      <div class="places">
+        <article class="place" id="ina-house-gion">
+          <div class="place-top"><div class="place-title"><span class="emoji">🏨</span><div><h3>INA HOUSE GION</h3><div class="meta"><span class="tag untested">Dans notre Trello</span></div></div></div></div>
+          <p>Une adresse enregistrée pour Kyoto, à consolider avec nos notes et notre retour d’expérience avant de la considérer comme recommandation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="loved">
+      <div class="section-head"><div class="section-kicker">À faire</div><h2>Idées déjà repérées</h2></div>
+      <div class="places">
+        <article class="place" id="okazaki-boat">
+          <div class="place-top"><div class="place-title"><span class="emoji">🌸</span><div><h3>Okazaki boat ride</h3><div class="meta"><span class="tag untested">Mars / avril</span><span class="tag time">Saisonnier</span></div></div></div></div>
+          <p>Balade en bateau repérée pour la saison des cerisiers. La note Trello précise de récupérer le billet au ponton au moins 20 minutes avant le départ et de prévoir une pièce d’identité.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="food">
+      <div class="section-head"><div class="section-kicker">Manger</div><h2>Bonnes adresses</h2></div>
+      <div class="places">
+        <article class="place" id="gion-karoku">
+          <div class="place-top"><div class="place-title"><span class="emoji">🥩</span><div><h3>Gion Karoku</h3><div class="meta"><span class="tag loved">Repéré comme excellent</span></div></div></div></div>
+          <p>Restaurant de grillades déjà mis en avant dans notre Trello Kyoto. On gardera ici notre retour détaillé, le temps à prévoir et les infos pratiques.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><a href="../">← Retour au Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Kyoto</strong><span>Les lieux du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [35.0116,135.7681];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>
