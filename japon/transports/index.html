@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Se déplacer au Japon : IC Card, Shinkansen, JR Pass, passes régionaux, bus et calculateur JR Pass.">
+<title>Se déplacer au Japon — Nos petits guides</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../">Nos petits guides</a><a class="back" href="../">← Japon</a></div></header>
+<main class="shell article">
+  <header class="hero">
+    <div class="eyebrow">🇯🇵 Japon · transports</div>
+    <h1>Se<br>déplacer</h1>
+    <p class="lead">Le Japon est extrêmement simple à parcourir sur les grands axes. Là où il faut vraiment préparer un peu, c’est le dernier train, le dernier bus… et le choix du bon pass.</p>
+  </header>
+
+  <section class="article-section">
+    <div class="section-kicker">Le réflexe quotidien</div><h2>IC Card : oui, sans réfléchir</h2>
+    <div class="article-grid">
+      <article class="prose-card"><h3>💳 Suica, PASMO, ICOCA…</h3><p>Une IC Card rechargeable sert pour énormément de métros, trains locaux et bus, mais aussi dans les konbini, distributeurs automatiques et certains commerces.</p><p>Les grandes cartes sont largement interopérables : inutile d’en acheter une nouvelle à chaque région.</p></article>
+      <article class="prose-card"><h3>📱 Sur téléphone</h3><p>Sur les appareils compatibles, une carte IC dématérialisée peut être encore plus pratique. Sinon, une carte physique reste très simple à utiliser et à recharger en gare.</p><p><a href="https://www.japan.travel/en/plan/ic-card/" target="_blank" rel="noopener">Guide officiel IC Card ↗</a></p></article>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="section-kicker">Longues distances</div><h2>Shinkansen & réservations</h2>
+    <div class="article-grid">
+      <article class="prose-card"><h3>🚄 Le Shinkansen</h3><p>Rapide, ponctuel et confortable : pour Tokyo → Kyoto/Osaka, Kansai → Hiroshima ou les grands axes du Tohoku/Kyushu, c’est le moyen de transport qui demande le moins d’énergie mentale.</p><p>Pour le Tokaido / Sanyo / Kyushu Shinkansen, <strong>SmartEX</strong> est un excellent portail de réservation et propose aussi des tarifs anticipés.</p><p><a href="https://smart-ex.jp/en/" target="_blank" rel="noopener">SmartEX ↗</a></p></article>
+      <article class="prose-card"><h3>🧳 Grosses valises</h3><p>Sur certains Shinkansen Tokaido, Sanyo et Kyushu, les bagages dont la somme des dimensions dépasse 160 cm nécessitent un siège avec espace bagage surdimensionné. Si la valise est énorme, on préfère souvent l’envoyer avec le service de livraison de bagages.</p></article>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="section-kicker">Le piège classique</div><h2>Le JR Pass n’est plus automatiquement une bonne affaire</h2>
+    <div class="callout"><h3>🎫 On calcule avant d’acheter</h3><p>Le Japan Rail Pass national coûte actuellement <strong>50 000 ¥ / 7 jours, 80 000 ¥ / 14 jours et 100 000 ¥ / 21 jours</strong> en classe ordinaire lorsqu’il est acheté sur le site officiel. À ces prix, un aller-retour Tokyo ↔ Kyoto ne suffit plus à le rentabiliser.</p><p>Autre détail : le pass national n’inclut pas directement les trains <strong>Nozomi</strong> et <strong>Mizuho</strong> ; ils nécessitent un billet supplémentaire dédié. Les Hikari/Sakura restent utilisables sans supplément.</p><p><a href="https://japanrailpass.net/en/purchase/price/" target="_blank" rel="noopener">Tarifs officiels ↗</a></p></div>
+    <p class="tip">Et surtout : avant de regarder le pass national, regardez les passes régionaux. Dans un itinéraire concentré, ils sont très souvent plus intéressants.</p>
+  </section>
+
+  <section class="article-section">
+    <div id="jrCalculator" class="calculator">
+      <div class="calc-head">
+        <div><div class="section-kicker">Interactif</div><h2>Est-ce qu’il me faut un JR Pass ?</h2><p class="section-intro">Sélectionnez les gros trajets que vous prévoyez. Le calcul compare les billets à l’unité avec le Japan Rail Pass et une sélection de passes JR East, West, Kyushu et Hokkaido.</p></div>
+        <span class="calc-updated">Tarifs vérifiés · 30 sept. 2026</span>
+      </div>
+      <div class="calc-control">
+        <div><label for="railDays">Sur combien de jours consécutifs sont concentrés vos gros trajets ?</label>
+          <select id="railDays" data-days>
+            <option value="1">1 jour</option><option value="2">2 jours</option><option value="3">3 jours</option><option value="4">4 jours</option>
+            <option value="5" selected>5 jours</option><option value="7">7 jours</option><option value="10">10 jours</option><option value="14">14 jours</option><option value="21">21 jours</option>
+          </select>
+        </div>
+        <div><span class="pill">Adulte · classe ordinaire</span></div>
+      </div>
+      <div class="route-list" data-routes></div>
+      <div class="calc-results" data-results></div>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="section-kicker">Passes régionaux</div><h2>Ceux qu’on regarde en premier</h2>
+    <div class="article-grid">
+      <article class="prose-card"><h3>JR West</h3><p><strong>Kansai WIDE</strong> pour Kinosaki/Okayama, <strong>Kansai-Hiroshima</strong> pour Hiroshima/Miyajima, <strong>Sanyo-San’in</strong> jusqu’à Hakata, ou <strong>Kansai-Hokuriku</strong> pour Kanazawa.</p><p><a href="https://www.westjr.co.jp/travel-information/en/tickets-passes/jrwest-rail-pass/" target="_blank" rel="noopener">Tous les passes JR West ↗</a></p></article>
+      <article class="prose-card"><h3>JR East</h3><p>Le <strong>JR EAST PASS</strong> existe en 5 ou 10 jours et couvre un très grand secteur de Tokyo vers Tohoku, Niigata et Nagano. Pour un voyage essentiellement à l’est, il peut être beaucoup plus logique que le pass national.</p><p><a href="https://www.jreast.co.jp/e/pass/" target="_blank" rel="noopener">JR East passes ↗</a></p></article>
+      <article class="prose-card"><h3>JR Kyushu</h3><p>Passes <strong>All Kyushu</strong>, <strong>Northern Kyushu</strong> ou <strong>Southern Kyushu</strong>. Les prix sont suffisamment bas pour devenir intéressants avec seulement quelques Shinkansen / limited express bien choisis.</p><p><a href="https://www.jrkyushu.co.jp/english/railpass/" target="_blank" rel="noopener">JR Kyushu passes ↗</a></p></article>
+      <article class="prose-card"><h3>JR Hokkaido</h3><p>Le <strong>Hokkaido Rail Pass</strong> et les passes Sapporo–Furano / Sapporo–Noboribetsu sont à regarder avant toute boucle ferroviaire autour de Sapporo.</p><p><a href="https://www.jrhokkaido.co.jp/global/english/ticket/railpass/" target="_blank" rel="noopener">JR Hokkaido passes ↗</a></p></article>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="section-kicker">Les derniers kilomètres</div><h2>Bus, navettes & taxis</h2>
+    <div class="article-grid">
+      <article class="prose-card"><h3>🚌 Bus</h3><p>Pour certaines montagnes et villes thermales, le bus est la seule vraie option. On vérifie toujours si une réservation est nécessaire et on évite de construire une journée autour du dernier bus.</p></article>
+      <article class="prose-card"><h3>🚐 Navettes</h3><p>Les ryokans proposent souvent une navette depuis la gare ou l’arrêt principal. Elle peut être gratuite et pourtant presque invisible sur Booking : un mail suffit souvent.</p></article>
+      <article class="prose-card"><h3>🚕 Taxi</h3><p>Parfait pour un dernier kilomètre ou une arrivée tardive. Beaucoup moins séduisant pour remplacer un train longue distance : la facture peut monter très vite.</p></article>
+      <article class="prose-card"><h3>🗺️ Itinéraires</h3><p><strong>Google Maps</strong> fait très bien le travail dans la plupart des cas. Quand une correspondance devient étrange, on recoupe avec <strong>Japan Travel by NAVITIME</strong>.</p></article>
+    </div>
+  </section>
+
+  <a class="backline" href="../">← Retour au Japon</a>
+</main>
+<script src="../../assets/jr-pass-calculator.js"></script>
+</body></html>
