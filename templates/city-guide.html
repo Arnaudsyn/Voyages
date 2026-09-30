@@ -18,10 +18,12 @@
     <nav class="nav" aria-label="Navigation principale">
       <a href="../../">← Tous les guides</a>
       <a href="../">FLAG COUNTRY</a>
-      <a href="#pratique">Pratique</a>
+      <a href="#transport">Se déplacer</a>
       <a href="#hotels">🏨 Hôtels</a>
-      <a href="#loved">❤️ À faire</a>
-      <a href="#food">🍜 Manger</a>
+      <a href="#loved">❤️ On a adoré</a>
+      <a href="#cafes">☕ Cafés & bonnes adresses</a>
+      <a href="#maybe">🙂 Selon les goûts</a>
+      <a href="#untested">🧭 Pas testés</a>
     </nav>
   </div>
 </header>
@@ -29,28 +31,31 @@
 <main class="layout">
   <div class="content">
     <header class="hero">
-      <div class="eyebrow">DURATION</div>
+      <div class="eyebrow">DATES · ACTUALISÉ POUR SEASON/YEAR</div>
       <h1>CITY,<br>notre petit guide !</h1>
-      <p class="lead">INTRO</p>
+      <p class="lead">EDITORIAL INTRO</p>
       <div class="legend">
         <span class="pill">❤️ On referait volontiers</span>
         <span class="pill">🙂 Sympa selon vos goûts</span>
-        <span class="pill">🧭 Pas encore testé</span>
+        <span class="pill">😬 Si vraiment ça vous intéresse</span>
+        <span class="pill">🧭 On n’a pas testé</span>
       </div>
     </header>
 
     <div class="toc">
       <h2>Menu rapide</h2>
       <div class="toc-links">
-        <a href="#pratique">🚇 Pratique</a>
+        <a href="#transport">🚇 Transports & cartes</a>
         <a href="#hotels">🏨 Où dormir</a>
-        <a href="#loved">❤️ À faire</a>
-        <a href="#food">🍜 Manger</a>
+        <a href="#loved">❤️ Nos gros coups de cœur</a>
+        <a href="#cafes">☕ Cafés & bonnes adresses</a>
+        <a href="#maybe">🙂 Bons compléments</a>
+        <a href="#untested">🧭 Ce qu’on n’a pas testé</a>
       </div>
     </div>
 
-    <section id="pratique">
-      <div class="section-head"><div class="section-kicker">Pratique</div><h2>À savoir</h2></div>
+    <section id="transport">
+      <div class="section-head"><div class="section-kicker">Pratique</div><h2>Se déplacer</h2><p class="section-intro">CITY-SPECIFIC TRANSPORT NOTES</p></div>
     </section>
 
     <section id="hotels">
@@ -59,12 +64,22 @@
     </section>
 
     <section id="loved">
-      <div class="section-head"><div class="section-kicker">Nos idées</div><h2>À faire</h2></div>
+      <div class="section-head"><div class="section-kicker">Nos coups de cœur</div><h2>On a adoré</h2></div>
       <div class="places"></div>
     </section>
 
-    <section id="food">
-      <div class="section-head"><div class="section-kicker">Manger</div><h2>Bonnes adresses</h2></div>
+    <section id="cafes">
+      <div class="section-head"><div class="section-kicker">Manger & boire</div><h2>Cafés & bonnes adresses</h2></div>
+      <div class="places"></div>
+    </section>
+
+    <section id="maybe">
+      <div class="section-head"><div class="section-kicker">Selon vos goûts</div><h2>Bons compléments</h2></div>
+      <div class="places"></div>
+    </section>
+
+    <section id="untested">
+      <div class="section-head"><div class="section-kicker">À garder sous le coude</div><h2>Pas encore testés</h2></div>
       <div class="places"></div>
     </section>
 
@@ -72,7 +87,7 @@
   </div>
 
   <aside class="map-panel" id="mapPanel">
-    <div class="map-label"><div class="map-badge"><strong>CITY</strong><span>Carte du guide</span></div></div>
+    <div class="map-label"><div class="map-badge"><strong>CITY</strong><span>Les lieux du guide</span></div></div>
     <div id="map"></div>
     <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
   </aside>
