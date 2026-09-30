@@ -59,3 +59,63 @@ a.card:hover{transform:translateY(-3px);border-color:#c8bcaa;box-shadow:var(--sh
 .mini-note{margin-top:16px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.55);border:1px solid rgba(222,215,202,.9);font-size:.9rem;color:#455149}
 .footer{border-top:1px solid var(--line);margin-top:64px;padding-top:24px;color:var(--muted);font-size:.86rem}
 @media(max-width:780px){.shell{padding:0 15px 56px}.topbar-inner{padding:10px 15px}.hero{padding:48px 0 28px}.grid,.grid.three,.note-grid,.quick-list{grid-template-columns:1fr}.guide-card.wide{grid-column:auto}.card.country{min-height:220px}h1{font-size:3.7rem}}
+
+
+/* Editorial country side-guides */
+.guide-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.guide-nav .card{min-height:205px}
+.guide-nav .icon{font-size:2rem;margin-bottom:30px}
+.guide-nav h3{margin-bottom:7px}
+.article{max-width:900px}
+.article .hero{padding-bottom:20px}
+.article-section{margin:48px 0}
+.article-section h2{margin-bottom:14px}
+.article-section h3{font-family:Georgia,"Times New Roman",serif}
+.article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.prose-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.prose-card p:first-child{margin-top:0}.prose-card p:last-child{margin-bottom:0}
+.prose-card h3{margin-top:0}
+.callout{background:#1d2922;color:#f8f5ef;border-radius:var(--radius);padding:23px}
+.callout p{color:#dfe6e1}
+.callout a{color:#fff}
+.tip{border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin:18px 0;color:#39463e}
+.link-list{display:grid;gap:10px}
+.link-row{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.link-row:last-child{border-bottom:0}
+.link-row strong{display:block}.link-row span{color:var(--muted);font-size:.9rem}
+.backline{display:inline-block;margin-top:25px;text-decoration:none;font-weight:800}
+
+/* JR pass calculator */
+.calculator{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.calc-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}
+.calc-head h2{font-size:2rem}
+.calc-updated{font-size:.75rem;color:var(--muted);white-space:nowrap}
+.calc-control{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:14px;align-items:end;margin:18px 0 24px}
+.calc-control label,.route-count label{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.09em;font-weight:800;color:var(--muted);margin-bottom:6px}
+.calc-control select,.route-count select{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink)}
+.route-list{display:grid;gap:9px}
+.route-row{display:grid;grid-template-columns:minmax(0,1fr) 100px 120px;gap:12px;align-items:center;border-top:1px solid var(--line);padding-top:10px}
+.route-row:first-child{border-top:0}
+.route-name strong{display:block}.route-name small{color:var(--muted)}
+.route-fare{text-align:right;font-weight:800}
+.calc-results{margin-top:24px;border-top:1px solid var(--line);padding-top:22px}
+.calc-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.calc-metric{border-radius:16px;padding:15px;background:var(--green-soft)}
+.calc-metric:nth-child(2){background:var(--blue-soft)}
+.calc-metric:nth-child(3){background:var(--accent-soft)}
+.calc-metric span{display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted)}
+.calc-metric strong{display:block;font-size:1.35rem;margin-top:3px}
+.calc-verdict{margin-top:15px;padding:17px 18px;border-radius:16px;background:#1d2922;color:#fff}
+.calc-verdict strong{display:block;font-size:1.08rem}
+.calc-verdict p{margin:5px 0 0;color:#dfe6e1}
+.calc-alt{margin-top:15px}
+.calc-alt-row{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.calc-note{font-size:.8rem;color:var(--muted);margin-top:16px}
+@media(max-width:900px){.guide-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){
+  .guide-nav,.article-grid,.calc-summary{grid-template-columns:1fr}
+  .guide-nav .card{min-height:auto}.guide-nav .icon{margin-bottom:18px}
+  .calc-head{display:block}.calc-updated{display:block;margin-top:5px}
+  .calc-control{grid-template-columns:1fr}
+  .route-row{grid-template-columns:minmax(0,1fr) 82px}.route-fare{grid-column:1/-1;text-align:left;font-size:.82rem;color:var(--muted)}
+}
