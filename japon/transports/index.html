@@ -40,20 +40,61 @@
   <section class="article-section">
     <div id="jrCalculator" class="calculator">
       <div class="calc-head">
-        <div><div class="section-kicker">Interactif</div><h2>Est-ce qu’il me faut un JR Pass ?</h2><p class="section-intro">Sélectionnez les gros trajets que vous prévoyez. Le calcul compare les billets à l’unité avec le Japan Rail Pass et une sélection de passes JR East, West, Kyushu et Hokkaido.</p></div>
-        <span class="calc-updated">Tarifs vérifiés · 30 sept. 2026</span>
-      </div>
-      <div class="calc-control">
-        <div><label for="railDays">Sur combien de jours consécutifs sont concentrés vos gros trajets ?</label>
-          <select id="railDays" data-days>
-            <option value="1">1 jour</option><option value="2">2 jours</option><option value="3">3 jours</option><option value="4">4 jours</option>
-            <option value="5" selected>5 jours</option><option value="7">7 jours</option><option value="10">10 jours</option><option value="14">14 jours</option><option value="21">21 jours</option>
-          </select>
+        <div>
+          <div class="section-kicker">Interactif</div>
+          <h2>Est-ce qu’il me faut un JR Pass ?</h2>
+          <p class="section-intro">Commencez par le scénario qui ressemble le plus à votre voyage. Pas besoin de connaître les noms des passes : on vous dit ensuite quoi regarder.</p>
         </div>
-        <div><span class="pill">Adulte · classe ordinaire</span></div>
+        <span class="calc-updated">Repères vérifiés · 30 sept. 2026</span>
       </div>
-      <div class="route-list" data-routes></div>
-      <div class="calc-results" data-results></div>
+
+      <div class="scenario-grid">
+        <button class="scenario-card" type="button" data-scenario="tokyo">
+          <strong>🏙️ Je reste autour de Tokyo</strong>
+          <span>Tokyo, Yokohama, quelques excursions proches.</span>
+          <span class="scenario-badge">Simple</span>
+        </button>
+        <button class="scenario-card" type="button" data-scenario="golden">
+          <strong>🗼 Tokyo + Kyoto + Osaka</strong>
+          <span>Le grand classique d’un premier voyage au Japon.</span>
+          <span class="scenario-badge">Très fréquent</span>
+        </button>
+        <button class="scenario-card" type="button" data-scenario="hiroshima">
+          <strong>⛩️ Tokyo + Kansai + Hiroshima</strong>
+          <span>On commence à couvrir assez de distance pour regarder les passes.</span>
+          <span class="scenario-badge regional">Pass régional ?</span>
+        </button>
+        <button class="scenario-card" type="button" data-scenario="custom">
+          <strong>🗺️ Je vais plus loin que ça</strong>
+          <span>Tohoku, Kanazawa, Kyushu, Hokkaido… choisissez vos grandes étapes.</span>
+          <span class="scenario-badge maybe">Simuler</span>
+        </button>
+      </div>
+
+      <div class="scenario-result" data-scenario-result></div>
+
+      <button class="custom-toggle" type="button" data-custom-toggle>＋ Construire mon voyage avec quelques grandes destinations</button>
+      <div class="custom-panel" data-custom-panel>
+        <p class="section-intro">Cochez les endroits importants. Ce n’est pas un itinéraire détaillé : le but est simplement d’estimer l’ampleur géographique du voyage et les familles de passes à comparer.</p>
+        <div class="destination-grid" data-destinations></div>
+        <div class="custom-options">
+          <div>
+            <label for="railDays">Sur combien de jours sont concentrés vos grands trajets ferroviaires ?</label>
+            <select id="railDays" data-days>
+              <option value="3">3 jours</option>
+              <option value="5">5 jours</option>
+              <option value="7" selected>7 jours</option>
+              <option value="10">10 jours</option>
+              <option value="14">14 jours</option>
+              <option value="21">21 jours</option>
+            </select>
+          </div>
+          <div><span class="pill">Adulte · classe ordinaire</span></div>
+        </div>
+        <div class="calc-results" data-custom-result></div>
+      </div>
+
+      <p class="calc-note">Ce simulateur sert à vous orienter. Il ne tient pas compte de chaque bus, ligne privée, réduction anticipée ou ordre exact des étapes — vérifiez toujours le tarif final sur les sites JR / SmartEX une fois votre itinéraire fixé.</p>
     </div>
   </section>
 
