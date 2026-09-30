@@ -1,6 +1,6 @@
 # Voyages
 
-nos petits guides de voyage personnels, organisés par pays puis par ville ou région.
+Nos petits guides de voyage personnels, organisés par pays puis par ville ou région.
 
 ## Structure
 
