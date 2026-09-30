@@ -15,6 +15,14 @@ Voyages/
 │       └── index.html
 └── japon/
     ├── index.html
+    ├── preparer/
+    │   └── index.html
+    ├── transports/
+    │   └── index.html
+    ├── hebergements/
+    │   └── index.html
+    ├── culture/
+    │   └── index.html
     └── kyoto/
         └── index.html
 ```
@@ -98,6 +106,7 @@ Les guides de villes/régions utilisent désormais une base commune :
 
 - `assets/guide.css` : mise en page, fiches, carte, responsive et comportement mobile visuel ;
 - `assets/guide.js` : Leaflet, marqueurs, focus fiche ↔ carte, aperçu mobile, lightbox et retour en haut ;
+- `assets/jr-pass-calculator.js` : comparateur interactif billets à l’unité / JR Pass national / principaux passes régionaux ;
 - `templates/city-guide.html` : squelette canonique pour démarrer une nouvelle destination ;
 - chaque `/<pays>/<destination>/index.html` ne contient plus que sa navigation, son contenu éditorial et ses données `GUIDE_*`.
 
