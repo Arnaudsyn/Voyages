@@ -82,6 +82,8 @@ button.map-link,.site-link{appearance:none;border:0;border-radius:999px;padding:
 button.map-link{background:#1d2922;color:#fff}
 button.map-link:hover{background:#31453a}
 .site-link{background:#ece6da;color:#334038}
+.google-map-link{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:#58655d;text-decoration:none;font-size:.76rem;font-weight:800}
+.google-map-link:hover,.google-map-link:focus-visible{background:#f1ece2;color:var(--ink);outline:none}
 .map-panel{position:sticky;top:82px;align-self:start;height:calc(100vh - 104px);border-radius:26px;overflow:hidden;background:#dfe7df;border:1px solid #d3d2c8;box-shadow:var(--shadow)}
 #map{height:100%;width:100%}
 .map-label{position:absolute;z-index:500;top:14px;left:14px;right:14px;pointer-events:none;display:flex;justify-content:space-between;gap:10px}
@@ -100,6 +102,8 @@ button.map-link:hover{background:#31453a}
 .mobile-map-theme{font-size:.66rem;line-height:1;text-transform:uppercase;letter-spacing:.11em;font-weight:850;color:var(--muted)}
 .mobile-map-card h4{margin:6px 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem;line-height:1.12;color:var(--ink)}
 .mobile-map-card .mobile-detail-btn{display:block;width:100%;margin:0;border:0;border-radius:999px;padding:9px 11px;background:#1d2922;color:#fff;font-weight:850;font-size:.8rem;cursor:pointer}
+.mobile-google-map-link{display:block;margin-top:9px;text-align:center;color:#5a665e;text-decoration:none;font-size:.72rem;font-weight:800}
+.mobile-google-map-link:hover,.mobile-google-map-link:focus-visible{text-decoration:underline;outline:none}
 .mobile-place-popup .leaflet-popup-close-button{width:28px;height:28px;line-height:26px;background:rgba(255,255,255,.92);border-radius:50%;top:7px;right:7px;color:#17211b!important;box-shadow:0 4px 12px rgba(0,0,0,.14)}
 .custom-marker{background:transparent!important;border:0!important}
 .pin{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#8b2942;border:3px solid #fff;box-shadow:0 5px 14px rgba(0,0,0,.28);font-size:17px;line-height:1}
