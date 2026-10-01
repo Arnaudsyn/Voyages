@@ -103,6 +103,39 @@
     return 'Visite';
   }
 
+  function guideCityName(){
+    var brand = document.querySelector('.brand');
+    if(!brand) return '';
+    return brand.textContent.replace(/^\s*[^A-Za-zÀ-ÿ]+\s*/,'').trim();
+  }
+
+  function googleMapsUrl(place){
+    if(place && Number.isFinite(Number(place.lat)) && Number.isFinite(Number(place.lng))){
+      return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.lat + ',' + place.lng);
+    }
+    var query = ((place && place.name) || '') + ' ' + guideCityName();
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query.trim());
+  }
+
+  function addGoogleMapsLink(card, place){
+    if(!card || card.querySelector('.google-map-link')) return;
+    var actions = card.querySelector('.actions');
+    if(!actions){
+      actions = document.createElement('div');
+      actions.className = 'actions';
+      var body = card.querySelector('.place-body') || card;
+      body.appendChild(actions);
+    }
+    var link = document.createElement('a');
+    link.className = 'google-map-link';
+    link.href = googleMapsUrl(place);
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'Google Maps ↗';
+    link.setAttribute('aria-label','Ouvrir ' + ((place && place.name) || 'ce lieu') + ' dans Google Maps');
+    actions.appendChild(link);
+  }
+
   function openMobilePlacePreview(place, marker){
     var wrapper = document.createElement('div');
     wrapper.className = 'mobile-map-card';
@@ -135,9 +168,17 @@
       window.focusPlace(place.id,true);
     });
 
+    var mapsLink = document.createElement('a');
+    mapsLink.className = 'mobile-google-map-link';
+    mapsLink.href = googleMapsUrl(place);
+    mapsLink.target = '_blank';
+    mapsLink.rel = 'noopener';
+    mapsLink.textContent = 'Google Maps ↗';
+
     body.appendChild(theme);
     body.appendChild(title);
     body.appendChild(button);
+    body.appendChild(mapsLink);
     wrapper.appendChild(body);
 
     L.popup({
@@ -154,6 +195,7 @@
   }
 
   places.forEach(function(place){
+    addGoogleMapsLink(document.getElementById(place.id), place);
     var marker = L.marker([place.lat,place.lng],{icon:iconFor(place)}).addTo(map);
     marker.bindTooltip(place.name,{direction:'top',offset:[0,-28],opacity:.92});
     marker.on('click', function(){
@@ -166,6 +208,13 @@
     });
     markers[place.id] = marker;
     bounds.push([place.lat,place.lng]);
+  });
+
+  document.querySelectorAll('.place').forEach(function(card){
+    if(card.querySelector('.google-map-link')) return;
+    var title = card.querySelector('h3');
+    if(!title) return;
+    addGoogleMapsLink(card,{name:title.textContent.trim()});
   });
 
   function refreshMap(fit) {
