@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Render the curated French destination data as static, Kyoto-style pages."""
+import hashlib
 import json
 import re
 import unicodedata
@@ -110,6 +111,8 @@ if 'assets/country-map.css' not in prefix:
 <link rel="stylesheet" href="../assets/country-map.css">
 </head>''')
 prefix = prefix.replace('<main class="shell">', '<main class="shell country-page">')
+map_versions = {ext: hashlib.sha256((ROOT/f'assets/country-map.{ext}').read_bytes()).hexdigest()[:12] for ext in ('css', 'js')}
+prefix = re.sub(r'\.\./assets/country-map\.css(?:\?[^\"]*)?\"', f'../assets/country-map.css?v={map_versions["css"]}"', prefix)
 country_map = '''
 <div class="country-map-block" id="countryMapBlock" hidden>
   <p class="country-map-status" id="countryMapStatus" role="status" aria-live="polite">Chargement des lieux…</p>
@@ -139,6 +142,7 @@ for sid,title,slugs in REGIONS:
 scripts = '''<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script defer src="../assets/country-map.js"></script>'''
+scripts = scripts.replace('../assets/country-map.js', f'../assets/country-map.js?v={map_versions["js"]}')
 hub.write_text(prefix+'<!-- JAPAN_DESTINATIONS -->\n'+navigation+sections+'<footer class="footer">Une collection personnelle qui se complète voyage après voyage. <a href="../">← Tous les pays</a></footer>\n</main>\n'+scripts+'\n</body></html>\n')
 from country_map import build as build_country_map
 build_country_map()
