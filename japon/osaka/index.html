@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Osaka : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Osaka — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Osaka</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Kansai · 2 à 4 jours · Première version</div>
+      <h1>Osaka,<br>notre petit guide !</h1><p class="lead">Osaka se prête bien à une alternance entre grandes soirées gourmandes et journées plus ciblées. Dōtonbori, le château et Universal Studios sont dans nos notes ; Nara et Himeji méritent chacun une vraie journée à part.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Umeda et Namba sont deux bases utiles, mais ne jouent pas le même rôle. Regarder la bonne gare pour les excursions, et garder Universal Studios sur une journée dédiée.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Umeda pour rayonner en train ; Namba pour les soirées. Les hôtels de Kansai Airport et d’Izumisano sont surtout des bases d’aéroport.</p><div class="places"><article class="place" id="lieu-6-umedaholic-hotel" data-place="lieu-6-umedaholic-hotel">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Umedaholic Hotel</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>L’adresse notée pour Osaka. Comparer la marche vers Umeda avec les trains prévus chaque jour.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Umedaholic+Hotel+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-7-henn-na-hotel-kansai-airport" data-place="lieu-7-henn-na-hotel-kansai-airport">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Henn na Hotel Kansai Airport</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Une option enregistrée pour une nuit près de l’aéroport ; vérifier le trajet vers le terminal.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Henn+na+Hotel+Kansai+Airport+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-8-ref-kanku-izumisano-by-vessel-hotels" data-place="lieu-8-ref-kanku-izumisano-by-vessel-hotels">
+      <div class="place-title"><span class="emoji">🏨</span><h3>REF Kanku-Izumisano by VESSEL HOTELS</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Les anciennes notes indiquent une base près de la gare d’Izumisano. Utile surtout pour organiser l’arrivée ou le départ.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=REF+Kanku-Izumisano+by+VESSEL+HOTELS+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-9-hatago-inn-kansai-airport" data-place="lieu-9-hatago-inn-kansai-airport">
+      <div class="place-title"><span class="emoji">🏨</span><h3>HATAGO INN Kansai Airport</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Autre adresse de nos anciennes étapes d’aéroport. À choisir en fonction du transfert réel vers KIX.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=HATAGO+INN+Kansai+Airport+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-dotonbori" data-place="lieu-1-dotonbori">
+      <div class="place-title"><span class="emoji">🏮</span><h3>Dōtonbori</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Canal, enseignes lumineuses et restaurants : une promenade à garder pour la fin de journée. La note le place déjà dans nos itinéraires ; l’avis détaillé reste à compléter.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-dotonbori">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=D%C5%8Dtonbori+Osaka" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://www.japan.travel/en/destinations/kansai/osaka/dotonbori-and-shinsaibashi/" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-osaka-jo" data-place="lieu-2-osaka-jo">
+      <div class="place-title"><span class="emoji">🏯</span><h3>Osaka-jō</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le château et son grand parc font un bon repère de journée. Décider séparément si l’on veut entrer dans le musée du château ou simplement se promener autour.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-osaka-jo">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Osaka-j%C5%8D+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-universal-studios-japan-harry-potter" data-place="lieu-3-universal-studios-japan-harry-potter">
+      <div class="place-title"><span class="emoji">🪄</span><h3>Universal Studios Japan · Harry Potter</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le « parc Harry Potter » des notes correspond à une zone d’Universal Studios Japan. Vérifier le billet d’entrée et les éventuels accès à heure définie avant de construire la journée.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-3-universal-studios-japan-harry-potter">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Universal+Studios+Japan+%C2%B7+Harry+Potter+Osaka" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://www.usj.co.jp/web/en/us" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-4-shinsekai" data-place="lieu-4-shinsekai">
+      <div class="place-title"><span class="emoji">🎡</span><h3>Shinsekai</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le quartier figure dans une ancienne liste de visites. L’activité notée « toboggan » reste à identifier ; on garde ici le quartier comme repère sans promettre une attraction précise.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-4-shinsekai">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Shinsekai+Osaka" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-5-nepenthes-osaka" data-place="lieu-5-nepenthes-osaka">
+      <div class="place-title"><span class="emoji">🛍️</span><h3>Nepenthes Osaka</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une boutique sauvegardée pour une pause shopping. À intégrer selon l’intérêt pour les vêtements plutôt que comme un passage obligé.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-5-nepenthes-osaka">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/91nt1HWn9xtHbEun8" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Château et parc, puis Dōtonbori en soirée.</li><li>Universal Studios si c’est une priorité du séjour.</li><li>Une excursion au choix : Nara, Himeji, Sakai ou Arima, selon le temps disponible.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../nara/">Nara →</a><a class="site-link" href="../himeji/">Himeji →</a><a class="site-link" href="../sakai/">Sakai · les kofun →</a><a class="site-link" href="../arima-onsen/">Arima Onsen →</a><a class="site-link" href="../kyoto/">Kyoto →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/kansai/osaka/dotonbori-and-shinsaibashi/" target="_blank" rel="noopener">Dōtonbori · JNTO ↗</a><a class="site-link" href="https://www.usj.co.jp/web/en/us" target="_blank" rel="noopener">Universal Studios Japan ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Osaka</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [34.67, 135.5];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-dotonbori",
+    "name": "Dōtonbori",
+    "lat": 34.6687,
+    "lng": 135.5013,
+    "emoji": "🏮",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C5%8Dtonbori+Osaka"
+  },
+  {
+    "id": "lieu-2-osaka-jo",
+    "name": "Osaka-jō",
+    "lat": 34.6873,
+    "lng": 135.5262,
+    "emoji": "🏯",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Osaka-j%C5%8D+Osaka"
+  },
+  {
+    "id": "lieu-3-universal-studios-japan-harry-potter",
+    "name": "Universal Studios Japan · Harry Potter",
+    "lat": 34.6654,
+    "lng": 135.4323,
+    "emoji": "🪄",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universal+Studios+Japan+%C2%B7+Harry+Potter+Osaka"
+  },
+  {
+    "id": "lieu-4-shinsekai",
+    "name": "Shinsekai",
+    "lat": 34.6524,
+    "lng": 135.5063,
+    "emoji": "🎡",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shinsekai+Osaka"
+  },
+  {
+    "id": "lieu-5-nepenthes-osaka",
+    "name": "Nepenthes Osaka",
+    "lat": 34.6865112,
+    "lng": 135.4944685,
+    "emoji": "🛍️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/91nt1HWn9xtHbEun8"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

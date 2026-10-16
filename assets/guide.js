@@ -110,6 +110,7 @@
   }
 
   function googleMapsUrl(place){
+    if(place && place.mapsUrl) return place.mapsUrl;
     if(place && Number.isFinite(Number(place.lat)) && Number.isFinite(Number(place.lng))){
       return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.lat + ',' + place.lng);
     }
@@ -211,6 +212,7 @@
   });
 
   document.querySelectorAll('.place').forEach(function(card){
+    if(card.dataset.mapSearch === 'false') return;
     if(card.querySelector('.google-map-link')) return;
     var title = card.querySelector('h3');
     if(!title) return;

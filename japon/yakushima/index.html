@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yakushima : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Yakushima — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Yakushima</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Kyūshū · 3 à 5 jours · Première version</div>
+      <h1>Yakushima,<br>notre petit guide !</h1><p class="lead">Les notes sont claires sur l’envie : vieux cèdres, mousse, forêt et plongée, avec peu de marche plutôt qu’une grande randonnée. Il faut choisir les parcours à l’intérieur de chaque site, car un même nom peut couvrir des niveaux d’effort très différents.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Arriver en avion ou en bateau depuis le continent, puis organiser les déplacements sur l’île. Garder une marge météo autour du transport et vérifier comment rejoindre chaque départ de promenade.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Cottage Yakusugi House est l’adresse enregistrée. Une base en cottage implique de préparer les repas et les déplacements autrement qu’un séjour en ryokan.</p><div class="places"><article class="place" id="lieu-6-cottage-yakusugi-house" data-place="lieu-6-cottage-yakusugi-house">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Cottage Yakusugi House</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>L’hébergement enregistré pour l’île. Localisation exacte, transport et retour personnel restent à compléter.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Cottage+Yakusugi+House+Yakushima" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-yakusugi-land" data-place="lieu-1-yakusugi-land">
+      <div class="place-title"><span class="emoji">🌲</span><h3>Yakusugi Land</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Les grands cèdres sont une priorité du carnet, notée « yakisugi land ». Choisir un parcours précis, puis vérifier l’état du sentier et l’équipement nécessaire.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-yakusugi-land">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Yakusugi+Land+Yakushima" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-shiratani-unsuikyo" data-place="lieu-2-shiratani-unsuikyo">
+      <div class="place-title"><span class="emoji">🌿</span><h3>Shiratani Unsuikyō</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le ravin de Shiratani figure dans le plan de visite. La mousse et les forêts donnent envie de prendre son temps ; ne pas confondre une courte boucle avec les parcours plus longs.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-shiratani-unsuikyo">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Shiratani+Unsuiky%C5%8D+Yakushima" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-sarukawa-foret" data-place="lieu-3-sarukawa-foret" data-map-search="false">
+      <div class="place-title"><span class="emoji">🌳</span><h3>Sarukawa · forêt</h3></div>
+      <div class="meta"><span class="tag untested">Parcours à préciser</span></div>
+      <p>Le carnet indique « sarukawa tree ». L’intention semble être une promenade en forêt ; le départ exact et le circuit restent à identifier.</p><div class="actions"></div>
+    </article>
+    <article class="place" id="lieu-4-janokuchi-falls" data-place="lieu-4-janokuchi-falls" data-map-search="false">
+      <div class="place-title"><span class="emoji">💧</span><h3>Janokuchi Falls</h3></div>
+      <div class="meta"><span class="tag untested">Parcours à confirmer</span></div>
+      <p>Une cascade dans le plan enregistré. La durée, le niveau et les conditions du chemin restent à vérifier ; elle n’est pas présentée comme une promenade facile.</p><div class="actions"></div>
+    </article>
+    <article class="place" id="lieu-5-plongee-a-yakushima" data-place="lieu-5-plongee-a-yakushima" data-map-search="false">
+      <div class="place-title"><span class="emoji">🤿</span><h3>Plongée à Yakushima</h3></div>
+      <div class="meta"><span class="tag untested">Prestataire à préciser</span></div>
+      <p>Une sortie est prévue dans les notes, mais le prestataire n’est pas nommé. Confirmer le niveau, le matériel et la météo ; les anciens devis ne sont pas des tarifs actuels.</p><div class="actions"></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Arrivée et installation, sans grosse randonnée ce jour-là.</li><li>Yakusugi Land : choisir un circuit adapté au niveau de marche souhaité.</li><li>Shiratani Unsuikyō : choisir le parcours selon la météo et l’état des sentiers.</li><li>Une sortie plongée ou une journée de marge selon les conditions.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Le souhait « peu de marche » est conservé, mais aucune randonnée n’est déclarée facile sans avoir choisi le circuit. Le prestataire de plongée et le point Sarukawa restent à identifier.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../kagoshima/">Kagoshima →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/" target="_blank" rel="noopener">Yakushima · JNTO ↗</a><a class="site-link" href="https://ferryyakusima2.com/" target="_blank" rel="noopener">Ferry Yakushima 2 ↗</a><a class="site-link" href="https://yesyakushima.com/" target="_blank" rel="noopener">Yes Yakushima · lien du carnet ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Yakushima</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [30.35, 130.53];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-yakusugi-land",
+    "name": "Yakusugi Land",
+    "lat": 30.304,
+    "lng": 130.598,
+    "emoji": "🌲",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yakusugi+Land+Yakushima"
+  },
+  {
+    "id": "lieu-2-shiratani-unsuikyo",
+    "name": "Shiratani Unsuikyō",
+    "lat": 30.38,
+    "lng": 130.575,
+    "emoji": "🌿",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shiratani+Unsuiky%C5%8D+Yakushima"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

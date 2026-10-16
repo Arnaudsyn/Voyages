@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kusatsu Onsen : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Kusatsu Onsen — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Kusatsu Onsen</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Gunma · 1 à 3 jours · Première version</div>
+      <h1>Kusatsu Onsen,<br>notre petit guide !</h1><p class="lead">Kusatsu a déjà plusieurs adresses de ryokan dans nos carnets. Le Yubatake, les bains et le parc Sainokawara donnent une étape très simple à construire, sans avoir besoin de remplir chaque heure.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>L’arrivée se termine en bus, notamment depuis Naganohara-Kusatsuguchi selon le trajet choisi. Garder une marge sur la dernière correspondance ; le centre se découvre ensuite surtout à pied.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Trois adresses reviennent dans nos notes : Kanemidori, Boun et Kiyoshigekan. Le retour personnel et la comparaison des chambres sont encore à compléter.</p><div class="places"><article class="place" id="lieu-7-kanemidori" data-place="lieu-7-kanemidori">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Kanemidori</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Noté « Kane midori » dans l’ancien itinéraire. Une adresse à comparer avec les deux autres bases de Kusatsu.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kanemidori+Kusatsu+Onsen" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-8-hotel-boun" data-place="lieu-8-hotel-boun">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Hotel Boun</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Une autre adresse de nos étapes thermales, avec un avis personnel à ajouter.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Boun+Kusatsu+Onsen" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-9-kiyoshigekan" data-place="lieu-9-kiyoshigekan">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Kiyoshigekan</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Conservé dans le carnet d’hiver. Le retour sur le séjour reste à compléter.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kiyoshigekan+Kusatsu+Onsen" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-yubatake" data-place="lieu-1-yubatake">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Yubatake</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le grand repère du centre, à revoir quand la lumière change en fin de journée.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-yubatake">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/j5pU6p9i6VwNcLmP6" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-parc-sainokawara" data-place="lieu-2-parc-sainokawara">
+      <div class="place-title"><span class="emoji">🌲</span><h3>Parc Sainokawara</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une promenade à combiner avec le bain extérieur, tout en distinguant l’accès au parc de l’entrée aux bains.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-parc-sainokawara">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/A274QaoKBBeQypWN8" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-sainokawara-rotenburo" data-place="lieu-3-sainokawara-rotenburo">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Sainokawara Rotenburo</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le bain en plein air sauvegardé près du parc. Vérifier les règles et horaires du jour avant de partir.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-3-sainokawara-rotenburo">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/jR7K74TjBY6KqUWw8" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-4-otaki-no-yu" data-place="lieu-4-otaki-no-yu">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Ōtaki no Yu</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une autre adresse de bain dans nos notes, à choisir selon l’envie plutôt que d’aligner les établissements.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-4-otaki-no-yu">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/uv2H6PZ3mX8F1tSY7" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-5-netsunoyu-yumomi" data-place="lieu-5-netsunoyu-yumomi">
+      <div class="place-title"><span class="emoji">🎭</span><h3>Netsunoyu · yumomi</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le lien du spectacle de brassage de l’eau est conservé dans les deux carnets. Regarder le calendrier et les conditions d’entrée.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Netsunoyu+%C2%B7+yumomi+Kusatsu+Onsen" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://www.kusatsu-onsen.ne.jp/netsunoyu/" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-6-kusatsu-onsen-pudding" data-place="lieu-6-kusatsu-onsen-pudding">
+      <div class="place-title"><span class="emoji">🍮</span><h3>Kusatsu Onsen Pudding</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une pause gourmande sauvegardée. On garde l’adresse sans lui prêter un avis de dégustation qui n’est pas dans les notes.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-6-kusatsu-onsen-pudding">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/6SbahFKjoAuSrUo49" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Yubatake et centre à l’arrivée.</li><li>Balade vers Sainokawara et bain en plein air selon les ouvertures.</li><li>Ōtaki no Yu ou Netsunoyu en complément, avec une pause sucrée.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../shima-onsen/">Shima Onsen →</a><a class="site-link" href="../hoshi-onsen/">Hoshi Onsen →</a><a class="site-link" href="../shibu-onsen/">Shibu Onsen &amp; Yudanaka →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/kanto/gunma/kusatsu-area/" target="_blank" rel="noopener">Kusatsu · JNTO ↗</a><a class="site-link" href="https://www.kusatsu-onsen.ne.jp/netsunoyu/" target="_blank" rel="noopener">Netsunoyu ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Kusatsu Onsen</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [36.623, 138.596];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-yubatake",
+    "name": "Yubatake",
+    "lat": 36.6229647,
+    "lng": 138.5967231,
+    "emoji": "♨️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/j5pU6p9i6VwNcLmP6"
+  },
+  {
+    "id": "lieu-2-parc-sainokawara",
+    "name": "Parc Sainokawara",
+    "lat": 36.6241602,
+    "lng": 138.5896634,
+    "emoji": "🌲",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/A274QaoKBBeQypWN8"
+  },
+  {
+    "id": "lieu-3-sainokawara-rotenburo",
+    "name": "Sainokawara Rotenburo",
+    "lat": 36.6243123,
+    "lng": 138.5883882,
+    "emoji": "♨️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/jR7K74TjBY6KqUWw8"
+  },
+  {
+    "id": "lieu-4-otaki-no-yu",
+    "name": "Ōtaki no Yu",
+    "lat": 36.6229109,
+    "lng": 138.6015251,
+    "emoji": "♨️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/uv2H6PZ3mX8F1tSY7"
+  },
+  {
+    "id": "lieu-6-kusatsu-onsen-pudding",
+    "name": "Kusatsu Onsen Pudding",
+    "lat": 36.6233429,
+    "lng": 138.5956932,
+    "emoji": "🍮",
+    "kind": "food",
+    "mapsUrl": "https://maps.app.goo.gl/6SbahFKjoAuSrUo49"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

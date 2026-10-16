@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Takachiho : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Takachiho — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Takachiho</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Kyūshū · 1 à 2 jours · Première version</div>
+      <h1>Takachiho,<br>notre petit guide !</h1><p class="lead">Une piste du backlog autour des gorges et des récits d’Amaterasu. Elle reste à transformer en étape concrète avec une base, un accès et les activités réellement disponibles au moment du séjour.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Préparer le trajet routier et les possibilités de retour avant d’ajouter Takachiho à une boucle de Kyūshū. La visite des gorges et une éventuelle activité sur l’eau sont à organiser séparément.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Aucun hébergement précis dans les notes. Une nuit peut être utile si l’on souhaite une activité en soirée, après vérification du programme.</p></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-takachiho-gorges" data-place="lieu-1-takachiho-gorges">
+      <div class="place-title"><span class="emoji">🏞️</span><h3>Takachiho · gorges</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repéré pour plus tard</span></div>
+      <p>La destination du lien sauvegardé. Les promenades et activités sur l’eau dépendent des conditions et des accès ; aucune réservation n’est supposée acquise.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-takachiho-gorges">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Takachiho+%C2%B7+gorges+Takachiho" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Arrivée et installation dans la zone choisie.</li><li>Gorges selon les accès ouverts.</li><li>Éventuelle soirée de kagura seulement après vérification du programme et du retour.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../kurokawa-onsen/">Kurokawa Onsen →</a><a class="site-link" href="../kagoshima/">Kagoshima →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/us/blog/destination-spotlight-kyushu/" target="_blank" rel="noopener">Kyūshū et Takachiho · JNTO ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Takachiho</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [32.711, 131.303];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-takachiho-gorges",
+    "name": "Takachiho · gorges",
+    "lat": 32.703,
+    "lng": 131.3,
+    "emoji": "🏞️",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Takachiho+%C2%B7+gorges+Takachiho"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>
