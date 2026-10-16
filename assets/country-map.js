@@ -6,7 +6,6 @@
   var status = document.getElementById('countryMapStatus');
   var controls = document.getElementById('countryMapControls');
   var search = document.getElementById('countryMapSearch');
-  var reset = document.getElementById('countryMapReset');
   var buttons = Array.from(controls.querySelectorAll('[data-category]'));
 
   function unavailable() {
@@ -94,14 +93,13 @@
           var cities = new Set(visible.map(function (entry) { return entry.point.city; })).size;
           status.textContent = visible.length+' lieu'+(visible.length>1?'x':'')+' · '+cities+' guide'+(cities>1?'s':'');
         } else {
-          status.textContent = 'Aucun lieu ne correspond. Essayez une autre recherche ou affichez tout.';
+          status.textContent = 'Aucun lieu ne correspond. Essayez une autre recherche ou un autre filtre.';
         }
       }
       buttons.forEach(function (button) {
         button.addEventListener('click',function () { category=button.dataset.category; render(); });
       });
       search.addEventListener('input',render);
-      reset.addEventListener('click',function () { search.value=''; category='all'; render(); });
       controls.hidden = false;
       render();
       if (window.ResizeObserver) new ResizeObserver(function () { map.invalidateSize({pan:false}); }).observe(container);

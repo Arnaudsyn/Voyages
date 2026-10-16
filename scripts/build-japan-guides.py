@@ -109,8 +109,10 @@ if 'assets/country-map.css' not in prefix:
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="../assets/country-map.css">
 </head>''')
+prefix = prefix.replace('<main class="shell">', '<main class="shell country-page">')
 country_map = '''
 <div class="country-map-block" id="countryMapBlock" hidden>
+  <p class="country-map-status" id="countryMapStatus" role="status" aria-live="polite">Chargement des lieux…</p>
   <div class="country-map-controls" id="countryMapControls" hidden>
     <div class="country-map-filters" role="group" aria-label="Types de lieux">
       <button type="button" data-category="all" aria-pressed="true">Tous les lieux</button>
@@ -122,10 +124,6 @@ country_map = '''
     <label class="country-map-search" for="countryMapSearch">Rechercher<input id="countryMapSearch" type="search" placeholder="Un lieu, une ville…" autocomplete="off"></label>
   </div>
   <div class="country-map" id="countryMap" role="region" aria-label="Carte des lieux de nos guides du Japon" data-points-url="../data/japan-map.json"></div>
-  <div class="country-map-caption">
-    <p><strong id="countryMapStatus" role="status" aria-live="polite">Chargement des lieux…</strong>Zoomez sur les groupes, puis ouvrez un lieu pour retrouver sa fiche.</p>
-    <button type="button" class="country-map-reset" id="countryMapReset">Tout afficher</button>
-  </div>
 </div>
 <noscript><p class="country-map-note">Activez JavaScript pour explorer la carte. Tous les guides restent accessibles ci-dessous.</p></noscript>
 '''
