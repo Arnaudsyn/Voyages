@@ -104,7 +104,32 @@ if '<!-- JAPAN_DESTINATIONS -->' in old:
     prefix = old.split('<!-- JAPAN_DESTINATIONS -->')[0]
 else:
     prefix = old[:old.index('  <section class="section">',old.index('</section>')+10)]
-navigation = '<section class="section"><div class="section-head"><div class="section-kicker">Nos guides</div><h2>Villes & régions</h2><p class="section-intro">44 guides et premières pistes, regroupés pour construire son voyage. Kyoto garde ses retours détaillés ; les autres carnets s’enrichissent avec nos adresses et nos prochains avis.</p></div><div class="meta">'+''.join(f'<a class="pill" href="#{sid}">{e(title.split(" · ")[0])}</a>' for sid,title,_ in REGIONS)+'</div></section>'
+if 'assets/country-map.css' not in prefix:
+    prefix = prefix.replace('</head>', '''<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="../assets/country-map.css">
+</head>''')
+country_map = '''
+<div class="country-map-block" id="countryMapBlock" hidden>
+  <div class="country-map-controls" id="countryMapControls" hidden>
+    <div class="country-map-filters" role="group" aria-label="Types de lieux">
+      <button type="button" data-category="all" aria-pressed="true">Tous les lieux</button>
+      <button type="button" data-category="visit" aria-pressed="false">📍 Visites</button>
+      <button type="button" data-category="hotel" aria-pressed="false">🏨 Hôtels</button>
+      <button type="button" data-category="food" aria-pressed="false">🍜 Tables</button>
+      <button type="button" data-category="onsen" aria-pressed="false">♨️ Bains</button>
+    </div>
+    <label class="country-map-search" for="countryMapSearch">Rechercher<input id="countryMapSearch" type="search" placeholder="Un lieu, une ville…" autocomplete="off"></label>
+  </div>
+  <div class="country-map" id="countryMap" role="region" aria-label="Carte des lieux de nos guides du Japon" data-points-url="../data/japan-map.json"></div>
+  <div class="country-map-caption">
+    <p><strong id="countryMapStatus" role="status" aria-live="polite">Chargement des lieux…</strong>Zoomez sur les groupes, puis ouvrez un lieu pour retrouver sa fiche.</p>
+    <button type="button" class="country-map-reset" id="countryMapReset">Tout afficher</button>
+  </div>
+</div>
+<noscript><p class="country-map-note">Activez JavaScript pour explorer la carte. Tous les guides restent accessibles ci-dessous.</p></noscript>
+'''
+navigation = '<section class="section" id="guides"><div class="section-head"><div class="section-kicker">Nos guides</div><h2>Villes & régions</h2><p class="section-intro">44 guides et premières pistes, regroupés pour construire son voyage. Kyoto garde ses retours détaillés ; les autres carnets s’enrichissent avec nos adresses et nos prochains avis.</p></div>'+country_map+'<div class="meta">'+''.join(f'<a class="pill" href="#{sid}">{e(title.split(" · ")[0])}</a>' for sid,title,_ in REGIONS)+'</div></section>'
 sections = ''
 for sid,title,slugs in REGIONS:
     cards=''
@@ -113,5 +138,10 @@ for sid,title,slugs in REGIONS:
         summary = g['intro'].split('. ')[0].rstrip('.')+'.'
         cards += f'<a class="card" href="{s}/"><div class="kicker">{e(g["region"])}</div><h3>{e(g["name"])}</h3><p>{e(summary)}</p><span class="duration">{e(g["duration"])}</span><span class="cta">{"Ouvrir le guide" if s=="kyoto" else "Ouvrir le carnet"} →</span></a>'
     sections+=f'<section class="section" id="{sid}"><div class="section-head"><h2>{e(title)}</h2></div><div class="grid three">{cards}</div></section>\n\n'
-hub.write_text(prefix+'<!-- JAPAN_DESTINATIONS -->\n'+navigation+sections+'<footer class="footer">Une collection personnelle qui se complète voyage après voyage. <a href="../">← Tous les pays</a></footer>\n</main>\n</body></html>\n')
+scripts = '''<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script defer src="../assets/country-map.js"></script>'''
+hub.write_text(prefix+'<!-- JAPAN_DESTINATIONS -->\n'+navigation+sections+'<footer class="footer">Une collection personnelle qui se complète voyage après voyage. <a href="../">← Tous les pays</a></footer>\n</main>\n'+scripts+'\n</body></html>\n')
+from country_map import build as build_country_map
+build_country_map()
 print(f'Rendered {len(GUIDES)} destination pages and the Japan hub.')

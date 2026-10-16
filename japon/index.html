@@ -5,6 +5,9 @@
 <meta name="description" content="Nos petits guides du Japon : préparer son voyage, transports, hébergements, culture et destinations.">
 <title>Japon — Nos petits guides</title>
 <link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="../assets/country-map.css">
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="../">Nos petits guides</a><a class="back" href="../">← Tous les pays</a></div></header>
@@ -36,7 +39,26 @@
   </section>
 
 <!-- JAPAN_DESTINATIONS -->
-<section class="section"><div class="section-head"><div class="section-kicker">Nos guides</div><h2>Villes & régions</h2><p class="section-intro">44 guides et premières pistes, regroupés pour construire son voyage. Kyoto garde ses retours détaillés ; les autres carnets s’enrichissent avec nos adresses et nos prochains avis.</p></div><div class="meta"><a class="pill" href="#kanto">Kantō et Fuji</a><a class="pill" href="#tokai">Tōkai</a><a class="pill" href="#kansai">Kansai</a><a class="pill" href="#nagano">Nagano</a><a class="pill" href="#gunma">Gunma</a><a class="pill" href="#hokuriku">Hokuriku et Gifu</a><a class="pill" href="#tohoku">Tōhoku et Niigata</a><a class="pill" href="#setouchi">Chūgoku et Shikoku</a><a class="pill" href="#kyushu">Kyūshū</a><a class="pill" href="#hokkaido">Hokkaidō</a></div></section><section class="section" id="kanto"><div class="section-head"><h2>Kantō et Fuji · Tokyo et les détours</h2></div><div class="grid three"><a class="card" href="tokyo/"><div class="kicker">Kantō</div><h3>Tokyo</h3><p>Tokyo se construit quartier par quartier.</p><span class="duration">2 à 6 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="hakone/"><div class="kicker">Kantō</div><h3>Hakone</h3><p>Hakone combine les bains, le lac et les transports qui font déjà partie de la visite.</p><span class="duration">2 à 4 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="fujiyoshida/"><div class="kicker">Fuji · Yamanashi</div><h3>Fujiyoshida &amp; les lacs de Fuji</h3><p>Cette étape rassemble Fujiyoshida et les détours sauvegardés au nord de Fuji.</p><span class="duration">2 à 3 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="omiya/"><div class="kicker">Kantō</div><h3>Ōmiya</h3><p>Ōmiya apparaît comme une étape d’une nuit dans l’ancien carnet.</p><span class="duration">½ à 1 jour</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="nasu/"><div class="kicker">Kantō</div><h3>Nasu</h3><p>Une idée de séjour de montagne autour du ryokan Sansuikaku.</p><span class="duration">1 à 3 jours</span><span class="cta">Ouvrir le carnet →</span></a></div></section>
+<section class="section" id="guides"><div class="section-head"><div class="section-kicker">Nos guides</div><h2>Villes & régions</h2><p class="section-intro">44 guides et premières pistes, regroupés pour construire son voyage. Kyoto garde ses retours détaillés ; les autres carnets s’enrichissent avec nos adresses et nos prochains avis.</p></div>
+<div class="country-map-block" id="countryMapBlock" hidden>
+  <div class="country-map-controls" id="countryMapControls" hidden>
+    <div class="country-map-filters" role="group" aria-label="Types de lieux">
+      <button type="button" data-category="all" aria-pressed="true">Tous les lieux</button>
+      <button type="button" data-category="visit" aria-pressed="false">📍 Visites</button>
+      <button type="button" data-category="hotel" aria-pressed="false">🏨 Hôtels</button>
+      <button type="button" data-category="food" aria-pressed="false">🍜 Tables</button>
+      <button type="button" data-category="onsen" aria-pressed="false">♨️ Bains</button>
+    </div>
+    <label class="country-map-search" for="countryMapSearch">Rechercher<input id="countryMapSearch" type="search" placeholder="Un lieu, une ville…" autocomplete="off"></label>
+  </div>
+  <div class="country-map" id="countryMap" role="region" aria-label="Carte des lieux de nos guides du Japon" data-points-url="../data/japan-map.json"></div>
+  <div class="country-map-caption">
+    <p><strong id="countryMapStatus" role="status" aria-live="polite">Chargement des lieux…</strong>Zoomez sur les groupes, puis ouvrez un lieu pour retrouver sa fiche.</p>
+    <button type="button" class="country-map-reset" id="countryMapReset">Tout afficher</button>
+  </div>
+</div>
+<noscript><p class="country-map-note">Activez JavaScript pour explorer la carte. Tous les guides restent accessibles ci-dessous.</p></noscript>
+<div class="meta"><a class="pill" href="#kanto">Kantō et Fuji</a><a class="pill" href="#tokai">Tōkai</a><a class="pill" href="#kansai">Kansai</a><a class="pill" href="#nagano">Nagano</a><a class="pill" href="#gunma">Gunma</a><a class="pill" href="#hokuriku">Hokuriku et Gifu</a><a class="pill" href="#tohoku">Tōhoku et Niigata</a><a class="pill" href="#setouchi">Chūgoku et Shikoku</a><a class="pill" href="#kyushu">Kyūshū</a><a class="pill" href="#hokkaido">Hokkaidō</a></div></section><section class="section" id="kanto"><div class="section-head"><h2>Kantō et Fuji · Tokyo et les détours</h2></div><div class="grid three"><a class="card" href="tokyo/"><div class="kicker">Kantō</div><h3>Tokyo</h3><p>Tokyo se construit quartier par quartier.</p><span class="duration">2 à 6 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="hakone/"><div class="kicker">Kantō</div><h3>Hakone</h3><p>Hakone combine les bains, le lac et les transports qui font déjà partie de la visite.</p><span class="duration">2 à 4 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="fujiyoshida/"><div class="kicker">Fuji · Yamanashi</div><h3>Fujiyoshida &amp; les lacs de Fuji</h3><p>Cette étape rassemble Fujiyoshida et les détours sauvegardés au nord de Fuji.</p><span class="duration">2 à 3 jours</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="omiya/"><div class="kicker">Kantō</div><h3>Ōmiya</h3><p>Ōmiya apparaît comme une étape d’une nuit dans l’ancien carnet.</p><span class="duration">½ à 1 jour</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="nasu/"><div class="kicker">Kantō</div><h3>Nasu</h3><p>Une idée de séjour de montagne autour du ryokan Sansuikaku.</p><span class="duration">1 à 3 jours</span><span class="cta">Ouvrir le carnet →</span></a></div></section>
 
 <section class="section" id="tokai"><div class="section-head"><h2>Tōkai · thé, côte et Ghibli</h2></div><div class="grid three"><a class="card" href="shizuoka/"><div class="kicker">Tōkai</div><h3>Shizuoka, Atami &amp; Numazu</h3><p>Nos notes rassemblent plusieurs étapes sous « Shizuoka ».</p><span class="duration">1 à 3 jours par base</span><span class="cta">Ouvrir le carnet →</span></a><a class="card" href="nagoya/"><div class="kicker">Tōkai</div><h3>Nagoya &amp; Ghibli Park</h3><p>Nagoya est une étape du carnet et une base possible pour Ghibli Park, situé à Nagakute.</p><span class="duration">1 à 3 jours</span><span class="cta">Ouvrir le carnet →</span></a></div></section>
 
@@ -58,4 +80,7 @@
 
 <footer class="footer">Une collection personnelle qui se complète voyage après voyage. <a href="../">← Tous les pays</a></footer>
 </main>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script defer src="../assets/country-map.js"></script>
 </body></html>

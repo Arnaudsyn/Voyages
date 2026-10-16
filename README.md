@@ -143,3 +143,9 @@ python3 scripts/check-guides.py
 Les pages générées sont versionnées : aucun Python ni build n’est nécessaire pour les consulter ou les publier sur GitHub Pages. Modifier leur contenu dans le JSON avant de régénérer. Kyoto reste une page éditée directement.
 
 Un point peut fournir `mapsUrl` pour conserver son lien Google Maps d’origine. Les fiches sans coordonnées conservent une recherche par nom ; les adresses ambiguës ne proposent pas de recherche automatique. Une page sans point localisé affiche directement le texte plutôt qu’une carte vide.
+
+## Carte pays
+
+Sur le hub Japon, la carte occupe toute la largeur sous le paragraphe d’introduction de « Nos guides · Villes & régions ». Les filtres par catégorie et la recherche portent sur tous les points déjà localisés, Kyoto compris. Chaque aperçu renvoie à la fiche exacte dans le guide de destination.
+
+`scripts/country_map.py` collecte les points et descriptions dans les pages détaillées et génère `data/japan-map.json`. Il est appelé par le générateur principal ; on peut aussi l’exécuter seul après une modification de Kyoto. Les points sans coordonnées ne reçoivent pas d’emplacement approximatif. `assets/country-map.js` et `assets/country-map.css` gèrent uniquement la carte du hub, avec Leaflet et Leaflet.markercluster.

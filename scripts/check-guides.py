@@ -59,5 +59,20 @@ for g in guides:
 hub=pages[(ROOT/'japon/index.html').resolve()]
 for g in guides:
     if g['slug']+'/' not in hub.links: errors.append(g['slug']+': absent from Japan hub')
+from country_map import read_pins
+country=json.loads((ROOT/'data/japan-map.json').read_text())
+expected={p.parent.name+'/'+pin['id'] for p in (ROOT/'japon').glob('*/index.html') for pin in read_pins(p.read_text())}
+if {p['id'] for p in country} != expected: errors.append('Country map does not cover every city-map pin')
+if len(country)!=len({p['id'] for p in country}): errors.append('Country map: duplicate id')
+for point in country:
+    u=urlsplit(point['url'])
+    target=(ROOT/'japon'/u.path/'index.html').resolve()
+    if target not in pages or u.fragment not in pages[target].cards:
+        errors.append('Country map: missing destination card '+point['url'])
+    if point['category'] not in ('visit','hotel','food','onsen'): errors.append('Country map: unknown category')
+    if not (20<point['lat']<47 and 122<point['lng']<155): errors.append('Country map: invalid coordinate')
+hub_text=(ROOT/'japon/index.html').read_text()
+if not (hub_text.index('les autres carnets s’enrichissent avec nos adresses et nos prochains avis.</p>') < hub_text.index('id="countryMapBlock"') < hub_text.index('href="#kanto"')):
+    errors.append('Country map must follow the guide introduction and precede regional navigation')
 if errors: raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(pages)} HTML pages; {len(guides)} new guides; {pin_count} map pins; local links, anchors, card controls and source hygiene.')
+print(f'PASS: {len(pages)} HTML pages; {len(guides)} new guides; {pin_count} city pins; {len(country)} country pins; links, anchors, card controls and source hygiene.')
