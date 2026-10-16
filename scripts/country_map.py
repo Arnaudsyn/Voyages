@@ -26,7 +26,9 @@ class Cards(HTMLParser):
                 if u.netloc in ('maps.app.goo.gl', 'maps.google.com') or (u.netloc in ('www.google.com', 'google.com') and u.path.startswith('/maps')):
                     self.current['mapsUrl'] = url
     def handle_endtag(self, tag):
-        if tag == 'p': self.paragraph = False
+        if tag == 'p':
+            if self.current is not None: self.current['text'].append(' ')
+            self.paragraph = False
         if tag == 'article': self.current, self.paragraph = None, False
     def handle_data(self, data):
         if self.current is not None and self.paragraph: self.current['text'].append(data)
