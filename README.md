@@ -124,3 +124,22 @@ window.GUIDE_PHOTOS = {
 ```
 
 Ainsi, une amélioration future du comportement mobile ou de la carte peut être faite une seule fois dans `guide.js` / `guide.css` et bénéficier à Vienne, Kyoto et aux futurs guides.
+
+## Collection Japon · première rédaction complète
+
+Le hub Japon relie désormais 44 guides ou premières pistes, dont Kyoto. Les destinations proviennent du tableau Japon et des étapes japonaises des différents voyages de « Les p'tits voyages 💑 ». Les petites destinations voisines sont parfois regroupées dans une page régionale.
+
+- `data/japan-guides.json` contient les textes français et les points des 43 nouvelles pages.
+- `scripts/build-japan-guides.py` régénère ces pages et la navigation du hub, sans modifier le contenu détaillé de Kyoto.
+- `scripts/check-guides.py` vérifie les liens locaux, les ancres, la cohérence fiches/carte et les champs de base.
+- [Couverture et limites de la première rédaction](docs/japan-coverage.md).
+- [Comment transmettre vos lieux Google Maps](docs/google-maps-pois.md).
+
+```sh
+python3 scripts/build-japan-guides.py
+python3 scripts/check-guides.py
+```
+
+Les pages générées sont versionnées : aucun Python ni build n’est nécessaire pour les consulter ou les publier sur GitHub Pages. Modifier leur contenu dans le JSON avant de régénérer. Kyoto reste une page éditée directement.
+
+Un point peut fournir `mapsUrl` pour conserver son lien Google Maps d’origine. Les fiches sans coordonnées conservent une recherche par nom ; les adresses ambiguës ne proposent pas de recherche automatique. Une page sans point localisé affiche directement le texte plutôt qu’une carte vide.

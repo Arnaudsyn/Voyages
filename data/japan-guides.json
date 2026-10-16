@@ -1,0 +1,2701 @@
+[
+  {
+    "slug": "tokyo",
+    "name": "Tokyo",
+    "region": "Kantō",
+    "duration": "2 à 6 jours",
+    "center": [
+      35.68,
+      139.76
+    ],
+    "intro": "Tokyo se construit quartier par quartier. Ueno et Akihabara font une bonne journée à l’est, le palais impérial une respiration au centre, et Mitaka mérite son propre créneau pour le musée Ghibli. On garderait de la place pour les boutiques et les détours plutôt que d’empiler les traversées de la ville.",
+    "transport": "Choisir ses journées par zone et utiliser trains ou métro avec une IC Card. Pour les nuits proches de Haneda, vérifier la gare, la navette éventuelle et le premier départ : un hôtel situé à Kawasaki ne se trouve pas dans le terminal.",
+    "sleep": "Ueno et Asakusa pour l’est de Tokyo ; Haneda ou Kawasaki pour une arrivée tardive ou un départ matinal. Les adresses de nos notes correspondent à plusieurs voyages, pas à un classement.",
+    "plan": [
+      "Ueno le matin, puis Akihabara et les boutiques selon l’envie.",
+      "Une autre journée autour du palais impérial ; Akasaka peut se garder pour la soirée.",
+      "Musée Ghibli à Mitaka sur réservation : garder du temps pour le trajet et le quartier."
+    ],
+    "places": [
+      {
+        "name": "Parc d’Ueno",
+        "text": "Un grand repère pour marcher et choisir un musée selon l’envie. On éviterait d’ajouter plusieurs grands musées à la même demi-journée.",
+        "emoji": "🌳",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.7147557,
+        "lng": 139.7734312,
+        "mapsUrl": "https://maps.app.goo.gl/wRqJ5rS4r4Qd7NEq5"
+      },
+      {
+        "name": "Yodobashi Camera · Akihabara",
+        "text": "Une adresse de nos notes pour le matériel photo, l’électronique et les étages où le temps disparaît. Prévoir sa liste avant d’entrer aide à garder le cap.",
+        "emoji": "📷",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.6989753,
+        "lng": 139.7746922,
+        "mapsUrl": "https://maps.app.goo.gl/4cDkSUtxi6bG4g2YA"
+      },
+      {
+        "name": "Palais impérial · Kōkyo",
+        "text": "Le palais impérial et ses abords donnent une autre échelle à Tokyo. Distinguer la promenade extérieure, les jardins accessibles et les visites encadrées : les conditions ne sont pas les mêmes.",
+        "emoji": "🌿",
+        "status": "À organiser selon les accès",
+        "kind": "visit",
+        "lat": 35.685175,
+        "lng": 139.7527995,
+        "mapsUrl": "https://maps.app.goo.gl/qmHv786ASE2oxAUMA"
+      },
+      {
+        "name": "Musée Ghibli · Mitaka",
+        "text": "Le musée figure dans nos envies de visite. L’entrée se réserve à l’avance et il n’y a pas de vente au musée. C’est une sortie à organiser autour du billet obtenu.",
+        "emoji": "🎬",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "visit",
+        "lat": 35.6962,
+        "lng": 139.5704,
+        "source": "https://www.ghibli-museum.jp/en/tickets/"
+      },
+      {
+        "name": "Harry Potter · Akasaka",
+        "text": "Une idée enregistrée pour Akasaka. La note ne précise pas s’il s’agit du spectacle, d’un café ou des aménagements du quartier : choisir l’expérience avant de réserver.",
+        "emoji": "🪄",
+        "status": "Adresse exacte à préciser",
+        "kind": "visit"
+      },
+      {
+        "name": "GINZA SIX",
+        "text": "Une adresse de shopping sauvegardée dans les inspirations, à glisser dans une promenade à Ginza selon l’envie. On garde le lien exact, sans lui attribuer un avis personnel absent des notes.",
+        "emoji": "🛍️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "mapsUrl": "https://maps.app.goo.gl/8fVtNGhDTLRm64dg8"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "HOTEL MYSTAYS Ueno Iriyaguchi",
+        "text": "Notre liste d’adresses pour une base dans le secteur d’Ueno. À comparer avec le trajet réel vers la gare et les quartiers prévus.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "APA Hotel Asakusa Tawaramachi Ekimae",
+        "text": "Une autre base notée pour l’est de Tokyo, vers Asakusa et Tawaramachi.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Kawasaki King Skyfront Tokyu REI Hotel",
+        "text": "L’adresse revient dans plusieurs étapes d’arrivée ou de départ. Préparer le transfert vers Haneda avant de la choisir.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Mercure Tokyo Haneda Airport",
+        "text": "Une option de nos notes pour une nuit liée à l’aéroport.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Villa Fontaine Grand Haneda Airport",
+        "text": "Une autre option à comparer pour une nuit à Haneda, selon le terminal et les horaires du vol.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Musée Ghibli · billets",
+        "https://www.ghibli-museum.jp/en/tickets/"
+      ],
+      [
+        "Palais impérial · JNTO",
+        "https://www.japan.travel/en/spot/1727/"
+      ]
+    ],
+    "related": [
+      "hakone",
+      "fujiyoshida",
+      "omiya"
+    ],
+    "gaps": "La carte « ramen étoilé Michelin » ne permet pas d’identifier le restaurant. On attend son nom ou son lien Maps avant d’en faire une adresse ou d’affirmer un statut Michelin actuel."
+  },
+  {
+    "slug": "osaka",
+    "name": "Osaka",
+    "region": "Kansai",
+    "duration": "2 à 4 jours",
+    "center": [
+      34.67,
+      135.5
+    ],
+    "intro": "Osaka se prête bien à une alternance entre grandes soirées gourmandes et journées plus ciblées. Dōtonbori, le château et Universal Studios sont dans nos notes ; Nara et Himeji méritent chacun une vraie journée à part.",
+    "transport": "Umeda et Namba sont deux bases utiles, mais ne jouent pas le même rôle. Regarder la bonne gare pour les excursions, et garder Universal Studios sur une journée dédiée.",
+    "sleep": "Umeda pour rayonner en train ; Namba pour les soirées. Les hôtels de Kansai Airport et d’Izumisano sont surtout des bases d’aéroport.",
+    "plan": [
+      "Château et parc, puis Dōtonbori en soirée.",
+      "Universal Studios si c’est une priorité du séjour.",
+      "Une excursion au choix : Nara, Himeji, Sakai ou Arima, selon le temps disponible."
+    ],
+    "places": [
+      {
+        "name": "Dōtonbori",
+        "text": "Canal, enseignes lumineuses et restaurants : une promenade à garder pour la fin de journée. La note le place déjà dans nos itinéraires ; l’avis détaillé reste à compléter.",
+        "emoji": "🏮",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6687,
+        "lng": 135.5013,
+        "source": "https://www.japan.travel/en/destinations/kansai/osaka/dotonbori-and-shinsaibashi/"
+      },
+      {
+        "name": "Osaka-jō",
+        "text": "Le château et son grand parc font un bon repère de journée. Décider séparément si l’on veut entrer dans le musée du château ou simplement se promener autour.",
+        "emoji": "🏯",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6873,
+        "lng": 135.5262
+      },
+      {
+        "name": "Universal Studios Japan · Harry Potter",
+        "text": "Le « parc Harry Potter » des notes correspond à une zone d’Universal Studios Japan. Vérifier le billet d’entrée et les éventuels accès à heure définie avant de construire la journée.",
+        "emoji": "🪄",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6654,
+        "lng": 135.4323,
+        "source": "https://www.usj.co.jp/web/en/us"
+      },
+      {
+        "name": "Shinsekai",
+        "text": "Le quartier figure dans une ancienne liste de visites. L’activité notée « toboggan » reste à identifier ; on garde ici le quartier comme repère sans promettre une attraction précise.",
+        "emoji": "🎡",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6524,
+        "lng": 135.5063
+      },
+      {
+        "name": "Nepenthes Osaka",
+        "text": "Une boutique sauvegardée pour une pause shopping. À intégrer selon l’intérêt pour les vêtements plutôt que comme un passage obligé.",
+        "emoji": "🛍️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6865112,
+        "lng": 135.4944685,
+        "mapsUrl": "https://maps.app.goo.gl/91nt1HWn9xtHbEun8"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Umedaholic Hotel",
+        "text": "L’adresse notée pour Osaka. Comparer la marche vers Umeda avec les trains prévus chaque jour.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Henn na Hotel Kansai Airport",
+        "text": "Une option enregistrée pour une nuit près de l’aéroport ; vérifier le trajet vers le terminal.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "REF Kanku-Izumisano by VESSEL HOTELS",
+        "text": "Les anciennes notes indiquent une base près de la gare d’Izumisano. Utile surtout pour organiser l’arrivée ou le départ.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "HATAGO INN Kansai Airport",
+        "text": "Autre adresse de nos anciennes étapes d’aéroport. À choisir en fonction du transfert réel vers KIX.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Dōtonbori · JNTO",
+        "https://www.japan.travel/en/destinations/kansai/osaka/dotonbori-and-shinsaibashi/"
+      ],
+      [
+        "Universal Studios Japan",
+        "https://www.usj.co.jp/web/en/us"
+      ]
+    ],
+    "related": [
+      "nara",
+      "himeji",
+      "sakai",
+      "arima-onsen",
+      "kyoto"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "hakone",
+    "name": "Hakone",
+    "region": "Kantō",
+    "duration": "2 à 4 jours",
+    "center": [
+      35.23,
+      139.04
+    ],
+    "intro": "Hakone combine les bains, le lac et les transports qui font déjà partie de la visite. On garderait au moins une nuit pour éviter de transformer la boucle en course, et on prendrait une vue sur Fuji comme un bonus météo.",
+    "transport": "Préparer les correspondances depuis Odawara ou Hakone-Yumoto. Comparer le Hakone Freepass avec les trajets réellement prévus ; certains suppléments et services restent distincts. Regarder l’état des transports le matin.",
+    "sleep": "Choisir entre la porte d’entrée Hakone-Yumoto, Gōra ou les rives du lac. Ce choix change les trajets et l’heure à laquelle on peut rejoindre son hébergement.",
+    "plan": [
+      "Une journée lac Ashi : croisière, sanctuaire et ancien poste de contrôle selon l’envie.",
+      "Owakudani et les transports de montagne si les conditions le permettent.",
+      "Garder une fin d’après-midi pour les bains et le dîner."
+    ],
+    "places": [
+      {
+        "name": "Croisière sur le lac Ashi",
+        "text": "Le bateau permet de profiter du lac tout en reliant les rives. Prévoir une marge pour les correspondances et vérifier les départs du jour.",
+        "emoji": "⛵",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.1899925,
+        "lng": 139.0245259,
+        "mapsUrl": "https://maps.app.goo.gl/JzegYx7c7ETepaTq8"
+      },
+      {
+        "name": "Torii de la paix",
+        "text": "Un repère au bord du lac, à associer au sanctuaire Hakone-jinja. La photo au torii peut demander de patienter ; la promenade ne se limite pas à ce point.",
+        "emoji": "⛩️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.202783,
+        "lng": 139.0257419,
+        "mapsUrl": "https://maps.app.goo.gl/jjBRMWUgPaey4g7L8"
+      },
+      {
+        "name": "Owakudani",
+        "text": "Paysage volcanique, vapeurs et panorama quand le ciel s’ouvre. Le fonctionnement des remontées dépend des conditions ; garder une autre idée de visite si elles sont suspendues.",
+        "emoji": "🌋",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.2429797,
+        "lng": 139.0216288,
+        "mapsUrl": "https://maps.app.goo.gl/cntCehY4Y3qJhmqB9"
+      },
+      {
+        "name": "Hakone Sekisho · ancien poste de contrôle",
+        "text": "Une visite historique sur l’ancienne route du Tōkaidō, pratique à regrouper avec le sud du lac.",
+        "emoji": "🏯",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.1923958,
+        "lng": 139.0263612,
+        "mapsUrl": "https://maps.app.goo.gl/srDNStvPTmCyGH7g7"
+      },
+      {
+        "name": "Tenzan Tōjikyō",
+        "text": "Le bain enregistré dans l’ancien séjour de Shizuoka se trouve à Hakone. On le range ici pour éviter un détour mal anticipé ; les modalités de visite sont à vérifier.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Lake Side Inn MIRAHAKONE",
+        "text": "L’adresse de nos notes autour du lac. Vérifier l’emplacement exact et les transports à l’heure du dîner avant de réserver.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Hakone · JNTO",
+        "https://www.japan.travel/en/destinations/kanto/kanagawa/hakone-and-around/"
+      ],
+      [
+        "Hakone Freepass",
+        "https://www.odakyu.jp/english/passes/hakone/"
+      ],
+      [
+        "Remontées et Owakudani · JNTO",
+        "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-ropeway/"
+      ]
+    ],
+    "related": [
+      "tokyo",
+      "fujiyoshida",
+      "shizuoka"
+    ],
+    "gaps": "La note « onsen en plein air avec vue sur le Mt. Fuji » ne nomme pas l’établissement. On conserve l’idée, mais l’adresse et l’accès à la journée sont à confirmer."
+  },
+  {
+    "slug": "kinosaki-onsen",
+    "name": "Kinosaki Onsen",
+    "region": "Kansai",
+    "duration": "1 à 3 jours",
+    "center": [
+      35.626,
+      134.81
+    ],
+    "intro": "Kinosaki est une étape à vivre en yukata, entre la rivière, le ryokan et les bains. Le temple, le téléphérique et Genbudō donnent des idées pour la journée, mais on laisserait surtout une vraie place au rythme thermal.",
+    "transport": "Arriver à Kinosaki Onsen en train, puis marcher dans la station. Pour Genbudō ou Takenohama, préparer séparément l’aller et le retour : ce ne sont pas des arrêts dans la rue des bains.",
+    "sleep": "Une nuit en ryokan permet de profiter du dîner et du village le soir. Demander ce qui est inclus pour les bains publics et les éventuels transferts.",
+    "plan": [
+      "Arrivée, installation et première promenade le long de la rivière.",
+      "Temple Onsenji et téléphérique selon l’envie, puis bains et dîner.",
+      "Genbudō ou la côte de Takeno sur une demi-journée supplémentaire."
+    ],
+    "places": [
+      {
+        "name": "Rivière et bains de Kinosaki",
+        "text": "Le centre est le cœur de l’étape. Choisir les bains selon leurs ouvertures du jour plutôt que de vouloir tous les enchaîner.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.6255,
+        "lng": 134.809,
+        "source": "https://visitkinosaki.com/"
+      },
+      {
+        "name": "Onsenji et Kinosaki Ropeway",
+        "text": "Deux repères explicitement conservés dans nos itinéraires. Les regrouper pour une sortie vers les hauteurs.",
+        "emoji": "🚡",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.623,
+        "lng": 134.8004,
+        "source": "https://visitkinosaki.com/"
+      },
+      {
+        "name": "Genbudō Park",
+        "text": "Une sortie géologique notée autour de Kinosaki. Préparer le transport et distinguer le parc des visites intérieures éventuelles.",
+        "emoji": "🪨",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.588,
+        "lng": 134.8067,
+        "source": "https://visitkinosaki.com/"
+      },
+      {
+        "name": "Takenohama Beach",
+        "text": "La plage de Takeno apparaît dans l’ancien itinéraire. Une idée de côte à garder selon la météo et la saison.",
+        "emoji": "🌊",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.6603,
+        "lng": 134.7598,
+        "source": "https://visitkinosaki.com/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Nishimuraya Hotel Shogetsutei",
+        "text": "Le ryokan conservé dans nos notes. L’expérience, la chambre choisie et le retour personnel restent à raconter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Office de tourisme de Kinosaki",
+        "https://visitkinosaki.com/"
+      ]
+    ],
+    "related": [
+      "kyoto",
+      "osaka",
+      "ine"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "shizuoka",
+    "name": "Shizuoka, Atami & Numazu",
+    "region": "Tōkai",
+    "duration": "1 à 3 jours par base",
+    "center": [
+      34.97,
+      138.39
+    ],
+    "intro": "Nos notes rassemblent plusieurs étapes sous « Shizuoka ». On sépare ici la ville, le thé autour de Shimada, Atami et Numazu : ce sont des bases différentes, pas une promenade que l’on fait entièrement à pied.",
+    "transport": "Choisir d’abord sa base sur l’axe ferroviaire, puis vérifier les derniers kilomètres vers les visites. Pour les paysages autour de Fuji, comparer le temps de transport avec la météo et garder un programme souple.",
+    "sleep": "Shizuoka pour une étape urbaine, Atami pour une nuit sur la côte, Numazu pour une autre base à étudier. Les notes sur Numazu ne contiennent pas encore d’adresse précise.",
+    "plan": [
+      "Shizuoka et une promenade locale le jour d’arrivée.",
+      "Shimada et le musée du thé sur une sortie dédiée.",
+      "Atami ou Numazu comme autre étape, selon le sens du voyage."
+    ],
+    "places": [
+      {
+        "name": "Shizuoka · centre",
+        "text": "La ville sert de base dans nos anciens itinéraires. Le carnet ne donne pas encore assez de détails pour recommander un quartier ou un restaurant précis.",
+        "emoji": "🍵",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.9717,
+        "lng": 138.3889
+      },
+      {
+        "name": "Musée du thé · Shimada",
+        "text": "Une piste concrète enregistrée pour découvrir le thé. Vérifier les ateliers, leur langue et l’accès avant de consacrer la journée au déplacement.",
+        "emoji": "🍃",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.8175,
+        "lng": 138.126,
+        "source": "https://tea-museum.jp/index_en.html"
+      },
+      {
+        "name": "Atami",
+        "text": "Une ancienne étape avec un hôtel près de la gare. À développer comme séjour côtier et thermal plutôt que de lui attribuer les visites de Shizuoka.",
+        "emoji": "🌊",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.1032,
+        "lng": 139.0778,
+        "source": "https://www.japan.travel/en/destinations/tokai/shizuoka/izu-and-around/"
+      },
+      {
+        "name": "Numazu",
+        "text": "La ville figure comme étape dans le carnet, sans activité ni hébergement détaillé. Un point de départ à enrichir avec vos lieux Maps.",
+        "emoji": "⚓",
+        "status": "Étape · notes encore légères",
+        "kind": "visit",
+        "lat": 35.1033,
+        "lng": 138.8609
+      },
+      {
+        "name": "Imamiya · adresse à identifier",
+        "text": "Le nom seul est trop ambigu pour placer une épingle fiable. On conserve cette piste en attendant le lien exact.",
+        "emoji": "📌",
+        "status": "Localisation à confirmer",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Sun Palace Hotel · Shizuoka",
+        "text": "L’adresse de l’ancien séjour à Shizuoka. Le retour personnel reste à ajouter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Toyoko Inn Atami Ekimae",
+        "text": "L’adresse notée pour l’étape d’Atami. À comparer selon l’arrivée en train et les bagages.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Musée du thé",
+        "https://tea-museum.jp/index_en.html"
+      ],
+      [
+        "Côte d’Izu · JNTO",
+        "https://www.japan.travel/en/destinations/tokai/shizuoka/izu-and-around/"
+      ]
+    ],
+    "related": [
+      "fujiyoshida",
+      "hakone"
+    ],
+    "gaps": "Iyashi no Sato est rangé dans le guide Fujiyoshida et lacs de Fuji ; Tenzan Tōjikyō dans celui de Hakone. « Imamiya » attend une localisation précise."
+  },
+  {
+    "slug": "shibu-onsen",
+    "name": "Shibu Onsen & Yudanaka",
+    "region": "Nagano",
+    "duration": "1 à 3 jours",
+    "center": [
+      36.735,
+      138.43
+    ],
+    "intro": "Une étape pour ralentir, profiter des bains et marcher dans les petites rues. Kanaguya et Kadoya sont dans nos notes, avec une sortie vers les snow monkeys et une piste vers Shiga Kōgen.",
+    "transport": "Rejoindre Yudanaka depuis Nagano, puis organiser le dernier trajet vers Shibu. La sortie des snow monkeys ajoute un accès routier et de la marche : regarder les conditions du sentier avant de partir.",
+    "sleep": "Dormir dans le village donne une autre ambiance à l’étape. Vérifier directement avec le ryokan quels bains sont accessibles et ce qui est compris dans le séjour.",
+    "plan": [
+      "Arriver et garder l’après-midi pour le village et les bains.",
+      "Jigokudani sur une sortie dédiée, avec des chaussures adaptées au chemin.",
+      "Shiga Kōgen seulement avec un programme et des transports cohérents avec la saison."
+    ],
+    "places": [
+      {
+        "name": "Shibu Onsen · village",
+        "text": "Le village thermal est le cœur de nos notes. L’intérêt est aussi de garder du temps entre les bains, le dîner et les rues le soir.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.7347,
+        "lng": 138.4307,
+        "source": "https://www.shibuonsen.net/"
+      },
+      {
+        "name": "Jigokudani · snow monkeys",
+        "text": "La visite figure dans le carnet. Ce sont des animaux sauvages : leur présence et la neige ne se commandent pas. Préparer l’accès et la marche selon les conditions.",
+        "emoji": "🐒",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.7327,
+        "lng": 138.4621,
+        "source": "https://en.jigokudani-yaenkoen.co.jp/"
+      },
+      {
+        "name": "Shiga Kōgen",
+        "text": "Une idée de sortie enregistrée autour de Yudanaka. À traiter comme un secteur de montagne distinct ; les activités et les accès dépendent de la saison.",
+        "emoji": "🏔️",
+        "status": "🧭 Piste à préciser",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Kanaguya",
+        "text": "Une adresse importante dans les anciens itinéraires. Les notes ne contiennent pas encore de compte rendu permettant de la classer parmi nos coups de cœur.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Shibu Onsen KADOYA",
+        "text": "Une autre adresse de séjour conservée à Shibu. Le choix de chambre, les repas et l’expérience restent à documenter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Shibu Onsen",
+        "https://www.shibuonsen.net/"
+      ],
+      [
+        "Jigokudani · parc officiel",
+        "https://en.jigokudani-yaenkoen.co.jp/"
+      ]
+    ],
+    "related": [
+      "bessho-onsen",
+      "nozawa-onsen",
+      "kusatsu-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kusatsu-onsen",
+    "name": "Kusatsu Onsen",
+    "region": "Gunma",
+    "duration": "1 à 3 jours",
+    "center": [
+      36.623,
+      138.596
+    ],
+    "intro": "Kusatsu a déjà plusieurs adresses de ryokan dans nos carnets. Le Yubatake, les bains et le parc Sainokawara donnent une étape très simple à construire, sans avoir besoin de remplir chaque heure.",
+    "transport": "L’arrivée se termine en bus, notamment depuis Naganohara-Kusatsuguchi selon le trajet choisi. Garder une marge sur la dernière correspondance ; le centre se découvre ensuite surtout à pied.",
+    "sleep": "Trois adresses reviennent dans nos notes : Kanemidori, Boun et Kiyoshigekan. Le retour personnel et la comparaison des chambres sont encore à compléter.",
+    "plan": [
+      "Yubatake et centre à l’arrivée.",
+      "Balade vers Sainokawara et bain en plein air selon les ouvertures.",
+      "Ōtaki no Yu ou Netsunoyu en complément, avec une pause sucrée."
+    ],
+    "places": [
+      {
+        "name": "Yubatake",
+        "text": "Le grand repère du centre, à revoir quand la lumière change en fin de journée.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.6229647,
+        "lng": 138.5967231,
+        "mapsUrl": "https://maps.app.goo.gl/j5pU6p9i6VwNcLmP6"
+      },
+      {
+        "name": "Parc Sainokawara",
+        "text": "Une promenade à combiner avec le bain extérieur, tout en distinguant l’accès au parc de l’entrée aux bains.",
+        "emoji": "🌲",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.6241602,
+        "lng": 138.5896634,
+        "mapsUrl": "https://maps.app.goo.gl/A274QaoKBBeQypWN8"
+      },
+      {
+        "name": "Sainokawara Rotenburo",
+        "text": "Le bain en plein air sauvegardé près du parc. Vérifier les règles et horaires du jour avant de partir.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.6243123,
+        "lng": 138.5883882,
+        "mapsUrl": "https://maps.app.goo.gl/jR7K74TjBY6KqUWw8"
+      },
+      {
+        "name": "Ōtaki no Yu",
+        "text": "Une autre adresse de bain dans nos notes, à choisir selon l’envie plutôt que d’aligner les établissements.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.6229109,
+        "lng": 138.6015251,
+        "mapsUrl": "https://maps.app.goo.gl/uv2H6PZ3mX8F1tSY7"
+      },
+      {
+        "name": "Netsunoyu · yumomi",
+        "text": "Le lien du spectacle de brassage de l’eau est conservé dans les deux carnets. Regarder le calendrier et les conditions d’entrée.",
+        "emoji": "🎭",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "source": "https://www.kusatsu-onsen.ne.jp/netsunoyu/"
+      },
+      {
+        "name": "Kusatsu Onsen Pudding",
+        "text": "Une pause gourmande sauvegardée. On garde l’adresse sans lui prêter un avis de dégustation qui n’est pas dans les notes.",
+        "emoji": "🍮",
+        "status": "Repère de nos notes",
+        "kind": "food",
+        "lat": 36.6233429,
+        "lng": 138.5956932,
+        "mapsUrl": "https://maps.app.goo.gl/6SbahFKjoAuSrUo49"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Kanemidori",
+        "text": "Noté « Kane midori » dans l’ancien itinéraire. Une adresse à comparer avec les deux autres bases de Kusatsu.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Hotel Boun",
+        "text": "Une autre adresse de nos étapes thermales, avec un avis personnel à ajouter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Kiyoshigekan",
+        "text": "Conservé dans le carnet d’hiver. Le retour sur le séjour reste à compléter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Kusatsu · JNTO",
+        "https://www.japan.travel/en/destinations/kanto/gunma/kusatsu-area/"
+      ],
+      [
+        "Netsunoyu",
+        "https://www.kusatsu-onsen.ne.jp/netsunoyu/"
+      ]
+    ],
+    "related": [
+      "shima-onsen",
+      "hoshi-onsen",
+      "shibu-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "shima-onsen",
+    "name": "Shima Onsen",
+    "region": "Gunma",
+    "duration": "1 à 2 jours",
+    "center": [
+      36.684,
+      138.774
+    ],
+    "intro": "Une parenthèse thermale plus calme dans nos notes, construite autour de Sekizenkan et de quelques bains du village. On viendrait ici pour la rivière, le ryokan et une journée sans programme trop chargé.",
+    "transport": "Préparer le train jusqu’à Nakanojo puis le bus vers Shima Onsen. Les visites et le dîner doivent rester compatibles avec le dernier trajet et l’heure d’arrivée au ryokan.",
+    "sleep": "Sekizenkan est l’adresse documentée dans l’ancien carnet. Vérifier le bâtiment et la catégorie de chambre : une même enseigne peut couvrir plusieurs expériences.",
+    "plan": [
+      "Arriver assez tôt pour découvrir le village avant le dîner.",
+      "Profiter des bains de son hébergement.",
+      "Ajouter un bain extérieur au ryokan seulement après avoir vérifié les accès du jour."
+    ],
+    "places": [
+      {
+        "name": "Sekizenkan",
+        "text": "Le ryokan est l’adresse centrale des notes. Son pont et son architecture donnent déjà un repère de promenade ; l’accès aux bains reste à vérifier selon la formule.",
+        "emoji": "🏯",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.6863,
+        "lng": 138.7744,
+        "source": "https://www.japan.travel/en/spot/313/"
+      },
+      {
+        "name": "Seiryū no Yu",
+        "text": "Bain public nommé dans le carnet. Vérifier les ouvertures avant de le garder comme activité principale.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit"
+      },
+      {
+        "name": "Kawara no Yu",
+        "text": "Une autre piste de bain public dans l’ancien itinéraire. Les conditions d’accès actuelles restent à vérifier.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit"
+      },
+      {
+        "name": "Yamaguchikan",
+        "text": "L’adresse est enregistrée pour ses bains accessibles sous conditions. Confirmer l’accueil des visiteurs à la journée directement auprès de l’établissement.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit"
+      },
+      {
+        "name": "Restaurants de Shima",
+        "text": "Une liste locale était conservée pour les repas hors ryokan. Utile surtout pour le déjeuner, après vérification des ouvertures.",
+        "emoji": "🍜",
+        "status": "Repère de nos notes",
+        "kind": "food",
+        "source": "https://shimaonsen-guide.com/restaurants-overview/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Sekizenkan",
+        "text": "L’adresse de séjour conservée à Shima. Comparer les bâtiments, les repas compris et les règles des bains au moment de réserver.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Shima Onsen · JNTO",
+        "https://www.japan.travel/en/spot/313/"
+      ],
+      [
+        "Vallée de Shima · JNTO",
+        "https://www.japan.travel/en/spot/2080/"
+      ]
+    ],
+    "related": [
+      "kusatsu-onsen",
+      "hoshi-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "ginzan-onsen",
+    "name": "Ginzan Onsen",
+    "region": "Tōhoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      38.5706,
+      140.5305
+    ],
+    "intro": "Ginzan se joue autant dans la lumière du soir que dans les bains. Une nuit sur place permet de profiter de la petite rue le long de la rivière, sans faire dépendre toute la visite d’un aller-retour pressé.",
+    "transport": "Rejoindre Ōishida puis organiser le bus ou un transfert confirmé par le ryokan. Les anciennes heures de navette du carnet ne valent pas comme horaires actuels ; en hiver, vérifier aussi les règles de circulation et d’accès.",
+    "sleep": "Shōwakan est l’adresse de l’ancien itinéraire. L’hébergement et le transfert sont à organiser ensemble, surtout lorsque la neige change les conditions d’arrivée.",
+    "plan": [
+      "Arriver en journée et déposer les bagages.",
+      "Marcher le long de la rivière, puis profiter du ryokan.",
+      "Revoir le village éclairé le soir et garder une promenade le lendemain selon les conditions."
+    ],
+    "places": [
+      {
+        "name": "Ginzan · village thermal",
+        "text": "Le centre thermal au bord de la rivière. On le garde comme une petite étape à savourer, avec une sortie vers Shirogane Park uniquement si les conditions le permettent.",
+        "emoji": "🏮",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 38.5706177,
+        "lng": 140.5305457,
+        "mapsUrl": "https://maps.app.goo.gl/pyABsSswwWB3Fr5q8"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Shōwakan Ginzan",
+        "text": "L’adresse de nos notes d’hiver. Un échange ancien mentionnait une navette depuis Ōishida ; sa disponibilité doit être reconfirmée pour tout nouveau séjour.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Ginzan Onsen · JNTO",
+        "https://www.japan.travel/en/spot/1798/"
+      ]
+    ],
+    "related": [
+      "aizu",
+      "fukushima",
+      "kamasaki-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "hokkaido",
+    "name": "Hokkaidō",
+    "region": "Hokkaidō",
+    "duration": "4 à 6 jours pour une zone",
+    "center": [
+      43.06,
+      141.35
+    ],
+    "intro": "Hokkaidō est une région entière. Pour une première boucle courte, on garderait Sapporo, Otaru et éventuellement un séjour thermal au sud-ouest. Asahidake, Daisetsuzan et Shiretoko sont d’autres voyages ou de vraies extensions, pas trois petites excursions à ajouter au même programme.",
+    "transport": "Dessiner une boucle réaliste avant de réserver. Sapporo et Otaru se combinent facilement en train ; pour les secteurs de montagne et Shiretoko, vérifier les liaisons saisonnières et le dernier trajet jusqu’au logement.",
+    "sleep": "Sapporo pour une base urbaine ; Noboribetsu ou Jōzankei pour une parenthèse thermale ; Utoro pour les notes liées à Shiretoko. Éviter de changer de côté de l’île chaque matin.",
+    "plan": [
+      "Sapporo : centre, parc Ōdōri et une visite au choix.",
+      "Otaru sur une journée distincte.",
+      "Noboribetsu et Upopoy sur une extension au sud, ou une nuit à Jōzankei.",
+      "Daisetsuzan ou Shiretoko demandent des jours supplémentaires et un autre plan de transport."
+    ],
+    "places": [
+      {
+        "name": "Sapporo · parc Ōdōri",
+        "text": "Un repère central pour découvrir Sapporo à pied et construire une première promenade.",
+        "emoji": "🌳",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 43.0607521,
+        "lng": 141.3544308,
+        "mapsUrl": "https://maps.app.goo.gl/npdnVNrW8X8Fqp9x9"
+      },
+      {
+        "name": "Otaru · canal",
+        "text": "Le canal est le point sauvegardé pour Otaru. Prévoir une journée distincte depuis Sapporo pour garder du temps dans la ville.",
+        "emoji": "⚓",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 43.199041,
+        "lng": 141.0021176,
+        "mapsUrl": "https://maps.app.goo.gl/vhqno8ZywwZu34rKA"
+      },
+      {
+        "name": "Village historique de Hokkaidō",
+        "text": "Une visite sauvegardée pour l’histoire et l’architecture de Hokkaidō. Elle se trouve à l’écart du centre de Sapporo.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 43.0482239,
+        "lng": 141.4969955,
+        "mapsUrl": "https://maps.app.goo.gl/Pcr6fxhEZwGfsY8E6"
+      },
+      {
+        "name": "Upopoy · musée et parc national aïnou",
+        "text": "Le musée et parc national consacré aux cultures aïnoues, à Shiraoi. Une visite à part entière à organiser selon les expositions et activités du jour.",
+        "emoji": "🏛️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 42.5577892,
+        "lng": 141.3635063,
+        "mapsUrl": "https://maps.app.goo.gl/G1KuA6RApQ58hYU29"
+      },
+      {
+        "name": "Noboribetsu Onsen",
+        "text": "Un secteur thermal distinct de Sapporo, à envisager avec une nuit sur place pour profiter des bains.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 42.4924775,
+        "lng": 141.1430592,
+        "mapsUrl": "https://maps.app.goo.gl/VZMEHeV3vpgXEay78"
+      },
+      {
+        "name": "Jōzankei · Grand Blissen",
+        "text": "Le carnet conserve une formule à la journée pour cette adresse. Vérifier la formule, les repas éventuels et le trajet depuis Sapporo avant de réserver.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "source": "https://jozankei.jp/en/oneday/grand-blissen/"
+      },
+      {
+        "name": "Asahidake Onsen",
+        "text": "Une piste de montagne et de bains autour d’Asahidake. L’accès, les remontées et les conditions de marche se préparent en fonction de la saison.",
+        "emoji": "🏔️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 43.6471786,
+        "lng": 142.7933044,
+        "mapsUrl": "https://maps.app.goo.gl/Jp8KrzBKo5mCJ36k7"
+      },
+      {
+        "name": "Daisetsuzan · repère régional",
+        "text": "Le parc est immense : choisir un secteur et un parcours avant de réserver une base. L’épingle repère le parc, pas un départ de randonnée.",
+        "emoji": "🌲",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 43.5083823,
+        "lng": 142.9843628,
+        "mapsUrl": "https://maps.app.goo.gl/HTMFw1Yx79uXbs3t6"
+      },
+      {
+        "name": "Kitakitsune Farm · Kitami",
+        "text": "Une adresse de visite sauvegardée près de Kitami. À étudier seulement dans un itinéraire passant dans ce secteur.",
+        "emoji": "🦊",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 43.7559064,
+        "lng": 143.4978126,
+        "mapsUrl": "https://maps.app.goo.gl/7nwQfTr8ybhKp66L6"
+      },
+      {
+        "name": "Shiretoko · Kitakobushi Hotel & Resort",
+        "text": "Une adresse sauvegardée à Utoro pour une éventuelle étape à Shiretoko. Le secteur demande son propre temps de trajet et un programme adapté aux accès saisonniers.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "hotel",
+        "lat": 44.0720332,
+        "lng": 144.9954182,
+        "mapsUrl": "https://maps.app.goo.gl/zWAT779faFtyB9Up6"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "JR Inn Sapporo Kita 2 Jo",
+        "text": "L’adresse conservée pour le séjour à Sapporo.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "Hotel Mahoroba · Noboribetsu",
+        "text": "Une adresse enregistrée dans le backlog, à comparer avant de bâtir un séjour thermal.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Noboribetsu et Upopoy · JNTO",
+        "https://www.japan.travel/en/destinations/hokkaido/hokkaido/noboribetsu-upopoy-and-around/"
+      ],
+      [
+        "Shiretoko · accès",
+        "https://www.japan.travel/national-parks/parks/shiretoko/how-to-get-there/"
+      ],
+      [
+        "Jōzankei · formule sauvegardée",
+        "https://jozankei.jp/en/oneday/grand-blissen/"
+      ]
+    ],
+    "related": [],
+    "gaps": "Le carnet est plus concret sur Sapporo que sur les extensions. Les adresses de l’est et de montagne restent des repérages, sans avis personnel établi."
+  },
+  {
+    "slug": "matsuyama",
+    "name": "Matsuyama & Dōgo",
+    "region": "Shikoku",
+    "duration": "2 à 3 jours",
+    "center": [
+      33.84,
+      132.78
+    ],
+    "intro": "Dōgo est le fil conducteur de cette étape : bains, promenade et temps pour profiter du quartier. Le centre de Matsuyama peut compléter le séjour, sans faire disparaître la parenthèse thermale sous une longue liste de visites.",
+    "transport": "Depuis Honshū, préparer l’accès à Shikoku en train via Okayama ou comparer avec l’avion selon le point de départ. Sur place, repérer les arrêts de tram utiles entre la base choisie et Dōgo.",
+    "sleep": "Le centre et Dōgo correspondent à deux ambiances. L’hôtel noté dans le carnet est à comparer avec les trajets prévus vers les bains.",
+    "plan": [
+      "Arrivée et première promenade à Dōgo.",
+      "Choisir une formule de bain et garder une marge autour de la réservation.",
+      "Compléter par Matsuyama ou Hanahimerō selon l’envie."
+    ],
+    "places": [
+      {
+        "name": "Dōgo Onsen",
+        "text": "Le cœur thermal de l’étape. Les notes conservent un outil de fréquentation : utile pour choisir son créneau, avec les formules et réservations actuelles à vérifier.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 33.852,
+        "lng": 132.7864,
+        "source": "https://www.dogo.or.jp/crowd-level/"
+      },
+      {
+        "name": "Hanahimerō",
+        "text": "Une maison de thé et une expérience culturelle enregistrées pour Dōgo. Vérifier le programme et la réservation avant d’en faire un rendez-vous du séjour.",
+        "emoji": "🍵",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "HOTEL MYSTAYS Matsuyama",
+        "text": "La base enregistrée dans le carnet. Vérifier les liaisons vers Dōgo et le quartier choisi pour les soirées.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Matsuyama · JNTO",
+        "https://www.japan.travel/en/destinations/shikoku/ehime/matsuyama-and-around/"
+      ],
+      [
+        "Dōgo Onsen · fréquentation",
+        "https://www.dogo.or.jp/crowd-level/"
+      ]
+    ],
+    "related": [
+      "okayama",
+      "kurashiki"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "fujiyoshida",
+    "name": "Fujiyoshida & les lacs de Fuji",
+    "region": "Fuji · Yamanashi",
+    "duration": "2 à 3 jours",
+    "center": [
+      35.49,
+      138.77
+    ],
+    "intro": "Cette étape rassemble Fujiyoshida et les détours sauvegardés au nord de Fuji. Les vues dépendent du ciel ; les villages, les sources et une nuit avec bain gardent leur intérêt même lorsque la montagne se cache.",
+    "transport": "Préparer les liaisons entre Fujiyoshida, Kawaguchiko, Saiko et Oshino : les épingles sont espacées. Regarder les retours de bus avant de choisir l’ordre de la journée.",
+    "sleep": "Le HOTEL MYSTAYS Fuji Onsen Resort est l’adresse enregistrée. Choisir sa base en fonction des transports et des visites prévues, puis vérifier le bain et la chambre dans l’offre réservée.",
+    "plan": [
+      "Arrivée et installation autour de Fujiyoshida ou Kawaguchiko.",
+      "Saiko et Iyashi no Sato sur une sortie dédiée.",
+      "Deguchi-ike dans le secteur d’Oshino si le trajet se combine bien."
+    ],
+    "places": [
+      {
+        "name": "Saiko Iyashi no Sato Nenba",
+        "text": "Le village de maisons traditionnelles est au bord du secteur de Saiko, dans le Yamanashi. On le sort des anciennes notes « Shizuoka » pour éviter la confusion géographique.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.5050023,
+        "lng": 138.6614772,
+        "mapsUrl": "https://maps.app.goo.gl/xsaMRaKRmbhzoamu7"
+      },
+      {
+        "name": "Deguchi-ike · Oshino",
+        "text": "Un étang sauvegardé dans le secteur d’Oshino. À intégrer dans une journée locale après avoir vérifié comment rejoindre le point et en repartir.",
+        "emoji": "💧",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.4535115,
+        "lng": 138.8369375,
+        "mapsUrl": "https://maps.app.goo.gl/9Aw7TLvXp569iUMH9"
+      },
+      {
+        "name": "Fujiyoshida · repère de base",
+        "text": "La base du carnet pour cette étape autour de Fuji. Les points de vue précis restent à compléter avec vos sélections Google Maps.",
+        "emoji": "🗻",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.487,
+        "lng": 138.807
+      }
+    ],
+    "hotels": [
+      {
+        "name": "HOTEL MYSTAYS Fuji Onsen Resort",
+        "text": "L’hôtel enregistré pour cette étape. Le retour personnel reste à compléter ; ne pas considérer une vue sur Fuji comme garantie météo.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Parc national Fuji-Hakone-Izu",
+        "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/"
+      ]
+    ],
+    "related": [
+      "shizuoka",
+      "hakone",
+      "tokyo"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "hoshi-onsen",
+    "name": "Hoshi Onsen",
+    "region": "Gunma",
+    "duration": "1 à 2 jours",
+    "center": [
+      36.74,
+      138.83
+    ],
+    "intro": "À Hoshi, le ryokan constitue l’étape. Chōjukan est une adresse de nos projets pour prendre le temps des bains et du bâtiment, avec le trajet préparé avant de partir.",
+    "transport": "Préparer l’accès via Jōmō-Kōgen et Sarugakyō selon le trajet choisi. L’établissement indique des bus peu fréquents : confirmer les correspondances et une solution de retour.",
+    "sleep": "Hoshi Onsen Chōjukan est la seule adresse de ce carnet. Les catégories de chambre peuvent avoir des équipements différents ; regarder précisément la formule choisie.",
+    "plan": [
+      "Arriver assez tôt pour découvrir les lieux.",
+      "Profiter des bains selon leurs créneaux et règles.",
+      "Garder une matinée calme avant le départ prévu."
+    ],
+    "places": [
+      {
+        "name": "Hoshi Onsen Chōjukan",
+        "text": "Un ryokan historique dont le grand bain Hoshi no Yu est mixte avec des créneaux spécifiques. Vérifier les règles des différents bains et les conditions de visite à la journée sur le site de l’établissement.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "hotel",
+        "source": "https://hoshi-onsen.com/english/onsen.html"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Chōjukan · bains",
+        "https://hoshi-onsen.com/english/onsen.html"
+      ],
+      [
+        "Chōjukan · accès",
+        "https://hoshi-onsen.com/english/access.html"
+      ]
+    ],
+    "related": [
+      "kusatsu-onsen",
+      "shima-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "fukushima",
+    "name": "Fukushima, Tsuchiyu & Takayu",
+    "region": "Tōhoku",
+    "duration": "1 à 2 nuits par onsen",
+    "center": [
+      37.75,
+      140.35
+    ],
+    "intro": "Fukushima est une base ferroviaire dans nos notes, avec deux projets thermaux distincts : Sansuisō à Tsuchiyu et Adachiya à Takayu. On choisirait un onsen pour une vraie pause plutôt que de transformer chaque nuit en transfert.",
+    "transport": "La gare de Fukushima sert de point d’arrivée. Tsuchiyu et Takayu demandent ensuite un trajet routier distinct ; confirmer le bus ou un transfert avec l’hébergement avant de réserver.",
+    "sleep": "Une nuit près de la gare pour transiter, ou un séjour thermal à part entière. Les noms Sansuisō et Adachiya sont des repérages à confirmer avec l’adresse exacte de la réservation.",
+    "plan": [
+      "Arrivée à Fukushima puis transfert vers l’onsen choisi.",
+      "Après-midi et soirée au ryokan.",
+      "Retour organisé vers la gare avant de poursuivre le voyage."
+    ],
+    "places": [
+      {
+        "name": "Fukushima · gare",
+        "text": "Le repère pratique de l’ancienne étape, avec un APA Hotel noté à proximité. Le carnet ne documente pas encore de parcours de visites urbaines.",
+        "emoji": "🚉",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 37.754,
+        "lng": 140.459
+      },
+      {
+        "name": "Tsuchiyu Onsen · Sansuisō",
+        "text": "L’adresse « Sansuiso » du projet semble correspondre à l’établissement de Tsuchiyu. La destination est gardée ici comme repérage, avec l’identité exacte à confirmer avant une réservation.",
+        "emoji": "♨️",
+        "status": "🧭 Identification à confirmer",
+        "kind": "hotel",
+        "source": "https://www.sansuiso.jp/"
+      },
+      {
+        "name": "Takayu Onsen · Adachiya",
+        "text": "La carte sauvegardée identifie Adachiya à Takayu. Préparer l’accès depuis Fukushima et comparer les bains et formules directement sur le site.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "hotel",
+        "mapsUrl": "https://maps.app.goo.gl/oZnqcR913rQaydYn7?g_st=com.google.maps.preview.copy"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "APA Hotel Fukushima Ekimae",
+        "text": "L’adresse du carnet pour une étape proche de la gare, à distinguer des séjours dans les onsen de montagne.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Adachiya · accès",
+        "https://www.adachiya.jp/access/"
+      ],
+      [
+        "Sansuisō · établissement à confirmer",
+        "https://www.sansuiso.jp/"
+      ]
+    ],
+    "related": [
+      "aizu",
+      "ginzan-onsen",
+      "kamasaki-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "aizu",
+    "name": "Aizu, Ashinomaki & Higashiyama",
+    "region": "Tōhoku",
+    "duration": "2 à 4 jours",
+    "center": [
+      37.43,
+      139.92
+    ],
+    "intro": "Deux ryokans structurent nos notes dans la région d’Aizu : Ōkawaso à Ashinomaki et Mukaitaki à Higashiyama. Ōuchi-juku donne une belle sortie de journée, mais chaque vallée demande son propre trajet.",
+    "transport": "Rejoindre Aizu-Wakamatsu via Kōriyama selon le point de départ. Organiser séparément Ashinomaki, Higashiyama et Ōuchi-juku ; une proximité sur la carte ne remplace pas une correspondance vérifiée.",
+    "sleep": "Choisir une base en ville ou une vallée thermale selon l’objectif. Ōkawaso et Mukaitaki sont les deux adresses du carnet ; le détail des expériences reste à écrire.",
+    "plan": [
+      "Arrivée et installation dans la vallée choisie.",
+      "Ōuchi-juku sur une sortie préparée.",
+      "Garder du temps pour Aizu-Wakamatsu ou une deuxième étape thermale."
+    ],
+    "places": [
+      {
+        "name": "Ashinomaki Onsen · Ōkawaso",
+        "text": "L’adresse du carnet d’hiver à Ashinomaki. On la conserve comme base de séjour, sans inventer de retour sur la chambre ou les repas.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "hotel",
+        "lat": 37.3668585,
+        "lng": 139.913719,
+        "mapsUrl": "https://maps.app.goo.gl/D8wPStAcFHZHsA8WA"
+      },
+      {
+        "name": "Higashiyama Onsen · Mukaitaki",
+        "text": "Le ryokan est enregistré dans le projet plus récent, dans une autre vallée. Vérifier l’accès et les conditions de séjour directement auprès de l’établissement.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "hotel",
+        "source": "https://www.mukaitaki.com/"
+      },
+      {
+        "name": "Ōuchi-juku",
+        "text": "Un ancien village relais aux toits de chaume, sauvegardé pour une sortie depuis la région d’Aizu. Prévoir le transport retour avant de se laisser absorber par les petites rues.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 37.3339192,
+        "lng": 139.8610475,
+        "mapsUrl": "https://maps.app.goo.gl/3v3mmtDtJtMqZ3X98"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Aizu-Wakamatsu · JNTO",
+        "https://www.japan.travel/en/destinations/tohoku/fukushima/aizuwakamatsu-and-oze/"
+      ],
+      [
+        "Ōuchi-juku · JNTO",
+        "https://www.japan.travel/en/us/ouchi-juku/"
+      ],
+      [
+        "Mukaitaki",
+        "https://www.mukaitaki.com/"
+      ]
+    ],
+    "related": [
+      "fukushima",
+      "ginzan-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kamasaki-onsen",
+    "name": "Kamasaki Onsen",
+    "region": "Tōhoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      38.03,
+      140.56
+    ],
+    "intro": "Une étape encore très simple dans nos notes : Yunushi Ichijō à Kamasaki. L’idée est de laisser le séjour au ryokan prendre toute sa place, plutôt que de chercher à remplir artificiellement une journée de visites.",
+    "transport": "Préparer l’arrivée par Shiroishi ou Shiroishi-Zaō selon le train, puis confirmer le dernier trajet avec l’établissement.",
+    "sleep": "Yunushi Ichijō est l’adresse enregistrée. Regarder les repas, le type de chambre et l’organisation des bains dans la formule choisie.",
+    "plan": [
+      "Arrivée et transfert confirmé vers Kamasaki.",
+      "Installation, bains et dîner au ryokan.",
+      "Départ avec une marge sur la correspondance ferroviaire."
+    ],
+    "places": [
+      {
+        "name": "Yunushi Ichijō",
+        "text": "Un ryokan à Kamasaki confirmé par le site officiel. Le carnet contient son nom comme projet de séjour ; l’avis personnel reste à compléter.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "hotel",
+        "source": "https://www.ichijoh.co.jp/en/"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Yunushi Ichijō · site officiel",
+        "https://www.ichijoh.co.jp/en/"
+      ]
+    ],
+    "related": [
+      "fukushima",
+      "minamisanriku",
+      "aizu"
+    ],
+    "gaps": "Une seule adresse est documentée pour le moment. Les promenades, les restaurants et le retour sur le ryokan restent à ajouter."
+  },
+  {
+    "slug": "minamisanriku",
+    "name": "Minamisanriku",
+    "region": "Tōhoku",
+    "duration": "1 à 3 jours",
+    "center": [
+      38.68,
+      141.44
+    ],
+    "intro": "Une parenthèse sur la côte du Sanriku dans nos projets, autour du Hotel Kanyō. Le carnet ne donne pas encore de parcours détaillé : on garde ici une base pour préparer ce séjour en bord de mer.",
+    "transport": "Vérifier le trajet complet depuis la gare de départ et les éventuelles navettes de l’hôtel. Sur cette côte, ne pas déduire la facilité d’accès de la seule distance sur la carte.",
+    "sleep": "Minami Sanriku Hotel Kanyō est l’adresse enregistrée. Le type de chambre, les repas et les bains sont à comparer dans la formule réservée.",
+    "plan": [
+      "Arrivée avec le transfert organisé.",
+      "Séjour côtier et temps à l’hôtel.",
+      "Une sortie locale à choisir après avoir confirmé les possibilités de déplacement."
+    ],
+    "places": [
+      {
+        "name": "Minami Sanriku Hotel Kanyō",
+        "text": "L’adresse de nos projets sur la côte du Sanriku. L’expérience et les sorties autour restent à documenter avant de présenter un programme plus précis.",
+        "emoji": "🌊",
+        "status": "🧭 Repéré · avis à compléter",
+        "kind": "hotel",
+        "source": "https://www.kanyo.co.jp/"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Hotel Kanyō",
+        "https://www.kanyo.co.jp/"
+      ]
+    ],
+    "related": [
+      "kamasaki-onsen",
+      "fukushima"
+    ],
+    "gaps": "Le carnet conserve seulement l’hébergement. Vos lieux Maps permettront d’ajouter des promenades, visites et tables sans inventer de recommandations personnelles."
+  },
+  {
+    "slug": "nasu",
+    "name": "Nasu",
+    "region": "Kantō",
+    "duration": "1 à 3 jours",
+    "center": [
+      37.07,
+      139.99
+    ],
+    "intro": "Une idée de séjour de montagne autour du ryokan Sansuikaku. Le nom enregistré demande encore une confirmation d’adresse, mais le site de Nasu donne une piste concrète pour commencer la préparation.",
+    "transport": "Choisir la gare d’arrivée et organiser le dernier trajet avec le ryokan. Une base dans les hauteurs de Nasu n’est pas une étape accessible uniquement à pied depuis le Shinkansen.",
+    "sleep": "Le carnet indique « Sansuikaku ». On retient provisoirement l’établissement de Nasu ; confirmer que c’est bien celui de la réservation ou du lien sauvegardé.",
+    "plan": [
+      "Arrivée et transfert vers le ryokan.",
+      "Bains et temps sur place.",
+      "Promenade à choisir selon la saison et les transports disponibles."
+    ],
+    "places": [
+      {
+        "name": "Nasukōgen no Yado Sansuikaku",
+        "text": "Le site officiel situe ce ryokan à Nasu. La correspondance avec la note « Sansuikaku » reste à confirmer ; on n’en déduit pas encore un séjour ni un avis.",
+        "emoji": "♨️",
+        "status": "🧭 Identification à confirmer",
+        "kind": "hotel",
+        "source": "https://sansuikaku.com/english/"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Sansuikaku · Nasu",
+        "https://sansuikaku.com/english/"
+      ]
+    ],
+    "related": [
+      "tokyo",
+      "fukushima"
+    ],
+    "gaps": "Confirmer l’identité de Sansuikaku avant d’enrichir cette étape. Le carnet n’a pas encore de sélection de visites à Nasu."
+  },
+  {
+    "slug": "hiroshima",
+    "name": "Hiroshima",
+    "region": "Chūgoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      34.395,
+      132.46
+    ],
+    "intro": "Une étape de ville dans le carnet avant Miyajima. On réserverait une vraie plage de temps au parcours de mémoire, et l’on garderait l’île pour une journée ou une nuit distincte.",
+    "transport": "La gare Shinkansen constitue une base d’arrivée pratique. Préparer le trajet vers le centre séparément, puis rejoindre Miyajimaguchi pour le ferry vers Miyajima si l’itinéraire continue sur l’île.",
+    "sleep": "L’adresse enregistrée est près de la gare. C’est un choix de logistique à comparer avec une base plus centrale selon les soirées prévues.",
+    "plan": [
+      "Arrivée et installation.",
+      "Parc de la Paix et musée selon le temps souhaité.",
+      "Miyajima sur une autre journée ou avec une nuit sur l’île."
+    ],
+    "places": [
+      {
+        "name": "Parc du Mémorial de la Paix",
+        "text": "Un premier repère de préparation à Hiroshima, ajouté pour donner un parcours à l’étape. Le musée mérite du temps ; ce texte ne remplace pas un retour personnel de visite.",
+        "emoji": "🕊️",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 34.3927,
+        "lng": 132.4526,
+        "source": "https://www.japan.travel/en/destinations/chugoku/hiroshima/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Toyoko Inn Hiroshima-eki Shinkansen-guchi No.2",
+        "text": "L’hôtel noté pour cette étape près de la gare. Le retour sur le séjour reste à ajouter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Hiroshima · JNTO",
+        "https://www.japan.travel/en/destinations/chugoku/hiroshima/"
+      ]
+    ],
+    "related": [
+      "miyajima",
+      "okayama",
+      "kurashiki"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "miyajima",
+    "name": "Miyajima",
+    "region": "Chūgoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      34.297,
+      132.32
+    ],
+    "intro": "Le carnet prévoit une nuit sur l’île dans une machiya. On garderait ce rythme pour profiter du village le soir et voir le sanctuaire à des marées différentes, sans regarder sans cesse l’heure du dernier ferry.",
+    "transport": "Rejoindre Miyajimaguchi puis prendre le ferry. Vérifier les départs et les conditions du billet ; pour une nuit sur l’île, organiser les bagages et l’arrivée avec l’hébergement.",
+    "sleep": "La machiya Shinryūan est l’adresse enregistrée. Son fonctionnement peut différer d’un ryokan avec repas : vérifier la formule exacte.",
+    "plan": [
+      "Arrivée et découverte des abords du sanctuaire.",
+      "Observer la marée et se promener dans le village.",
+      "Matinée sur l’île avant de reprendre le ferry."
+    ],
+    "places": [
+      {
+        "name": "Itsukushima-jinja et grand torii",
+        "text": "La marée transforme complètement le paysage. Un repère de préparation pour organiser la journée, avec les accès du sanctuaire à vérifier séparément.",
+        "emoji": "⛩️",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 34.2959,
+        "lng": 132.3198,
+        "source": "https://www.japan.travel/en/spot/ma_179/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Miyajima Machiya-yado Shinryūan · 宮島 町家宿 進龍庵",
+        "text": "La machiya conservée dans le carnet. Confirmer le nom, le point d’accueil et les modalités d’arrivée directement avec l’hébergement.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Miyajima · JNTO",
+        "https://www.japan.travel/en/spot/ma_179/"
+      ]
+    ],
+    "related": [
+      "hiroshima"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "beppu",
+    "name": "Beppu",
+    "region": "Kyūshū",
+    "duration": "2 à 3 jours",
+    "center": [
+      33.28,
+      131.49
+    ],
+    "intro": "Beppu ouvre la séquence thermale de Kyūshū dans nos notes. On distinguerait les bains où l’on entre dans l’eau des « enfers » que l’on visite, puis on garderait du temps pour explorer un quartier plutôt que de tout collectionner.",
+    "transport": "La gare permet d’arriver en train ; les différents secteurs thermaux demandent ensuite des déplacements locaux. Comparer les bus et le temps de trajet avant de choisir les bains.",
+    "sleep": "AMANEK Inn Beppu est l’adresse conservée. Vérifier les équipements compris dans la réservation et les éventuels accès à un autre établissement.",
+    "plan": [
+      "Installation et découverte du quartier de la base.",
+      "Une zone thermale, avec bains et visites choisis séparément.",
+      "Poursuite vers Yufuin avec la liaison préparée."
+    ],
+    "places": [
+      {
+        "name": "Beppu · centre et gare",
+        "text": "Le repère d’arrivée de notre étape. Le carnet ne nomme pas encore les bains visités ; la sélection reste à compléter.",
+        "emoji": "🚉",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 33.2795,
+        "lng": 131.5005
+      },
+      {
+        "name": "Les enfers de Beppu",
+        "text": "Une idée de préparation pour découvrir les phénomènes thermaux. Ce sont des sites d’observation ; on ne se baigne pas dans ces bassins.",
+        "emoji": "🌋",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "source": "https://www.japan.travel/en/spot/ma_213/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "AMANEK Inn Beppu",
+        "text": "L’adresse de nos notes pour Beppu. L’expérience de séjour et les bonnes adresses autour restent à ajouter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Beppu et Yufuin · JNTO",
+        "https://www.japan.travel/en/spot/ma_213/"
+      ]
+    ],
+    "related": [
+      "yufuin",
+      "kurokawa-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "yufuin",
+    "name": "Yufuin",
+    "region": "Kyūshū",
+    "duration": "1 à 3 jours",
+    "center": [
+      33.265,
+      131.36
+    ],
+    "intro": "Yufuin est une étape de ryokan dans le carnet, entre Beppu et Kurokawa. Une promenade dans la ville et vers le lac suffit déjà à donner un rythme agréable autour du séjour.",
+    "transport": "Comparer train et bus selon le point de départ. Pour poursuivre vers Kurokawa, vérifier et réserver la liaison adaptée au jour du voyage ; une ancienne réservation ne fournit pas un horaire actuel.",
+    "sleep": "Taishō Yufu no Hana est l’adresse enregistrée. Prévoir l’arrivée au ryokan et le dîner sans serrer le programme de l’après-midi.",
+    "plan": [
+      "Arrivée et promenade dans le centre.",
+      "Lac Kinrin puis temps au ryokan.",
+      "Départ vers Kurokawa avec la correspondance confirmée."
+    ],
+    "places": [
+      {
+        "name": "Lac Kinrin",
+        "text": "Un repère de promenade à Yufuin, ajouté pour préparer l’étape autour du ryokan. Garder du temps pour les petites rues entre la gare et le lac.",
+        "emoji": "🌿",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 33.2656,
+        "lng": 131.3696,
+        "source": "https://www.japan.travel/en/spot/707/"
+      },
+      {
+        "name": "Yufuin no Mori",
+        "text": "Le train touristique figure dans le backlog. Vérifier s’il dessert le trajet choisi et réserver selon les règles du train.",
+        "emoji": "🚂",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "source": "https://www.jrkyushu.co.jp/english/train/yufuin_no_mori.html"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Taishō Yufu no Hana",
+        "text": "L’adresse du carnet à Yufuin. Les repas, les bains et la chambre restent à décrire à partir du retour de séjour.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Yufuin · JNTO",
+        "https://www.japan.travel/en/spot/707/"
+      ],
+      [
+        "Yufuin no Mori · JR Kyushu",
+        "https://www.jrkyushu.co.jp/english/train/yufuin_no_mori.html"
+      ]
+    ],
+    "related": [
+      "beppu",
+      "kurokawa-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kurokawa-onsen",
+    "name": "Kurokawa Onsen",
+    "region": "Kyūshū",
+    "duration": "1 à 3 jours",
+    "center": [
+      33.078,
+      131.14
+    ],
+    "intro": "Kurokawa donne envie de ralentir : un ryokan, la rivière et des bains choisis selon l’envie. Shinmeikan est dans l’itinéraire ; Yamabiko Ryokan est une autre adresse sauvegardée pour plus tard.",
+    "transport": "L’accès se prépare en bus ou en voiture. Vérifier l’horaire exact, la réservation et la distance entre l’arrêt et le ryokan ; garder le programme du jour d’arrivée léger.",
+    "sleep": "Shinmeikan est l’adresse de séjour enregistrée. Yamabiko est un repérage distinct, à comparer sans lui attribuer un avis de visite.",
+    "plan": [
+      "Arriver et marcher dans le village.",
+      "Profiter du ryokan et choisir un autre bain si les accès le permettent.",
+      "Matinée calme avant le départ."
+    ],
+    "places": [
+      {
+        "name": "Kurokawa · village thermal",
+        "text": "Le village et la rivière donnent le cadre de cette étape. Regarder les conditions d’accès aux bains avant de prévoir une tournée.",
+        "emoji": "♨️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 33.0784,
+        "lng": 131.1407,
+        "source": "https://www.japan.travel/en/spot/1957/"
+      },
+      {
+        "name": "Yamabiko Ryokan",
+        "text": "Un ryokan sauvegardé dans le backlog. Il reste à comparer avec l’adresse du séjour et à documenter avant d’en faire une recommandation personnelle.",
+        "emoji": "🏨",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "hotel",
+        "mapsUrl": "https://maps.app.goo.gl/fGZsBoyYyCwaAVVz7?g_st=com.google.maps.preview.copy"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Shinmeikan",
+        "text": "Le ryokan de l’itinéraire enregistré. L’avis sur l’expérience, les bains et le dîner reste à compléter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Kurokawa et Kuju · JNTO",
+        "https://www.japan.travel/en/spot/1957/"
+      ]
+    ],
+    "related": [
+      "yufuin",
+      "beppu",
+      "takachiho"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kagoshima",
+    "name": "Kagoshima",
+    "region": "Kyūshū",
+    "duration": "1 à 3 jours",
+    "center": [
+      31.59,
+      130.55
+    ],
+    "intro": "Kagoshima apparaît à l’aller et au retour de Yakushima. Une bonne raison de lui garder du temps propre, tout en organisant séparément le trajet vers l’île.",
+    "transport": "Distinguer la gare Shinkansen, le centre et le port utilisé par le bateau choisi. Garder une marge autour des départs maritimes et vérifier les conditions du jour.",
+    "sleep": "Les deux adresses du carnet sont Henn na Hotel Kagoshima Tenmonkan et remm Kagoshima. Les comparer selon le transport du lendemain.",
+    "plan": [
+      "Arrivée et installation dans le centre.",
+      "Promenade urbaine ou sortie vers Sakurajima selon le temps disponible.",
+      "Départ pour Yakushima avec le port et le bateau confirmés."
+    ],
+    "places": [
+      {
+        "name": "Tenmonkan",
+        "text": "Le quartier associé à une des adresses du carnet. Une base pour les soirées, à comparer avec le trajet vers le port.",
+        "emoji": "🏮",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 31.5903,
+        "lng": 130.5559
+      },
+      {
+        "name": "Sakurajima",
+        "text": "Une piste de préparation pour une journée depuis Kagoshima. Les activités, l’accès et les conditions volcaniques sont à vérifier au moment du séjour.",
+        "emoji": "🌋",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 31.591,
+        "lng": 130.602,
+        "source": "https://www.japan.travel/en/us/blog/destination-spotlight-kyushu/"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Henn na Hotel Kagoshima Tenmonkan",
+        "text": "L’adresse notée à l’aller dans le carnet.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      },
+      {
+        "name": "remm Kagoshima",
+        "text": "L’adresse notée au retour de Yakushima. Les deux séjours restent à comparer à partir de nos retours.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Kyūshū et Kagoshima · JNTO",
+        "https://www.japan.travel/en/us/blog/destination-spotlight-kyushu/"
+      ],
+      [
+        "Ferry Yakushima 2",
+        "https://ferryyakusima2.com/"
+      ]
+    ],
+    "related": [
+      "yakushima",
+      "kurokawa-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "yakushima",
+    "name": "Yakushima",
+    "region": "Kyūshū",
+    "duration": "3 à 5 jours",
+    "center": [
+      30.35,
+      130.53
+    ],
+    "intro": "Les notes sont claires sur l’envie : vieux cèdres, mousse, forêt et plongée, avec peu de marche plutôt qu’une grande randonnée. Il faut choisir les parcours à l’intérieur de chaque site, car un même nom peut couvrir des niveaux d’effort très différents.",
+    "transport": "Arriver en avion ou en bateau depuis le continent, puis organiser les déplacements sur l’île. Garder une marge météo autour du transport et vérifier comment rejoindre chaque départ de promenade.",
+    "sleep": "Cottage Yakusugi House est l’adresse enregistrée. Une base en cottage implique de préparer les repas et les déplacements autrement qu’un séjour en ryokan.",
+    "plan": [
+      "Arrivée et installation, sans grosse randonnée ce jour-là.",
+      "Yakusugi Land : choisir un circuit adapté au niveau de marche souhaité.",
+      "Shiratani Unsuikyō : choisir le parcours selon la météo et l’état des sentiers.",
+      "Une sortie plongée ou une journée de marge selon les conditions."
+    ],
+    "places": [
+      {
+        "name": "Yakusugi Land",
+        "text": "Les grands cèdres sont une priorité du carnet, notée « yakisugi land ». Choisir un parcours précis, puis vérifier l’état du sentier et l’équipement nécessaire.",
+        "emoji": "🌲",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 30.304,
+        "lng": 130.598,
+        "source": "https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/"
+      },
+      {
+        "name": "Shiratani Unsuikyō",
+        "text": "Le ravin de Shiratani figure dans le plan de visite. La mousse et les forêts donnent envie de prendre son temps ; ne pas confondre une courte boucle avec les parcours plus longs.",
+        "emoji": "🌿",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 30.38,
+        "lng": 130.575,
+        "source": "https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/"
+      },
+      {
+        "name": "Sarukawa · forêt",
+        "text": "Le carnet indique « sarukawa tree ». L’intention semble être une promenade en forêt ; le départ exact et le circuit restent à identifier.",
+        "emoji": "🌳",
+        "status": "Parcours à préciser",
+        "kind": "visit"
+      },
+      {
+        "name": "Janokuchi Falls",
+        "text": "Une cascade dans le plan enregistré. La durée, le niveau et les conditions du chemin restent à vérifier ; elle n’est pas présentée comme une promenade facile.",
+        "emoji": "💧",
+        "status": "Parcours à confirmer",
+        "kind": "visit"
+      },
+      {
+        "name": "Plongée à Yakushima",
+        "text": "Une sortie est prévue dans les notes, mais le prestataire n’est pas nommé. Confirmer le niveau, le matériel et la météo ; les anciens devis ne sont pas des tarifs actuels.",
+        "emoji": "🤿",
+        "status": "Prestataire à préciser",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Cottage Yakusugi House",
+        "text": "L’hébergement enregistré pour l’île. Localisation exacte, transport et retour personnel restent à compléter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Yakushima · JNTO",
+        "https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/"
+      ],
+      [
+        "Ferry Yakushima 2",
+        "https://ferryyakusima2.com/"
+      ],
+      [
+        "Yes Yakushima · lien du carnet",
+        "https://yesyakushima.com/"
+      ]
+    ],
+    "related": [
+      "kagoshima"
+    ],
+    "gaps": "Le souhait « peu de marche » est conservé, mais aucune randonnée n’est déclarée facile sans avoir choisi le circuit. Le prestataire de plongée et le point Sarukawa restent à identifier."
+  },
+  {
+    "slug": "okayama",
+    "name": "Okayama",
+    "region": "Chūgoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      34.666,
+      133.928
+    ],
+    "intro": "Une étape courte dans le carnet, avec le jardin Kōraku-en comme point concret. Kurashiki est assez proche pour se combiner dans le voyage, mais mérite sa propre demi-journée.",
+    "transport": "Okayama est une base ferroviaire sur l’axe Shinkansen et pour rejoindre Shikoku. Préparer le trajet vers le jardin et séparer les bagages des heures de promenade.",
+    "sleep": "Aucun hôtel précis n’est conservé pour cette étape. Une base proche de la gare simplifie un passage court ; choisir le centre si le séjour est plus long.",
+    "plan": [
+      "Arrivée et dépôt des bagages.",
+      "Kōraku-en sans trop serrer le temps de visite.",
+      "Kurashiki sur une autre demi-journée si le programme le permet."
+    ],
+    "places": [
+      {
+        "name": "Kōraku-en",
+        "text": "Le jardin est la visite explicitement sauvegardée pour Okayama. Garder du temps pour les allées et les points de vue plutôt que d’en faire un simple arrêt photo.",
+        "emoji": "🌿",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.6673339,
+        "lng": 133.93617,
+        "mapsUrl": "https://maps.app.goo.gl/Htkfy1EP2tjuCytA8"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Okayama et Kurashiki · JNTO",
+        "https://www.japan.travel/en/destinations/chugoku/okayama/kurashiki/"
+      ]
+    ],
+    "related": [
+      "kurashiki",
+      "matsuyama",
+      "hiroshima"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kurashiki",
+    "name": "Kurashiki",
+    "region": "Chūgoku",
+    "duration": "½ à 2 jours",
+    "center": [
+      34.596,
+      133.772
+    ],
+    "intro": "Kurashiki apparaît à la fois comme étape de route et comme détour pour le denim. Le quartier Bikan donne une promenade compacte ; la recherche de jeans mérite ensuite ses propres adresses.",
+    "transport": "Rejoindre Kurashiki depuis Okayama puis marcher vers Bikan. Ne pas confondre une adresse dans le centre avec le secteur du denim à Kojima, qui demande un trajet distinct.",
+    "sleep": "Aucune adresse de nuit n’est notée. Une visite depuis Okayama est une possibilité ; dormir sur place permettrait de profiter des rues après les visiteurs de la journée.",
+    "plan": [
+      "Bikan et les canaux le matin ou en fin de journée.",
+      "Boutiques selon l’envie, avec l’adresse denim vérifiée.",
+      "Ajouter un musée seulement si l’on veut prolonger la visite."
+    ],
+    "places": [
+      {
+        "name": "Quartier historique Bikan",
+        "text": "Canal, anciens bâtiments marchands et petites rues : le repère confirmé de nos notes pour Kurashiki.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 34.5957392,
+        "lng": 133.7717651,
+        "mapsUrl": "https://maps.app.goo.gl/W3qQq3SQDjdkgFkz5"
+      },
+      {
+        "name": "Denim Laboratory",
+        "text": "Le nom figure dans une carte intitulée « temple du jean à Kurashiki », rangée sous Tokyo. On le replace ici, avec l’adresse exacte à confirmer avant de poser une épingle.",
+        "emoji": "👖",
+        "status": "Adresse à confirmer",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Kurashiki · JNTO",
+        "https://www.japan.travel/en/destinations/chugoku/okayama/kurashiki/"
+      ]
+    ],
+    "related": [
+      "okayama",
+      "matsuyama"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "nagoya",
+    "name": "Nagoya & Ghibli Park",
+    "region": "Tōkai",
+    "duration": "1 à 3 jours",
+    "center": [
+      35.17,
+      136.91
+    ],
+    "intro": "Nagoya est une étape du carnet et une base possible pour Ghibli Park, situé à Nagakute. Le parc se prépare autour d’un billet réservé, et mérite une journée distincte du reste de la ville.",
+    "transport": "Distinguer l’arrivée à Nagoya du trajet vers Nagakute. Vérifier les correspondances jusqu’au parc et les zones incluses dans le billet avant de réserver l’hôtel.",
+    "sleep": "R&B Hotel Nagoya Shinkansenguchi est l’adresse enregistrée, orientée vers la gare. Le retour sur le séjour reste à compléter.",
+    "plan": [
+      "Arrivée à Nagoya et installation.",
+      "Ghibli Park sur une journée réservée à l’avance.",
+      "Une autre visite de Nagoya selon l’envie, encore à choisir dans nos notes."
+    ],
+    "places": [
+      {
+        "name": "Ghibli Park · Nagakute",
+        "text": "Le parc sauvegardé est à Nagakute, dans la préfecture d’Aichi. Réserver à l’avance et regarder les zones comprises dans le billet : c’est une autre visite que le musée Ghibli de Mitaka.",
+        "emoji": "🎬",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 35.1750449,
+        "lng": 137.0887689,
+        "mapsUrl": "https://maps.app.goo.gl/VhRc6BDwvZvRQEn59"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "R&B Hotel Nagoya Shinkansenguchi",
+        "text": "L’adresse conservée pour l’étape à Nagoya. Vérifier le nom actuel et les modalités de séjour avant de réserver.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Ghibli Park · billets officiels",
+        "https://ghibli-park.jp/en/ticket/"
+      ]
+    ],
+    "related": [
+      "nakasendo",
+      "takayama",
+      "kyoto"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "kanazawa",
+    "name": "Kanazawa",
+    "region": "Hokuriku",
+    "duration": "2 à 3 jours",
+    "center": [
+      36.566,
+      136.66
+    ],
+    "intro": "Le carnet donne déjà une journée très lisible : Kenroku-en, les quartiers historiques et Ōmichō. Takayama et Shirakawa-gō étaient rangés dans la même liste ; on les traite comme de vraies étapes distinctes.",
+    "transport": "Arriver en train puis regrouper les visites par secteur. Préparer séparément les bus longue distance si le séjour continue vers Shirakawa-gō ou Takayama.",
+    "sleep": "HOTEL TORIFITO KANAZAWA est l’adresse notée. Comparer la proximité de la gare avec les quartiers où l’on souhaite passer les soirées.",
+    "plan": [
+      "Kenroku-en et les abords du château.",
+      "Higashi Chaya puis Ōmichō selon l’heure des commerces.",
+      "Nagamachi et temps pour les petites rues avant de poursuivre le voyage."
+    ],
+    "places": [
+      {
+        "name": "Kenroku-en",
+        "text": "Le grand jardin du carnet, à garder comme une vraie promenade et à combiner avec le secteur du château.",
+        "emoji": "🌿",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.5621278,
+        "lng": 136.6626515,
+        "mapsUrl": "https://maps.app.goo.gl/tMnCwfAthmbkpmns9"
+      },
+      {
+        "name": "Higashi Chaya",
+        "text": "Un quartier de maisons de thé sauvegardé pour les rues et l’architecture. Respecter les lieux privés et regarder quelles maisons se visitent.",
+        "emoji": "🏮",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.5724921,
+        "lng": 136.6669815,
+        "mapsUrl": "https://maps.app.goo.gl/wFZn12caAZycUch56"
+      },
+      {
+        "name": "Nagamachi",
+        "text": "Le quartier des anciennes résidences de samouraïs fait partie des repères du carnet. Choisir les visites intérieures selon les envies.",
+        "emoji": "🏯",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.5636291,
+        "lng": 136.6510951,
+        "mapsUrl": "https://maps.app.goo.gl/mD4xYhv8Evw4FXiw5"
+      },
+      {
+        "name": "Marché Ōmichō",
+        "text": "Une étape de marché pour la journée. Les restaurants et commerces n’ont pas tous les mêmes horaires ; choisir sa pause en conséquence.",
+        "emoji": "🍣",
+        "status": "Repère de nos notes",
+        "kind": "food",
+        "lat": 36.5717335,
+        "lng": 136.6558651,
+        "mapsUrl": "https://maps.app.goo.gl/jVRif8ndzJxNnxZ86"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "HOTEL TORIFITO KANAZAWA",
+        "text": "L’adresse de l’étape d’hiver. L’avis personnel et les détails de chambre restent à ajouter.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [
+      [
+        "Kenroku-en · JNTO",
+        "https://www.japan.travel/en/spot/1399/"
+      ],
+      [
+        "Kanazawa et itinéraire régional · JNTO",
+        "https://www.japan.travel/en/au/guide/guide-takayama-shirakawa-go-kanazawa/"
+      ]
+    ],
+    "related": [
+      "shirakawa-go",
+      "takayama"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "takayama",
+    "name": "Takayama",
+    "region": "Gifu",
+    "duration": "1 à 2 jours",
+    "center": [
+      36.141,
+      137.26
+    ],
+    "intro": "Sanmachi Suji était sauvegardé dans la liste de Kanazawa. On lui donne ici sa bonne place : une promenade à Takayama, avec le temps de trajet pris en compte dans la boucle régionale.",
+    "transport": "Préparer l’arrivée en train ou en bus selon le parcours. Takayama, Kanazawa et Shirakawa-gō peuvent se combiner, mais demandent des déplacements interurbains.",
+    "sleep": "Aucun hébergement précis n’est enregistré pour Takayama. Choisir entre une visite de journée et une nuit pour garder les rues le matin ou le soir.",
+    "plan": [
+      "Arrivée et découverte de Sanmachi Suji.",
+      "Promenade prolongée dans la vieille ville.",
+      "Départ vers Shirakawa-gō ou la prochaine base, avec le transport réservé si nécessaire."
+    ],
+    "places": [
+      {
+        "name": "Sanmachi Suji",
+        "text": "Le quartier historique sauvegardé. Une bonne base pour marcher, regarder les façades et choisir les visites selon l’envie, sans lui attribuer un avis personnel absent du carnet.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.1413161,
+        "lng": 137.2596227,
+        "mapsUrl": "https://maps.app.goo.gl/D3AG4JbM86xCUNBD6"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Takayama et boucle régionale · JNTO",
+        "https://www.japan.travel/en/au/guide/guide-takayama-shirakawa-go-kanazawa/"
+      ]
+    ],
+    "related": [
+      "shirakawa-go",
+      "kanazawa",
+      "nagoya"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "shirakawa-go",
+    "name": "Shirakawa-gō & Gokayama",
+    "region": "Gifu · Toyama",
+    "duration": "1 à 2 jours",
+    "center": [
+      36.2578,
+      136.9062
+    ],
+    "intro": "Les villages de maisons gasshō-zukuri sont enregistrés dans les deux carnets. On choisirait précisément le village et le temps sur place, plutôt que de traiter tout le site UNESCO comme une seule épingle.",
+    "transport": "Préparer les bus depuis Takayama ou Kanazawa et vérifier la nécessité de réserver. Gokayama demande son propre arrêt et ne se visite pas simplement à pied depuis Shirakawa-gō.",
+    "sleep": "Aucune auberge précise n’est conservée. Une visite de journée ou une nuit en village sont deux projets différents à préparer séparément.",
+    "plan": [
+      "Arrivée au village choisi et première promenade.",
+      "Une maison ouverte à la visite selon les conditions du jour.",
+      "Retour prévu ou nuit sur place ; Gokayama seulement avec une liaison préparée."
+    ],
+    "places": [
+      {
+        "name": "Shirakawa-gō · repère du village",
+        "text": "Le lien du carnet pointe le site patrimonial. L’épingle sert de repère pour Shirakawa-gō ; elle ne remplace pas le choix d’un village ni d’un point d’accueil précis.",
+        "emoji": "🏘️",
+        "status": "Repère de nos notes",
+        "kind": "visit",
+        "lat": 36.2577967,
+        "lng": 136.9061975,
+        "mapsUrl": "https://maps.app.goo.gl/BUhvp41RYSq8VfyEA"
+      },
+      {
+        "name": "Gokayama",
+        "text": "L’autre ensemble de villages cité dans le lien sauvegardé. Choisir le village voulu avant de tracer le trajet ; cette première version ne pose pas d’épingle approximative.",
+        "emoji": "🏡",
+        "status": "Village à choisir",
+        "kind": "visit"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Shirakawa-gō · JNTO",
+        "https://www.japan.travel/en/spot/2031/"
+      ],
+      [
+        "Boucle régionale · JNTO",
+        "https://www.japan.travel/en/au/guide/guide-takayama-shirakawa-go-kanazawa/"
+      ]
+    ],
+    "related": [
+      "kanazawa",
+      "takayama"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "nakasendo",
+    "name": "Nakasendō · Magome & Tsumago",
+    "region": "Gifu · Nagano",
+    "duration": "1 à 2 jours",
+    "center": [
+      35.55,
+      137.58
+    ],
+    "intro": "Deux villages sauvegardés pour leur architecture et l’ancienne route qui les relie. On peut venir pour les villages seulement ou ajouter la marche, mais ce ne sont pas les mêmes contraintes de temps et de bagages.",
+    "transport": "Comparer les accès par Nakatsugawa et Nagiso, puis les bus jusqu’au village de départ. Pour marcher entre les deux, préparer le retour avant de partir et vérifier les conditions du sentier.",
+    "sleep": "Aucune auberge précise dans le backlog. Une nuit en village peut donner une autre ambiance ; une visite depuis une base ferroviaire demande surtout de bien organiser les bus.",
+    "plan": [
+      "Arrivée à Magome ou Tsumago.",
+      "Visite du village puis marche seulement si le parcours et les conditions conviennent.",
+      "Deuxième village et retour préparé."
+    ],
+    "places": [
+      {
+        "name": "Magome-juku",
+        "text": "Le village en pente au départ d’une section connue du Nakasendō. Garder du temps pour les rues même si l’on ne fait pas la marche complète.",
+        "emoji": "🏘️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 35.525621,
+        "lng": 137.566011,
+        "mapsUrl": "https://maps.app.goo.gl/WqtweEw5MNf8BLE68"
+      },
+      {
+        "name": "Tsumago-juku",
+        "text": "L’autre village sauvegardé, à combiner avec Magome selon le temps et les transports disponibles.",
+        "emoji": "🏘️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 35.5775876,
+        "lng": 137.5956667,
+        "mapsUrl": "https://maps.app.goo.gl/AdHwQTG8Y4tK6WjZ7"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Tsumago · JNTO",
+        "https://www.japan.travel/en/spot/1365/"
+      ],
+      [
+        "Magome · JNTO",
+        "https://www.japan.travel/en/spot/1271/"
+      ]
+    ],
+    "related": [
+      "nagoya",
+      "takayama"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "bessho-onsen",
+    "name": "Bessho Onsen",
+    "region": "Nagano",
+    "duration": "1 à 2 jours",
+    "center": [
+      36.35,
+      138.16
+    ],
+    "intro": "Bessho est une idée encore légère dans nos notes. On l’interprète provisoirement comme Bessho Onsen, près d’Ueda, pour une étape de bains et de temples à préciser.",
+    "transport": "Préparer l’accès par Ueda puis la ligne locale vers Bessho Onsen. Vérifier les correspondances selon le train d’arrivée.",
+    "sleep": "Aucun ryokan précis n’est nommé pour le moment. Choisir l’hébergement avant de fixer les visites autour.",
+    "plan": [
+      "Arrivée et promenade dans le village.",
+      "Bains et un temple selon l’envie.",
+      "Retour vers Ueda avec les correspondances vérifiées."
+    ],
+    "places": [
+      {
+        "name": "Bessho Onsen · village",
+        "text": "Le nom de destination est la seule note personnelle disponible. La localisation près d’Ueda reste à confirmer avec votre intention initiale.",
+        "emoji": "♨️",
+        "status": "🧭 Destination à confirmer",
+        "kind": "visit",
+        "lat": 36.35,
+        "lng": 138.16,
+        "source": "https://www.japan.travel/en/uk/inspiration/onsen-destinations-in-the-japanese-alps/"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Bessho · JNTO",
+        "https://www.japan.travel/en/uk/inspiration/onsen-destinations-in-the-japanese-alps/"
+      ]
+    ],
+    "related": [
+      "shibu-onsen",
+      "nozawa-onsen"
+    ],
+    "gaps": "Confirmer que « Bessho » désigne bien Bessho Onsen. Hébergement, bains et visites restent à sélectionner."
+  },
+  {
+    "slug": "nozawa-onsen",
+    "name": "Nozawa Onsen",
+    "region": "Nagano",
+    "duration": "1 à 3 jours hors ski",
+    "center": [
+      36.92,
+      138.44
+    ],
+    "intro": "Nozawa Onsen est identifié par un lien sauvegardé dans nos notes. Une piste pour combiner village thermal et, en saison, séjour au ski ; le programme dépendra d’abord de cette envie.",
+    "transport": "Préparer le trajet par Iiyama puis le bus vers Nozawa. Pour un voyage d’hiver, vérifier les dates d’exploitation et les conditions de transport.",
+    "sleep": "Aucun hébergement n’est encore noté. Choisir une base pour le village ou les pistes selon le séjour souhaité.",
+    "plan": [
+      "Arrivée et découverte du village.",
+      "Bains et promenade, ou journée de ski préparée séparément.",
+      "Matinée libre et retour prévu vers Iiyama."
+    ],
+    "places": [
+      {
+        "name": "Nozawa Onsen · village",
+        "text": "La destination du lien sauvegardé. La note est un repérage, sans avis personnel établi sur un bain ni un hébergement.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "mapsUrl": "https://maps.app.goo.gl/U7hF3StQeufk7iPD9?g_st=com.google.maps.preview.copy"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Nozawa Onsen · JNTO",
+        "https://www.japan.travel/en/destinations/hokuriku-shinetsu/nagano/nozawa-onsen/"
+      ]
+    ],
+    "related": [
+      "bessho-onsen",
+      "shibu-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "sukayu-onsen",
+    "name": "Sukayu Onsen",
+    "region": "Tōhoku",
+    "duration": "1 à 2 jours",
+    "center": [
+      40.6505,
+      140.8507
+    ],
+    "intro": "Un repérage thermal dans les montagnes de Hakkōda. Le bain et l’ambiance de montagne sont le cœur de cette piste ; les promenades se choisissent selon la saison et les conditions.",
+    "transport": "Préparer l’accès depuis Aomori ou Shin-Aomori avec les horaires saisonniers. Confirmer les possibilités de transfert et de retour avant de réserver.",
+    "sleep": "Le lien Maps identifie Sukayu Onsen Tamanoyu. Vérifier la formule exacte et les bains accessibles, sans déduire les équipements du seul nom.",
+    "plan": [
+      "Arrivée et installation.",
+      "Bains selon les règles de l’établissement.",
+      "Une courte promenade seulement si les conditions locales le permettent."
+    ],
+    "places": [
+      {
+        "name": "Sukayu Onsen · Tamanoyu",
+        "text": "Le repérage sauvegardé autour de Sukayu. Les bains ont des règles et créneaux propres, notamment pour les espaces mixtes ; les vérifier directement avant la visite.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "hotel",
+        "lat": 40.6505449,
+        "lng": 140.8506872,
+        "mapsUrl": "https://maps.app.goo.gl/Pma3ottWUZRbDN39A"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Sukayu · JNTO",
+        "https://www.japan.travel/national-parks/parks/towada-hachimantai/see-and-do/sukayu-nature-trail/"
+      ],
+      [
+        "Hakkōda · accès saisonniers",
+        "https://www.japan.travel/national-parks/parks/towada-hachimantai/how-to-get-there/"
+      ]
+    ],
+    "related": [
+      "ginzan-onsen",
+      "hokkaido"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "omiya",
+    "name": "Ōmiya",
+    "region": "Kantō",
+    "duration": "½ à 1 jour",
+    "center": [
+      35.906,
+      139.624
+    ],
+    "intro": "Ōmiya apparaît comme une étape d’une nuit dans l’ancien carnet. La base est identifiée, mais aucune visite précise n’est encore documentée : une page courte pour préparer une halte sans inventer de souvenirs.",
+    "transport": "Rejoindre Ōmiya en train et vérifier la sortie de gare adaptée à l’hôtel. Choisir ensuite si l’étape sert de transit ou de vraie journée de visite.",
+    "sleep": "REF Omiya by VESSEL HOTELS est l’adresse conservée. Le retour personnel reste à compléter.",
+    "plan": [
+      "Arrivée et installation.",
+      "Promenade locale à choisir selon le temps disponible.",
+      "Départ vers la prochaine étape en gardant une marge en gare."
+    ],
+    "places": [
+      {
+        "name": "Ōmiya · gare",
+        "text": "Le repère pratique de cette halte. Les lieux de visite seront ajoutés lorsque les notes ou les points Maps seront disponibles.",
+        "emoji": "🚉",
+        "status": "Étape · notes encore légères",
+        "kind": "visit",
+        "lat": 35.9064,
+        "lng": 139.624
+      }
+    ],
+    "hotels": [
+      {
+        "name": "REF Omiya by VESSEL HOTELS",
+        "text": "L’adresse enregistrée pour cette nuit d’étape, à comparer selon le trajet ferroviaire du lendemain.",
+        "emoji": "🏨",
+        "status": "Adresse notée · avis à compléter",
+        "kind": "hotel"
+      }
+    ],
+    "sources": [],
+    "related": [
+      "tokyo",
+      "kusatsu-onsen"
+    ],
+    "gaps": "Seuls le nom de l’étape et l’hôtel sont documentés. Les visites et adresses attendent vos sélections."
+  },
+  {
+    "slug": "nara",
+    "name": "Nara",
+    "region": "Kansai",
+    "duration": "1 jour",
+    "center": [
+      34.685,
+      135.84
+    ],
+    "intro": "Nara est une excursion déjà présente dans les notes d’Osaka. Cette première version garde un parcours de préparation autour du parc, à enrichir avec nos retours de visite.",
+    "transport": "Comparer les gares JR Nara et Kintetsu Nara selon le point de départ et les lieux choisis. Garder une journée distincte depuis Osaka ou Kyoto.",
+    "sleep": "Aucun hôtel n’est noté à Nara. Le carnet la traite comme une excursion depuis Osaka.",
+    "plan": [
+      "Arriver dans la matinée.",
+      "Parc et un grand temple selon l’envie.",
+      "Retour sans ajouter une autre grande ville à la même journée."
+    ],
+    "places": [
+      {
+        "name": "Parc de Nara",
+        "text": "Un repère de préparation pour organiser la journée. Les temples précis et le retour personnel restent à sélectionner.",
+        "emoji": "🦌",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 34.685,
+        "lng": 135.843
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Nara · JNTO",
+        "https://www.japan.travel/en/destinations/kansai/nara/"
+      ]
+    ],
+    "related": [
+      "osaka",
+      "kyoto"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "himeji",
+    "name": "Himeji",
+    "region": "Kansai",
+    "duration": "1 jour",
+    "center": [
+      34.839,
+      134.694
+    ],
+    "intro": "Himeji est une autre excursion des notes d’Osaka. On lui garderait une journée avec de la marge pour le château, plutôt que de vouloir la combiner au pas de course avec Nara.",
+    "transport": "Préparer le train jusqu’à Himeji puis le trajet vers le château. Comparer la durée et le billet selon le type de train choisi.",
+    "sleep": "Aucune adresse de nuit dans le carnet : l’étape est enregistrée comme excursion.",
+    "plan": [
+      "Arrivée et trajet vers le château.",
+      "Château avec le temps nécessaire à la visite.",
+      "Promenade complémentaire selon l’envie puis retour."
+    ],
+    "places": [
+      {
+        "name": "Château de Himeji",
+        "text": "Le repère principal de cette première préparation. Vérifier les horaires, la dernière entrée et l’affluence pour le jour prévu.",
+        "emoji": "🏯",
+        "status": "🧭 Repère de préparation",
+        "kind": "visit",
+        "lat": 34.8394,
+        "lng": 134.6939
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Château de Himeji · JNTO",
+        "https://www.japan.travel/en/spot/1030/"
+      ]
+    ],
+    "related": [
+      "osaka",
+      "kinosaki-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "sakai",
+    "name": "Sakai · les kofun",
+    "region": "Kansai",
+    "duration": "½ à 1 jour",
+    "center": [
+      34.564,
+      135.487
+    ],
+    "intro": "Le lien sauvegardé près d’Osaka identifie le Daisen-ryō Kofun, associé à l’empereur Nintoku. Une piste pour donner une place concrète à l’envie de découvrir les kofun.",
+    "transport": "Préparer l’accès au secteur de Sakai depuis Osaka et choisir les points d’observation. L’épingle repère le tumulus, pas une entrée pour en visiter l’intérieur.",
+    "sleep": "Aucun hébergement n’est noté. Une sortie depuis Osaka est le format à étudier en premier.",
+    "plan": [
+      "Rejoindre le secteur du kofun.",
+      "Observer le site depuis les points autorisés.",
+      "Compléter par une promenade locale avant de rentrer."
+    ],
+    "places": [
+      {
+        "name": "Daisen-ryō Kofun",
+        "text": "Le tumulus identifié par le lien Maps. Préparer les vues depuis l’extérieur ; ne pas présenter une visite intérieure comme accessible.",
+        "emoji": "🌳",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 34.5639426,
+        "lng": 135.4874764,
+        "mapsUrl": "https://maps.app.goo.gl/xMMWg5C6hkxpJ9cP9"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Daisen-ryō Kofun · JNTO",
+        "https://www.japan.travel/en/spot/19/"
+      ]
+    ],
+    "related": [
+      "osaka"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "arima-onsen",
+    "name": "Arima Onsen",
+    "region": "Kansai",
+    "duration": "1 à 2 jours",
+    "center": [
+      34.798,
+      135.248
+    ],
+    "intro": "Arima est sauvegardé comme détour thermal dans les notes d’Osaka. Une option à comparer avec une excursion urbaine, ou à transformer en nuit sur place pour prendre davantage son temps.",
+    "transport": "Préparer l’accès depuis Kobe ou Osaka et le retour selon l’heure souhaitée. Choisir son bain avant de construire la journée autour.",
+    "sleep": "Aucun ryokan précis n’est enregistré pour cette destination. La première décision est de venir à la journée ou de dormir sur place.",
+    "plan": [
+      "Arrivée et découverte du village.",
+      "Un bain choisi selon les règles et ouvertures.",
+      "Retour ou soirée au ryokan selon le format retenu."
+    ],
+    "places": [
+      {
+        "name": "Arima Onsen · village",
+        "text": "Le point sauvegardé identifie le village thermal, sans recommander un établissement particulier.",
+        "emoji": "♨️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 34.7978083,
+        "lng": 135.2476961,
+        "mapsUrl": "https://maps.app.goo.gl/ywA3uSYtyxNkfFwZ9"
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Arima Onsen · JNTO",
+        "https://www.japan.travel/en/spot/1025/"
+      ]
+    ],
+    "related": [
+      "osaka",
+      "kinosaki-onsen"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "ine",
+    "name": "Ine",
+    "region": "Kansai",
+    "duration": "1 à 2 jours",
+    "center": [
+      35.674,
+      135.288
+    ],
+    "intro": "Une idée conservée dans les anciennes visites : un village de pêcheurs au nord de Kyoto. On lui garde sa propre étape de préparation, car la côte n’est pas un petit détour dans la ville de Kyoto.",
+    "transport": "Préparer le trajet vers la côte et le dernier bus avant de décider d’un aller-retour. Le temps de transport compte autant que le temps de promenade.",
+    "sleep": "Aucun hébergement n’est nommé. Vérifier les possibilités de nuit sur place si l’aller-retour laisse trop peu de temps.",
+    "plan": [
+      "Arrivée sur la côte.",
+      "Promenade autour du port et des maisons de pêcheurs depuis les accès publics.",
+      "Retour organisé ou nuit sur place."
+    ],
+    "places": [
+      {
+        "name": "Ine · port",
+        "text": "Le village de pêcheurs est l’unique repère du carnet. Les maisons sont aussi des lieux de vie ; choisir les visites et points de vue autorisés.",
+        "emoji": "⚓",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 35.674,
+        "lng": 135.288
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Ine · JNTO",
+        "https://www.japan.travel/en/spot/1120/"
+      ]
+    ],
+    "related": [
+      "kyoto",
+      "kinosaki-onsen"
+    ],
+    "gaps": "Le carnet donne seulement le nom du village et son intérêt général. Adresses, vues et éventuelles sorties en bateau restent à sélectionner."
+  },
+  {
+    "slug": "takachiho",
+    "name": "Takachiho",
+    "region": "Kyūshū",
+    "duration": "1 à 2 jours",
+    "center": [
+      32.711,
+      131.303
+    ],
+    "intro": "Une piste du backlog autour des gorges et des récits d’Amaterasu. Elle reste à transformer en étape concrète avec une base, un accès et les activités réellement disponibles au moment du séjour.",
+    "transport": "Préparer le trajet routier et les possibilités de retour avant d’ajouter Takachiho à une boucle de Kyūshū. La visite des gorges et une éventuelle activité sur l’eau sont à organiser séparément.",
+    "sleep": "Aucun hébergement précis dans les notes. Une nuit peut être utile si l’on souhaite une activité en soirée, après vérification du programme.",
+    "plan": [
+      "Arrivée et installation dans la zone choisie.",
+      "Gorges selon les accès ouverts.",
+      "Éventuelle soirée de kagura seulement après vérification du programme et du retour."
+    ],
+    "places": [
+      {
+        "name": "Takachiho · gorges",
+        "text": "La destination du lien sauvegardé. Les promenades et activités sur l’eau dépendent des conditions et des accès ; aucune réservation n’est supposée acquise.",
+        "emoji": "🏞️",
+        "status": "🧭 Repéré pour plus tard",
+        "kind": "visit",
+        "lat": 32.703,
+        "lng": 131.3
+      }
+    ],
+    "hotels": [],
+    "sources": [
+      [
+        "Kyūshū et Takachiho · JNTO",
+        "https://www.japan.travel/en/us/blog/destination-spotlight-kyushu/"
+      ]
+    ],
+    "related": [
+      "kurokawa-onsen",
+      "kagoshima"
+    ],
+    "gaps": "Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours."
+  },
+  {
+    "slug": "murakami",
+    "name": "Murakami",
+    "region": "Niigata",
+    "duration": "1 à 2 jours",
+    "center": [
+      38.22,
+      139.48
+    ],
+    "intro": "Une idée très précise mais encore peu documentée : participer à une plantation de riz autour de Murakami. L’intérêt est une expérience saisonnière, à organiser autour d’un prestataire et d’une date confirmés.",
+    "transport": "Identifier d’abord le lieu de l’activité et son accueil, puis préparer le trajet depuis Murakami ou la base proposée. Le centre-ville n’est qu’un repère géographique.",
+    "sleep": "Aucun hôtel n’est noté. Attendre de connaître le lieu de l’activité avant de choisir où dormir.",
+    "plan": [
+      "Confirmer la date, la langue et le lieu de l’activité.",
+      "Organiser l’arrivée et les transferts.",
+      "Garder le reste du programme souple autour de l’expérience confirmée."
+    ],
+    "places": [
+      {
+        "name": "Plantation de riz · piste du carnet",
+        "text": "Le lien enregistré décrit une expérience autour de Murakami. Il ne prouve pas qu’elle est proposée actuellement : prestataire et dates restent à confirmer avant réservation.",
+        "emoji": "🌾",
+        "status": "🧭 Activité saisonnière à confirmer",
+        "kind": "visit",
+        "source": "https://voyapon.com/fr/murakami-planter-du-riz-japon/"
+      }
+    ],
+    "hotels": [],
+    "sources": [],
+    "related": [],
+    "gaps": "Seule l’idée de plantation de riz est documentée. Ne pas choisir les dates du séjour avant d’avoir confirmé l’activité."
+  }
+]

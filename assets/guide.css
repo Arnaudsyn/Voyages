@@ -21,6 +21,7 @@ a{color:inherit}
 .nav a{white-space:nowrap;text-decoration:none;padding:8px 11px;border-radius:999px;color:#3d4941;font-size:.88rem}
 .nav a:hover,.nav a:focus-visible{background:#fff;outline:none}
 .layout{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(390px,.82fr);gap:30px;padding:28px 24px 70px}
+.layout.layout-text{display:block;max-width:1000px}
 .content{min-width:0}
 .hero{padding:34px 0 20px}
 .eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;font-weight:800;color:var(--accent)}

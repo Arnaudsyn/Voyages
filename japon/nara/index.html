@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nara : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Nara — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Nara</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Kansai · 1 jour · Première version</div>
+      <h1>Nara,<br>notre petit guide !</h1><p class="lead">Nara est une excursion déjà présente dans les notes d’Osaka. Cette première version garde un parcours de préparation autour du parc, à enrichir avec nos retours de visite.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Comparer les gares JR Nara et Kintetsu Nara selon le point de départ et les lieux choisis. Garder une journée distincte depuis Osaka ou Kyoto.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Aucun hôtel n’est noté à Nara. Le carnet la traite comme une excursion depuis Osaka.</p></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-parc-de-nara" data-place="lieu-1-parc-de-nara">
+      <div class="place-title"><span class="emoji">🦌</span><h3>Parc de Nara</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repère de préparation</span></div>
+      <p>Un repère de préparation pour organiser la journée. Les temples précis et le retour personnel restent à sélectionner.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-parc-de-nara">Voir sur la carte</button><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Parc+de+Nara+Nara" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Arriver dans la matinée.</li><li>Parc et un grand temple selon l’envie.</li><li>Retour sans ajouter une autre grande ville à la même journée.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../osaka/">Osaka →</a><a class="site-link" href="../kyoto/">Kyoto →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/kansai/nara/" target="_blank" rel="noopener">Nara · JNTO ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Nara</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [34.685, 135.84];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-parc-de-nara",
+    "name": "Parc de Nara",
+    "lat": 34.685,
+    "lng": 135.843,
+    "emoji": "🦌",
+    "kind": "visit",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc+de+Nara+Nara"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

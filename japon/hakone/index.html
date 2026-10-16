@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hakone : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Hakone — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Hakone</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Kantō · 2 à 4 jours · Première version</div>
+      <h1>Hakone,<br>notre petit guide !</h1><p class="lead">Hakone combine les bains, le lac et les transports qui font déjà partie de la visite. On garderait au moins une nuit pour éviter de transformer la boucle en course, et on prendrait une vue sur Fuji comme un bonus météo.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Préparer les correspondances depuis Odawara ou Hakone-Yumoto. Comparer le Hakone Freepass avec les trajets réellement prévus ; certains suppléments et services restent distincts. Regarder l’état des transports le matin.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Choisir entre la porte d’entrée Hakone-Yumoto, Gōra ou les rives du lac. Ce choix change les trajets et l’heure à laquelle on peut rejoindre son hébergement.</p><div class="places"><article class="place" id="lieu-6-lake-side-inn-mirahakone" data-place="lieu-6-lake-side-inn-mirahakone">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Lake Side Inn MIRAHAKONE</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>L’adresse de nos notes autour du lac. Vérifier l’emplacement exact et les transports à l’heure du dîner avant de réserver.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Lake+Side+Inn+MIRAHAKONE+Hakone" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-croisiere-sur-le-lac-ashi" data-place="lieu-1-croisiere-sur-le-lac-ashi">
+      <div class="place-title"><span class="emoji">⛵</span><h3>Croisière sur le lac Ashi</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le bateau permet de profiter du lac tout en reliant les rives. Prévoir une marge pour les correspondances et vérifier les départs du jour.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-croisiere-sur-le-lac-ashi">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/JzegYx7c7ETepaTq8" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-torii-de-la-paix" data-place="lieu-2-torii-de-la-paix">
+      <div class="place-title"><span class="emoji">⛩️</span><h3>Torii de la paix</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Un repère au bord du lac, à associer au sanctuaire Hakone-jinja. La photo au torii peut demander de patienter ; la promenade ne se limite pas à ce point.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-torii-de-la-paix">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/jjBRMWUgPaey4g7L8" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-owakudani" data-place="lieu-3-owakudani">
+      <div class="place-title"><span class="emoji">🌋</span><h3>Owakudani</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Paysage volcanique, vapeurs et panorama quand le ciel s’ouvre. Le fonctionnement des remontées dépend des conditions ; garder une autre idée de visite si elles sont suspendues.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-3-owakudani">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/cntCehY4Y3qJhmqB9" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-4-hakone-sekisho-ancien-poste-de-controle" data-place="lieu-4-hakone-sekisho-ancien-poste-de-controle">
+      <div class="place-title"><span class="emoji">🏯</span><h3>Hakone Sekisho · ancien poste de contrôle</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une visite historique sur l’ancienne route du Tōkaidō, pratique à regrouper avec le sud du lac.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-4-hakone-sekisho-ancien-poste-de-controle">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/srDNStvPTmCyGH7g7" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-5-tenzan-tojikyo" data-place="lieu-5-tenzan-tojikyo">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Tenzan Tōjikyō</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le bain enregistré dans l’ancien séjour de Shizuoka se trouve à Hakone. On le range ici pour éviter un détour mal anticipé ; les modalités de visite sont à vérifier.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tenzan+T%C5%8Djiky%C5%8D+Hakone" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Une journée lac Ashi : croisière, sanctuaire et ancien poste de contrôle selon l’envie.</li><li>Owakudani et les transports de montagne si les conditions le permettent.</li><li>Garder une fin d’après-midi pour les bains et le dîner.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>La note « onsen en plein air avec vue sur le Mt. Fuji » ne nomme pas l’établissement. On conserve l’idée, mais l’adresse et l’accès à la journée sont à confirmer.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../tokyo/">Tokyo →</a><a class="site-link" href="../fujiyoshida/">Fujiyoshida &amp; les lacs de Fuji →</a><a class="site-link" href="../shizuoka/">Shizuoka, Atami &amp; Numazu →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/kanto/kanagawa/hakone-and-around/" target="_blank" rel="noopener">Hakone · JNTO ↗</a><a class="site-link" href="https://www.odakyu.jp/english/passes/hakone/" target="_blank" rel="noopener">Hakone Freepass ↗</a><a class="site-link" href="https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-ropeway/" target="_blank" rel="noopener">Remontées et Owakudani · JNTO ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Hakone</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [35.23, 139.04];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-croisiere-sur-le-lac-ashi",
+    "name": "Croisière sur le lac Ashi",
+    "lat": 35.1899925,
+    "lng": 139.0245259,
+    "emoji": "⛵",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/JzegYx7c7ETepaTq8"
+  },
+  {
+    "id": "lieu-2-torii-de-la-paix",
+    "name": "Torii de la paix",
+    "lat": 35.202783,
+    "lng": 139.0257419,
+    "emoji": "⛩️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/jjBRMWUgPaey4g7L8"
+  },
+  {
+    "id": "lieu-3-owakudani",
+    "name": "Owakudani",
+    "lat": 35.2429797,
+    "lng": 139.0216288,
+    "emoji": "🌋",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/cntCehY4Y3qJhmqB9"
+  },
+  {
+    "id": "lieu-4-hakone-sekisho-ancien-poste-de-controle",
+    "name": "Hakone Sekisho · ancien poste de contrôle",
+    "lat": 35.1923958,
+    "lng": 139.0263612,
+    "emoji": "🏯",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/srDNStvPTmCyGH7g7"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

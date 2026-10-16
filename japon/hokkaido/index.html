@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hokkaidō : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Hokkaidō — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Hokkaidō</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Hokkaidō · 4 à 6 jours pour une zone · Première version</div>
+      <h1>Hokkaidō,<br>notre petit guide !</h1><p class="lead">Hokkaidō est une région entière. Pour une première boucle courte, on garderait Sapporo, Otaru et éventuellement un séjour thermal au sud-ouest. Asahidake, Daisetsuzan et Shiretoko sont d’autres voyages ou de vraies extensions, pas trois petites excursions à ajouter au même programme.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Dessiner une boucle réaliste avant de réserver. Sapporo et Otaru se combinent facilement en train ; pour les secteurs de montagne et Shiretoko, vérifier les liaisons saisonnières et le dernier trajet jusqu’au logement.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">Sapporo pour une base urbaine ; Noboribetsu ou Jōzankei pour une parenthèse thermale ; Utoro pour les notes liées à Shiretoko. Éviter de changer de côté de l’île chaque matin.</p><div class="places"><article class="place" id="lieu-11-jr-inn-sapporo-kita-2-jo" data-place="lieu-11-jr-inn-sapporo-kita-2-jo">
+      <div class="place-title"><span class="emoji">🏨</span><h3>JR Inn Sapporo Kita 2 Jo</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>L’adresse conservée pour le séjour à Sapporo.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=JR+Inn+Sapporo+Kita+2+Jo+Hokkaid%C5%8D" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-12-hotel-mahoroba-noboribetsu" data-place="lieu-12-hotel-mahoroba-noboribetsu">
+      <div class="place-title"><span class="emoji">🏨</span><h3>Hotel Mahoroba · Noboribetsu</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>Une adresse enregistrée dans le backlog, à comparer avant de bâtir un séjour thermal.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Mahoroba+%C2%B7+Noboribetsu+Hokkaid%C5%8D" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-sapporo-parc-odori" data-place="lieu-1-sapporo-parc-odori">
+      <div class="place-title"><span class="emoji">🌳</span><h3>Sapporo · parc Ōdōri</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Un repère central pour découvrir Sapporo à pied et construire une première promenade.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-sapporo-parc-odori">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/npdnVNrW8X8Fqp9x9" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-otaru-canal" data-place="lieu-2-otaru-canal">
+      <div class="place-title"><span class="emoji">⚓</span><h3>Otaru · canal</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le canal est le point sauvegardé pour Otaru. Prévoir une journée distincte depuis Sapporo pour garder du temps dans la ville.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-otaru-canal">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/vhqno8ZywwZu34rKA" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-village-historique-de-hokkaido" data-place="lieu-3-village-historique-de-hokkaido">
+      <div class="place-title"><span class="emoji">🏘️</span><h3>Village historique de Hokkaidō</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une visite sauvegardée pour l’histoire et l’architecture de Hokkaidō. Elle se trouve à l’écart du centre de Sapporo.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-3-village-historique-de-hokkaido">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/Pcr6fxhEZwGfsY8E6" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-4-upopoy-musee-et-parc-national-ainou" data-place="lieu-4-upopoy-musee-et-parc-national-ainou">
+      <div class="place-title"><span class="emoji">🏛️</span><h3>Upopoy · musée et parc national aïnou</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le musée et parc national consacré aux cultures aïnoues, à Shiraoi. Une visite à part entière à organiser selon les expositions et activités du jour.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-4-upopoy-musee-et-parc-national-ainou">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/G1KuA6RApQ58hYU29" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-5-noboribetsu-onsen" data-place="lieu-5-noboribetsu-onsen">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Noboribetsu Onsen</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Un secteur thermal distinct de Sapporo, à envisager avec une nuit sur place pour profiter des bains.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-5-noboribetsu-onsen">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/VZMEHeV3vpgXEay78" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-6-jozankei-grand-blissen" data-place="lieu-6-jozankei-grand-blissen">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Jōzankei · Grand Blissen</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le carnet conserve une formule à la journée pour cette adresse. Vérifier la formule, les repas éventuels et le trajet depuis Sapporo avant de réserver.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=J%C5%8Dzankei+%C2%B7+Grand+Blissen+Hokkaid%C5%8D" target="_blank" rel="noopener">Google Maps ↗</a><a class="site-link" href="https://jozankei.jp/en/oneday/grand-blissen/" target="_blank" rel="noopener">En savoir plus ↗</a></div>
+    </article>
+    <article class="place" id="lieu-7-asahidake-onsen" data-place="lieu-7-asahidake-onsen">
+      <div class="place-title"><span class="emoji">🏔️</span><h3>Asahidake Onsen</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repéré pour plus tard</span></div>
+      <p>Une piste de montagne et de bains autour d’Asahidake. L’accès, les remontées et les conditions de marche se préparent en fonction de la saison.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-7-asahidake-onsen">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/Jp8KrzBKo5mCJ36k7" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-8-daisetsuzan-repere-regional" data-place="lieu-8-daisetsuzan-repere-regional">
+      <div class="place-title"><span class="emoji">🌲</span><h3>Daisetsuzan · repère régional</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repéré pour plus tard</span></div>
+      <p>Le parc est immense : choisir un secteur et un parcours avant de réserver une base. L’épingle repère le parc, pas un départ de randonnée.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-8-daisetsuzan-repere-regional">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/HTMFw1Yx79uXbs3t6" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-9-kitakitsune-farm-kitami" data-place="lieu-9-kitakitsune-farm-kitami">
+      <div class="place-title"><span class="emoji">🦊</span><h3>Kitakitsune Farm · Kitami</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repéré pour plus tard</span></div>
+      <p>Une adresse de visite sauvegardée près de Kitami. À étudier seulement dans un itinéraire passant dans ce secteur.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-9-kitakitsune-farm-kitami">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/7nwQfTr8ybhKp66L6" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-10-shiretoko-kitakobushi-hotel-resort" data-place="lieu-10-shiretoko-kitakobushi-hotel-resort">
+      <div class="place-title"><span class="emoji">♨️</span><h3>Shiretoko · Kitakobushi Hotel &amp; Resort</h3></div>
+      <div class="meta"><span class="tag untested">🧭 Repéré pour plus tard</span></div>
+      <p>Une adresse sauvegardée à Utoro pour une éventuelle étape à Shiretoko. Le secteur demande son propre temps de trajet et un programme adapté aux accès saisonniers.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-10-shiretoko-kitakobushi-hotel-resort">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/zWAT779faFtyB9Up6" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Sapporo : centre, parc Ōdōri et une visite au choix.</li><li>Otaru sur une journée distincte.</li><li>Noboribetsu et Upopoy sur une extension au sud, ou une nuit à Jōzankei.</li><li>Daisetsuzan ou Shiretoko demandent des jours supplémentaires et un autre plan de transport.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Le carnet est plus concret sur Sapporo que sur les extensions. Les adresses de l’est et de montagne restent des repérages, sans avis personnel établi.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/destinations/hokkaido/hokkaido/noboribetsu-upopoy-and-around/" target="_blank" rel="noopener">Noboribetsu et Upopoy · JNTO ↗</a><a class="site-link" href="https://www.japan.travel/national-parks/parks/shiretoko/how-to-get-there/" target="_blank" rel="noopener">Shiretoko · accès ↗</a><a class="site-link" href="https://jozankei.jp/en/oneday/grand-blissen/" target="_blank" rel="noopener">Jōzankei · formule sauvegardée ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Hokkaidō</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [43.06, 141.35];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-sapporo-parc-odori",
+    "name": "Sapporo · parc Ōdōri",
+    "lat": 43.0607521,
+    "lng": 141.3544308,
+    "emoji": "🌳",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/npdnVNrW8X8Fqp9x9"
+  },
+  {
+    "id": "lieu-2-otaru-canal",
+    "name": "Otaru · canal",
+    "lat": 43.199041,
+    "lng": 141.0021176,
+    "emoji": "⚓",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/vhqno8ZywwZu34rKA"
+  },
+  {
+    "id": "lieu-3-village-historique-de-hokkaido",
+    "name": "Village historique de Hokkaidō",
+    "lat": 43.0482239,
+    "lng": 141.4969955,
+    "emoji": "🏘️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/Pcr6fxhEZwGfsY8E6"
+  },
+  {
+    "id": "lieu-4-upopoy-musee-et-parc-national-ainou",
+    "name": "Upopoy · musée et parc national aïnou",
+    "lat": 42.5577892,
+    "lng": 141.3635063,
+    "emoji": "🏛️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/G1KuA6RApQ58hYU29"
+  },
+  {
+    "id": "lieu-5-noboribetsu-onsen",
+    "name": "Noboribetsu Onsen",
+    "lat": 42.4924775,
+    "lng": 141.1430592,
+    "emoji": "♨️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/VZMEHeV3vpgXEay78"
+  },
+  {
+    "id": "lieu-7-asahidake-onsen",
+    "name": "Asahidake Onsen",
+    "lat": 43.6471786,
+    "lng": 142.7933044,
+    "emoji": "🏔️",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/Jp8KrzBKo5mCJ36k7"
+  },
+  {
+    "id": "lieu-8-daisetsuzan-repere-regional",
+    "name": "Daisetsuzan · repère régional",
+    "lat": 43.5083823,
+    "lng": 142.9843628,
+    "emoji": "🌲",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/HTMFw1Yx79uXbs3t6"
+  },
+  {
+    "id": "lieu-9-kitakitsune-farm-kitami",
+    "name": "Kitakitsune Farm · Kitami",
+    "lat": 43.7559064,
+    "lng": 143.4978126,
+    "emoji": "🦊",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/7nwQfTr8ybhKp66L6"
+  },
+  {
+    "id": "lieu-10-shiretoko-kitakobushi-hotel-resort",
+    "name": "Shiretoko · Kitakobushi Hotel & Resort",
+    "lat": 44.0720332,
+    "lng": 144.9954182,
+    "emoji": "♨️",
+    "kind": "hotel",
+    "mapsUrl": "https://maps.app.goo.gl/zWAT779faFtyB9Up6"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>

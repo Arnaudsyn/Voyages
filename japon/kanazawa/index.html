@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kanazawa : nos repères, hébergements notés, carte et conseils pour préparer l’étape.">
+  <title>Kanazawa — notre petit guide</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../../assets/guide.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">🇯🇵 Kanazawa</div>
+    <nav class="nav" aria-label="Navigation principale"><a href="../../">← Tous les guides</a><a href="../">🇯🇵 Japon</a><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></nav>
+  </div>
+</header>
+
+<main class="layout">
+  <div class="content"><header class="hero"><div class="eyebrow">Hokuriku · 2 à 3 jours · Première version</div>
+      <h1>Kanazawa,<br>notre petit guide !</h1><p class="lead">Le carnet donne déjà une journée très lisible : Kenroku-en, les quartiers historiques et Ōmichō. Takayama et Shirakawa-gō étaient rangés dans la même liste ; on les traite comme de vraies étapes distinctes.</p>
+      <div class="legend"><span class="pill">📍 Les repères de nos carnets</span><span class="pill">🧭 Des pistes à explorer</span><span class="pill">✍️ Nos avis à compléter</span></div></header>
+      <div class="toc"><h2>Menu rapide</h2><div class="toc-links"><a href="#transport">🚆 Se déplacer</a><a href="#hotels">🏨 Où dormir</a><a href="#visites">📍 Nos repères</a><a href="#itineraire">🌿 Prendre son temps</a><a href="#a-completer">🧭 À compléter</a></div></div><section id="transport"><div class="section-head"><div class="section-kicker">Le trajet fait partie du séjour</div><h2>Se déplacer</h2></div><article class="mini-card"><p>Arriver en train puis regrouper les visites par secteur. Préparer séparément les bus longue distance si le séjour continue vers Shirakawa-gō ou Takayama.</p><a href="../transports/">Trains, IC Cards et passes au Japon →</a></article></section>
+
+    <section id="hotels"><div class="section-head"><div class="section-kicker">Choisir sa base</div><h2>Où dormir</h2></div><p class="section-intro">HOTEL TORIFITO KANAZAWA est l’adresse notée. Comparer la proximité de la gare avec les quartiers où l’on souhaite passer les soirées.</p><div class="places"><article class="place" id="lieu-5-hotel-torifito-kanazawa" data-place="lieu-5-hotel-torifito-kanazawa">
+      <div class="place-title"><span class="emoji">🏨</span><h3>HOTEL TORIFITO KANAZAWA</h3></div>
+      <div class="meta"><span class="tag untested">Adresse notée · avis à compléter</span></div>
+      <p>L’adresse de l’étape d’hiver. L’avis personnel et les détails de chambre restent à ajouter.</p><div class="actions"><a class="google-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=HOTEL+TORIFITO+KANAZAWA+Kanazawa" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="visites"><div class="section-head"><div class="section-kicker">Les lieux à garder sous le coude</div><h2>Nos repères</h2></div><div class="places"><article class="place" id="lieu-1-kenroku-en" data-place="lieu-1-kenroku-en">
+      <div class="place-title"><span class="emoji">🌿</span><h3>Kenroku-en</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le grand jardin du carnet, à garder comme une vraie promenade et à combiner avec le secteur du château.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-1-kenroku-en">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/tMnCwfAthmbkpmns9" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-2-higashi-chaya" data-place="lieu-2-higashi-chaya">
+      <div class="place-title"><span class="emoji">🏮</span><h3>Higashi Chaya</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Un quartier de maisons de thé sauvegardé pour les rues et l’architecture. Respecter les lieux privés et regarder quelles maisons se visitent.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-2-higashi-chaya">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/wFZn12caAZycUch56" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-3-nagamachi" data-place="lieu-3-nagamachi">
+      <div class="place-title"><span class="emoji">🏯</span><h3>Nagamachi</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Le quartier des anciennes résidences de samouraïs fait partie des repères du carnet. Choisir les visites intérieures selon les envies.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-3-nagamachi">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/mD4xYhv8Evw4FXiw5" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article>
+    <article class="place" id="lieu-4-marche-omicho" data-place="lieu-4-marche-omicho">
+      <div class="place-title"><span class="emoji">🍣</span><h3>Marché Ōmichō</h3></div>
+      <div class="meta"><span class="tag untested">Repère de nos notes</span></div>
+      <p>Une étape de marché pour la journée. Les restaurants et commerces n’ont pas tous les mêmes horaires ; choisir sa pause en conséquence.</p><div class="actions"><button class="map-link" type="button" data-focus="lieu-4-marche-omicho">Voir sur la carte</button><a class="google-map-link" href="https://maps.app.goo.gl/jVRif8ndzJxNnxZ86" target="_blank" rel="noopener">Google Maps ↗</a></div>
+    </article></div></section>
+
+    <section id="itineraire"><div class="section-head"><div class="section-kicker">Un rythme, pas une course</div><h2>Comment organiser l’étape</h2></div><article class="mini-card"><ol><li>Kenroku-en et les abords du château.</li><li>Higashi Chaya puis Ōmichō selon l’heure des commerces.</li><li>Nagamachi et temps pour les petites rues avant de poursuivre le voyage.</li></ol><p>Une trame indicative à adapter à la météo, aux transports et aux réservations.</p></article></section>
+
+    <section id="a-completer"><div class="section-head"><div class="section-kicker">Le carnet reste ouvert</div><h2>Ce qu’on aimerait encore préciser</h2></div><article class="notice"><p>Nos avis détaillés, les bonnes tables et les petits détours restent à enrichir avec nos prochains retours.</p><p>Cette première version rassemble nos notes et des repères de préparation. Une adresse enregistrée n’implique pas un avis de séjour ; on garde les coups de cœur pour les retours réellement documentés.</p></article></section>
+
+    <section id="autour"><div class="section-head"><div class="section-kicker">Poursuivre le voyage</div><h2>À combiner avec</h2></div><div class="actions"><a class="site-link" href="../shirakawa-go/">Shirakawa-gō &amp; Gokayama →</a><a class="site-link" href="../takayama/">Takayama →</a></div></section>
+
+    <section id="sources"><div class="section-head"><div class="section-kicker">Pour préparer concrètement</div><h2>Liens utiles</h2></div><div class="actions"><a class="site-link" href="https://www.japan.travel/en/spot/1399/" target="_blank" rel="noopener">Kenroku-en · JNTO ↗</a><a class="site-link" href="https://www.japan.travel/en/au/guide/guide-takayama-shirakawa-go-kanazawa/" target="_blank" rel="noopener">Kanazawa et itinéraire régional · JNTO ↗</a></div></section><footer class="footer"><p>Première rédaction · octobre 2026. Les durées proposées sont indicatives ; vérifier horaires, accès et tarifs auprès des lieux avant le départ.</p><a href="../">← Tous nos guides du Japon</a></footer>
+  </div>
+
+  <aside class="map-panel" id="mapPanel">
+    <div class="map-label"><div class="map-badge"><strong>Kanazawa</strong><span>Les repères du guide</span></div></div>
+    <div id="map"></div>
+    <button class="map-toggle" id="mapToggle" type="button">Réduire la carte</button>
+  </aside>
+</main>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+<div class="lightbox" id="photoLightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fermer">×</button>
+  <div class="lightbox-inner"><img id="lightboxImage" alt=""><div class="lightbox-caption" id="lightboxCaption"></div></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+window.GUIDE_CENTER = [36.566, 136.66];
+window.GUIDE_ZOOM = 12;
+window.GUIDE_PLACES = [
+  {
+    "id": "lieu-1-kenroku-en",
+    "name": "Kenroku-en",
+    "lat": 36.5621278,
+    "lng": 136.6626515,
+    "emoji": "🌿",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/tMnCwfAthmbkpmns9"
+  },
+  {
+    "id": "lieu-2-higashi-chaya",
+    "name": "Higashi Chaya",
+    "lat": 36.5724921,
+    "lng": 136.6669815,
+    "emoji": "🏮",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/wFZn12caAZycUch56"
+  },
+  {
+    "id": "lieu-3-nagamachi",
+    "name": "Nagamachi",
+    "lat": 36.5636291,
+    "lng": 136.6510951,
+    "emoji": "🏯",
+    "kind": "visit",
+    "mapsUrl": "https://maps.app.goo.gl/mD4xYhv8Evw4FXiw5"
+  },
+  {
+    "id": "lieu-4-marche-omicho",
+    "name": "Marché Ōmichō",
+    "lat": 36.5717335,
+    "lng": 136.6558651,
+    "emoji": "🍣",
+    "kind": "food",
+    "mapsUrl": "https://maps.app.goo.gl/jVRif8ndzJxNnxZ86"
+  }
+];
+window.GUIDE_PHOTOS = {};
+</script>
+<script src="../../assets/guide.js"></script>
+</body>
+</html>
